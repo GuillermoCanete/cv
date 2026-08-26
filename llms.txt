@@ -1,0 +1,106 @@
+﻿# Guillermo Cañete — Operational Excellence Leader & Lean Manufacturing Specialist
+
+> Professional portfolio & CV for Guillermo Cañete. Specializing in Lean Transformation, Continuous Improvement (Kaizen), Quality Management (ISO 9001 · 14001 · 45001), and AI-Assisted Manufacturing Systems.
+
+- **Full Name**: Guillermo Cañete
+- **Title**: Operational Excellence Leader | Lean Manufacturing | AI-Enhanced Quality Systems
+- **Location**: Tierra del Fuego, Argentina (Open to relocation and international assignments)
+- **Email**: guillermo.canete@hotmail.com
+- **Phone**: +54 9 2964 413910
+- **LinkedIn**: https://www.linkedin.com/in/guillermo-canete
+- **Portfolio Web**: https://guillermocanete.github.io/cv/
+
+---
+
+## Professional Summary
+
+Operational Excellence Leader with 14+ years driving Lean transformation, quality management, and continuous improvement in complex, high-reliability manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel). Certified Auditor for ISO 9001 · 14001 · 45001, with hands-on application of Lean tools — Value Stream Mapping (VSM), line balancing, standard work — to raise throughput and First Pass Yield simultaneously. Acting as a bridge between Quality, Engineering, and Production, facilitating improvement workshops and training frontline teams to embed continuous improvement as a daily practice. Leads root-cause analysis and closed-loop CAPA programs with strict metrological traceability, defines and tracks KPIs across production flow, and builds proprietary AI-assisted tools to accelerate quality decision-making.
+
+---
+
+## Core Competencies & Skills
+
+- **Lean Manufacturing**: Subject Matter Expert (SME), Kaizen, Value Stream Mapping (VSM), Line Balancing, Standard Work.
+- **Quality Systems & Standards**: ISO 9001, ISO 14001, ISO 45001 (Active Integrated Auditor), ISO 17025 (Metrology & Calibration).
+- **Core Tools & Failure Prevention**: APQP, PFMEA, DFMEA, Control Plans, CAPA (Closed-Loop), Root Cause Analysis (RCA), 8D, Ishikawa, 5 Whys.
+- **Process & Production Engineering**: Statistical Process Control (SPC), Process Flow Optimization, NPI (New Product Introduction).
+- **Digital Innovation & AI**: AI Applied to Manufacturing, Gemini / Claude AI Prompting & Workflows, Web App Development for Quality Tools.
+- **Project Management**: UTN FRBA Certified Project Management Expert (PMBOK / PMI methodology).
+- **Languages**: Spanish (Native), English (Advanced C1/B2+ Technical & Business), Portuguese (Basic / Relocation to Brazil).
+
+---
+
+## Key Achievements & Proven Metrics
+
+- **+17% Production Increase**: Delivered on Alcatel 4007 mobile line through Lean assembly-line rebalancing and ergonomic workstation optimization, simultaneously exceeding First Pass Yield targets.
+- **+10% Planned Production Exceeded**: Delivered on Alcatel 4015 through tactical process-flow optimization, maintaining zero catastrophic defects.
+- **-3 Operator Roles Reallocated**: Optimized labor efficiency on Samsung microwave line through Lean line rebalancing, lowering manufacturing costs without compromising reliability.
+- **-2 Days Onboarding Time Cut**: Designed and facilitated a peer-to-peer 1-on-1 cross-shift training program for new product launches, accelerating skill acquisition.
+- **Closed-Loop CAPA Success**: Eliminated recurrence of critical defects across multiple high-tech electronic manufacturing lines.
+- **5+ Global Brands Compliance**: Ensured quality and process standards for Motorola, Samsung, Huawei, Sony, and Alcatel on the plant floor.
+
+---
+
+## Professional Experience
+
+### Grupo BGH — Quality Management & Continuous Improvement
+*May 2025 – Present | Full-time | On-site | Tierra del Fuego, Argentina*
+- Leading failure analysis and root-cause investigations across 2–3 active production lines to ensure a zero-defect mindset.
+- Designing and implementing closed-loop Corrective and Preventive Actions (CAPA) with tracked outcomes.
+- Managing control and traceability of critical components throughout production flow.
+- Coordinating with international suppliers (Asia) for component quality compliance and non-conformity resolution.
+
+### Grupo BGH — Integrated ISO Auditor (ISO 9001 / 14001 / 45001)
+*October 2022 – Present | Part-time / Parallel Function*
+- Conducting 2–4 annual integrated internal audits across the plant.
+- Ensuring compliance with customer expectations (ISO 9001), environmental regulations (ISO 14001), and occupational safety standards (ISO 45001).
+
+### Grupo BGH — Senior Process Engineer
+*August 2019 – February 2024*
+- Designed complete process flow and applied Statistical Process Control (SPC) for a multi-product manufacturing line.
+- Facilitated technical training workshops on Lean and critical manufacturing standards.
+- Performed process failure analysis to prevent catastrophic deviations.
+
+### Grupo BGH — Metrology & Engineering Laboratory Specialist
+*February 2017 – August 2019*
+- Executed high-precision calibrations for 50–100 instruments annually under ISO 17025 principles.
+- Ensured uninterrupted metrological traceability for RF (Radio Frequency) generators, GPS simulators, and Hi-Pot safety testers.
+
+### Grupo BGH — Process Engineer — Mobile Business Unit (Global Brands)
+*March 2014 – February 2017*
+- Led manufacturing launch of Alcatel brand; engineered phone assembly lines for Motorola, Huawei, ZTE, Sony, and Alcatel.
+- Delivered +17% productivity increase on Alcatel 4007; applied APQP, PFMEA, Control Plans, and line balancing.
+- Coordinated with overseas suppliers in China for incoming component quality compliance.
+
+### Grupo BGH — NPI Quality Analyst (New Product Introduction)
+*May 2012 – February 2014*
+- Quality assurance across 11–15 NPI launches under ISO 9001 and ISO/TS 16949 standards.
+- Authored inspection instructions, control plans, and participated in DFMEA/PFMEA development.
+
+---
+
+## Proprietary Software & AI Projects
+
+1. **PCB Defect Recorder**: Web application logging defects directly onto product images with real-time heatmaps and automated statistics. (URL: https://guillermocanete.github.io/DefectRecorder/)
+2. **ISO Compliance Analyzer**: AI-driven compliance tool scanning documentation against ISO 9001/14001/45001 clauses to identify gaps and redundancies.
+
+---
+
+## Certifications & Education
+
+- **ISO 9001 / 14001 / 45001 Integrated Auditor**: BGH S.A. / IGS Consulting (2022)
+- **Project Management Expert**: UTN FRBA (PMBOK / PMI Standard) — Blockchain Verified (2016)
+- **APQP with Emphasis on FMEA & Control Plan**: Shinka Engineering (2012)
+- **GenAI in Data Analytics**: Meta (2026)
+- **Generative AI Agents with Vertex AI & Flutter**: Coursera / Google Cloud (2026)
+- **Authority, Management & Leadership**: UNAM (2026)
+- **Human Talent Management**: UNAM (2026)
+- **Business Analysis & Process Management**: Coursera (2025)
+- **Claude 101, Claude Code 101 & AI Fluency**: Anthropic Education (2026)
+
+---
+
+## Downloadable Resumes (PDF)
+- Spanish: https://guillermocanete.github.io/cv/Guillermo_Canete_CV_es.pdf
+- English: https://guillermocanete.github.io/cv/Guillermo_Canete_CV_en.pdf
+- Portuguese: https://guillermocanete.github.io/cv/Guillermo_Canete_CV_pt.pdf
