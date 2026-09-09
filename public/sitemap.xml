@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://guillermocanete.github.io/CV/</loc>
+    <loc>https://guillermocanete.github.io/cv/</loc>
     <lastmod>2026-06-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://guillermocanete.github.io/CV/?lang=es" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://guillermocanete.github.io/CV/?lang=en" />
-    <xhtml:link rel="alternate" hreflang="pt" href="https://guillermocanete.github.io/CV/?lang=pt" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://guillermocanete.github.io/CV/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://guillermocanete.github.io/cv/?lang=es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://guillermocanete.github.io/cv/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://guillermocanete.github.io/cv/?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://guillermocanete.github.io/cv/" />
   </url>
 </urlset>

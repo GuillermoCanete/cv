@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirigiendo...</title>
+    <script type="text/javascript">
+      // GitHub Pages es sensible a mayúsculas. 
+      // Si llegamos a este 404 y la URL tiene "cv" en minúsculas, redirigimos a "CV" en mayúsculas.
+      var path = window.location.pathname;
+      if (path.toLowerCase().includes('/cv/') && !path.includes('/cv/')) {
+        var newPath = path.replace(/\/cv\//i, '/cv/');
+        window.location.replace(newPath + window.location.search + window.location.hash);
+      } else {
+        // Redirección genérica a la raíz de la aplicación si el 404 es por otra ruta inválida
+        window.location.replace('/cv/');
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirigiendo a la página correcta...</p>
+  </body>
+</html>

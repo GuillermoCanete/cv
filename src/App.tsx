@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "motion/react";
 import { 
   Mail, 
   Linkedin, 
@@ -24,6 +25,7 @@ import {
 import { 
   STATS, 
   SKILLS, 
+  SKILL_CATEGORIES,
   ACHIEVEMENTS, 
   EXPERIENCES, 
   PROJECTS, 
@@ -80,11 +82,13 @@ function AnimatedCounter({ value }: AnimatedCounterProps) {
   const elementRef = React.useRef<HTMLSpanElement | null>(null);
   const animationStarted = React.useRef(false);
 
-  // Parse target and suffix/prefix
-  const match = value.match(/^([+-]?\d+)(.*)$/);
-  const isPlus = value.startsWith("+");
-  const prefix = isPlus ? "+" : "";
-  const target = match ? parseInt(match[1].replace("+", ""), 10) : 0;
+  // Parse target and suffix/prefix (supporting + and - / −)
+  const normalized = value.replace("−", "-");
+  const isPlus = normalized.startsWith("+");
+  const isMinus = normalized.startsWith("-");
+  const prefix = isPlus ? "+" : isMinus ? "−" : "";
+  const match = normalized.match(/^([+-]?\d+)(.*)$/);
+  const target = match ? Math.abs(parseInt(match[1].replace("+", "").replace("-", ""), 10)) : 0;
   const suffix = match ? match[2] : "";
 
   useEffect(() => {
@@ -291,7 +295,7 @@ export default function App() {
               onClick={() => scrollToSection("achievements")} 
               className="text-xs font-bold uppercase tracking-wider text-cv-ink2 hover:text-cv-accent transition-colors cursor-pointer"
             >
-              {lang === "es" ? "Resultados" : lang === "pt" ? "Resultados" : "Results"}
+              {lang === "es" ? "Qué he mejorado" : lang === "pt" ? "O que melhorei" : "What I improved"}
             </button>
           </li>
           <li>
@@ -307,7 +311,7 @@ export default function App() {
               onClick={() => scrollToSection("projects")} 
               className="text-xs font-bold uppercase tracking-wider text-cv-ink2 hover:text-cv-accent transition-colors cursor-pointer"
             >
-              {lang === "es" ? "Proyectos" : lang === "pt" ? "Projetos" : "Projects"}
+              {lang === "es" ? "Herramientas" : lang === "pt" ? "Ferramentas" : "Tools"}
             </button>
           </li>
           <li>
@@ -323,7 +327,7 @@ export default function App() {
               onClick={() => scrollToSection("writing")} 
               className="text-xs font-bold uppercase tracking-wider text-cv-ink2 hover:text-cv-accent transition-colors cursor-pointer"
             >
-              {lang === "es" ? "Artículos" : lang === "pt" ? "Artigos" : "Articles"}
+              {lang === "es" ? "Insights" : lang === "pt" ? "Insights" : "Insights"}
             </button>
           </li>
           <li>
@@ -341,10 +345,10 @@ export default function App() {
           <a 
             href={
               lang === "es" 
-                ? "/CV/Guillermo_Canete_CV_es.pdf" 
+                ? "/cv/Guillermo_Canete_CV_es.pdf" 
                 : lang === "pt" 
-                  ? "/CV/Guillermo_Canete_CV_pt.pdf" 
-                  : "/CV/Guillermo_Canete_CV_en.pdf"
+                  ? "/cv/Guillermo_Canete_CV_pt.pdf" 
+                  : "/cv/Guillermo_Canete_CV_en.pdf"
             }
             download={
               lang === "es" 
@@ -427,30 +431,33 @@ export default function App() {
             </div>
           </div>
 
-          <p className="text-base sm:text-lg text-cv-ink2 max-w-xl mb-8 leading-relaxed">
-            {lang === "es" ? (
-              <>
-                <span className="block font-mono text-xs sm:text-sm text-cv-accent font-bold uppercase tracking-wider mb-4">
-                  Operational Excellence &amp; Process Engineering | AI-Enhanced Manufacturing Systems
-                </span>
-                Profesional en <strong>Excelencia Operacional e Ingeniería de Procesos</strong> con 14+ años de trayectoria en manufactura compleja (Motorola, Samsung, Huawei, Sony, Alcatel). Auditor certificado <strong>ISO 9001 · 14001 · 45001</strong>. Gestiono la calidad creando puentes activos entre Calidad, Ingeniería y Producción para resolver problemas desde una perspectiva holística. Agilizo la comunicación en equipos multidisciplinarios para disminuir costos, aumentar la producción y elevar la calidad de forma natural. Construyo mis propias herramientas digitales aplicando IA y estoy disponible para relocalización.
-              </>
-            ) : lang === "pt" ? (
-              <>
-                <span className="block font-mono text-xs sm:text-sm text-cv-accent font-bold uppercase tracking-wider mb-4">
-                  Operational Excellence &amp; Process Engineering | AI-Enhanced Manufacturing Systems
-                </span>
-                Profissional em <strong>Excelência Operacional e Engenharia de Processos</strong> com 14+ anos em manufatura complexa (Motorola, Samsung, Huawei, Sony, Alcatel). Auditor certificado <strong>ISO 9001 · 14001 · 45001</strong>. Gerencio a qualidade construindo pontes ativas entre Qualidade, Engenharia e Produção para resolver problemas de forma holística. Agilizo a comunicação em equipes multidisciplinares para reduzir custos, aumentar a produção e elevar a qualidade naturalmente. Desenvolvo minhas próprias ferramentas digitais aplicando IA e estou disponível para relocação.
-              </>
-            ) : (
-              <>
-                <span className="block font-mono text-xs sm:text-sm text-cv-accent font-bold uppercase tracking-wider mb-4">
-                  Operational Excellence &amp; Process Engineering | AI-Enhanced Manufacturing Systems
-                </span>
-                Professional in <strong>Operational Excellence &amp; Process Engineering</strong> with over 14 years in complex manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel). Certified Auditor for <strong>ISO 9001 · 14001 · 45001</strong>. I manage quality by building active bridges between Quality, Engineering, and Production to solve problems holistically. I streamline communication in cross-functional teams to lower costs, increase output, and naturally elevate quality. I build proprietary digital tools leveraging AI and am open to relocation.
-              </>
-            )}
-          </p>
+          <div className="mb-8">
+            <span className="block font-mono text-xs sm:text-sm text-cv-accent font-bold uppercase tracking-wider mb-2">
+              {lang === "es" ? "ESPECIALISTA EN CALIDAD Y MEJORA DE PROCESOS" : lang === "pt" ? "ESPECIALISTA EM QUALIDADE E MELHORIA DE PROCESSOS" : "QUALITY & PROCESS IMPROVEMENT SPECIALIST"}
+            </span>
+            <span className="block font-serif text-lg sm:text-xl text-cv-ink italic font-normal mb-4">
+              {lang === "es" 
+                ? "Resuelvo problemas operativos mediante mejora de procesos, datos y herramientas digitales" 
+                : lang === "pt" 
+                  ? "Resolvo problemas operacionais por meio de melhoria de processos, dados e ferramentas digitais" 
+                  : "I solve operational problems through process improvement, data and digital tools"}
+            </span>
+            <p className="text-base sm:text-lg text-cv-ink2 max-w-xl leading-relaxed">
+              {lang === "es" ? (
+                <>
+                  Identifico problemas, simplifico procesos, elimino trabajo innecesario y construyo soluciones prácticas. Con 14+ años en manufactura compleja y alta confiabilidad (Motorola, Samsung, Huawei, Sony, Alcatel), actúo como puente directo entre Calidad, Ingeniería y Producción en planta. Auditor certificado <strong>ISO 9001 · 14001 · 45001</strong>, aplico herramientas Lean prácticas (balanceo de líneas, trabajo estándar, VSM) y construyo herramientas digitales propias para resolver cuellos de botella, reducir costos y asegurar una calidad robusta con cero defectos. Disponible para relocalización.
+                </>
+              ) : lang === "pt" ? (
+                <>
+                  Identifico problemas, simplifico processos, elimino trabalho desnecessário e construo soluções práticas. Com mais de 14 anos na manufatura complexa e de alta confiabilidade (Motorola, Samsung, Huawei, Sony, Alcatel), atuo como ponte direta entre Qualidade, Engenharia e Produção na fábrica. Auditor certificado <strong>ISO 9001 · 14001 · 45001</strong>, aplico ferramentas Lean práticas (balanceamento de linha, trabalho padrão, VSM) e desenvolvo ferramentas digitais próprias para resolver gargalos, reduzir custos e garantir zero defeitos. Disponível para relocação.
+                </>
+              ) : (
+                <>
+                  I identify problems, simplify processes, eliminate unnecessary work and build practical solutions. With 14+ years in complex, high-reliability manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel), I bridge Quality, Engineering, and Production on the plant floor. Certified Auditor for <strong>ISO 9001 · 14001 · 45001</strong>, applying practical Lean tools (Line Balancing, Standard Work, VSM) and building custom digital tools to resolve bottlenecks, lower costs, and secure Zero-Defect reliability. Open to relocation and international assignments.
+                </>
+              )}
+            </p>
+          </div>
 
           <div className="flex flex-wrap gap-4">
             <button 
@@ -462,10 +469,10 @@ export default function App() {
             <a 
               href={
                 lang === "es" 
-                  ? "/CV/Guillermo_Canete_CV_es.pdf" 
+                  ? "/cv/Guillermo_Canete_CV_es.pdf" 
                   : lang === "pt" 
-                    ? "/CV/Guillermo_Canete_CV_pt.pdf" 
-                    : "/CV/Guillermo_Canete_CV_en.pdf"
+                    ? "/cv/Guillermo_Canete_CV_pt.pdf" 
+                    : "/cv/Guillermo_Canete_CV_en.pdf"
               }
               download={
                 lang === "es" 
@@ -498,10 +505,10 @@ export default function App() {
         </div>
 
         {/* Right Side Highlight Stats */}
-        <div className="lg:col-span-5 px-6 sm:px-12 py-12 lg:py-24 bg-cv-bg2/30 flex flex-col justify-center gap-8 lg:gap-12">
+        <div className="lg:col-span-5 px-6 sm:px-12 py-10 lg:py-16 bg-cv-bg2/30 flex flex-col justify-center gap-4 sm:gap-5">
           {STATS.map((stat, idx) => (
-            <div key={idx} className="bg-cv-white p-6 sm:p-8 rounded border border-cv-line shadow-sm hover:border-cv-accent transition-all duration-300">
-              <div className="font-serif text-5xl sm:text-6xl text-cv-accent leading-none mb-2">
+            <div key={idx} className="bg-cv-white p-5 sm:p-6 rounded border border-cv-line shadow-sm hover:border-cv-accent hover:shadow-md transition-all duration-300">
+              <div className="font-serif text-4xl sm:text-5xl text-cv-accent leading-none mb-2">
                 <AnimatedCounter value={stat.number} />
               </div>
               <div className="text-sm font-semibold text-cv-ink leading-tight mb-1">
@@ -524,64 +531,70 @@ export default function App() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-          <div className="space-y-6 text-sm sm:text-base text-cv-ink2 leading-relaxed">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <div className="lg:col-span-6 space-y-5 text-sm sm:text-base text-cv-ink2 leading-relaxed">
             {lang === "es" ? (
               <>
-                <p>
-                  No gestiono la calidad desde lejos — la diseño desde el corazón del proceso. Con más de 14 años en <strong>Grupo BGH</strong> entregando resultados para clientes globales, construí mi carrera sobre un principio fundamental: <strong>encontrar la causa raíz, resolver de forma definitiva y medir todo para optimizar.</strong>
+                <p className="text-base sm:text-lg font-medium text-cv-ink">
+                  Resuelvo problemas de manufactura y calidad combinando experiencia práctica en planta, análisis de causa raíz, mejora de procesos y herramientas digitales útiles.
                 </p>
                 <p>
-                  Combino metodologías tradicionales de excelencia industrial (<strong>APQP, PFMEA, CAPA, Core Tools</strong>) con la integración práctica de herramientas de IA para lograr diagnósticos veloces y flujos de trabajo más inteligentes.
+                  A lo largo de más de 14 años en <strong>Grupo BGH</strong> entregando resultados para marcas globales de primer nivel (Motorola, Samsung, Huawei, Sony, Alcatel), aprendí que la mejora real no surge detrás de un escritorio: se logra recorriendo la línea, entendiendo dónde se pierde tiempo o material, encontrando la causa raíz y dejando el sistema mejor que antes.
                 </p>
                 <p>
-                  Planifico y realizo auditorías integradas, aseguro el cumplimiento regulatorio estricto con clientes globales y diseño flujos de producción optimizados.
+                  En lugar de sumar burocracia documental, diseño flujos de trabajo claros y construyo herramientas digitales para automatizar tareas repetitivas, asegurar cumplimiento normativo (<strong>ISO 9001, 14001, 45001, 17025</strong>) y brindar visibilidad inmediata tanto al operario como a la gerencia.
                 </p>
               </>
             ) : lang === "pt" ? (
               <>
-                <p>
-                  Não gerencio a qualidade à distância — eu a projeto a partir do coração do processo. Com mais de 14 anos na <strong>Grupo BGH</strong> entregando resultados para marcas globais, consolidei minha carreira sobre um princípio fundamental: <strong>encontrar a causa raiz, resolver de forma definitiva e medir cada métrica para otimizar os resultados.</strong>
+                <p className="text-base sm:text-lg font-medium text-cv-ink">
+                  Resolvo problemas de manufatura e qualidade combinando experiência prática na fábrica, análise de causa raiz, melhoria de processos e ferramentas digitais práticas.
                 </p>
                 <p>
-                  Combino metodologias tradicionais de excelência industrial (<strong>APQP, PFMEA, CAPA, Core Tools</strong>) com a integração prática de ferramentas de IA para alcançar diagnósticos mais rápidos e fluxos de trabalho mais inteligentes.
+                  Ao longo de mais de 14 anos no <strong>Grupo BGH</strong> entregando resultados para marcas globais líderes (Motorola, Samsung, Huawei, Sony, Alcatel), aprendi que a melhoria real não acontece atrás de uma mesa: acontece no chão de fábrica, entendendo onde se perde tempo ou material, encontrando a causa raiz e deixando o sistema melhor do que antes.
                 </p>
                 <p>
-                  Planejo e realizo auditorias integradas, asseguro o estrito cumprimento regulatório com clientes globais e desenho fluxos de produção otimizados.
+                  Em vez de acrescentar burocracia, desenho fluxos de trabalho ágeis e desenvolvo ferramentas digitais para automatizar tarefas repetitivas, assegurar conformidade normativa (<strong>ISO 9001, 14001, 45001, 17025</strong>) e fornecer visibilidade imediata para operadores e liderança.
                 </p>
               </>
             ) : (
               <>
-                <p>
-                  I don't manage quality from a distant desk — I design it from within. With 14+ years at <strong>Grupo BGH</strong> delivering products for global brands, I built my career on a simple premise: <strong>isolate the root cause, resolve permanently, and track key metrics to optimize.</strong>
+                <p className="text-base sm:text-lg font-medium text-cv-ink">
+                  I solve manufacturing and quality problems by combining hands-on plant experience, root cause analysis, process improvement, and practical digital tools.
                 </p>
                 <p>
-                  I fuse traditional manufacturing excellence (<strong>APQP, PFMEA, CAPA, Core Tools</strong>) with modern AI tools to expedite analysis diagnostics and build smarter operational flows.
+                  Over 14+ years at <strong>Grupo BGH</strong> delivering for top global brands (Motorola, Samsung, Huawei, Sony, Alcatel), I learned that real improvement doesn't happen from behind a desk: it happens by walking the line, understanding where time and material are wasted, finding the root cause, and leaving the system better than before.
                 </p>
                 <p>
-                  I plan and execute integrated audits, ensure strict regulatory compliance with global clients, and design optimized production flows.
+                  Instead of adding layers of paperwork, I design streamlined workflows and build lightweight digital tools to automate repetitive tasks, ensure compliance (<strong>ISO 9001, 14001, 45001, 17025</strong>), and give operators and managers clear, actionable visibility.
                 </p>
               </>
             )}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4">
-            {SKILLS.filter(skill => skill.id !== "s7" || lang === "pt").map((skill) => (
-              <div key={skill.id} className="bg-cv-white border border-cv-line p-4 rounded flex items-center justify-between shadow-sm hover:border-cv-accent transition-all duration-200 hover:-translate-y-0.5">
-                <span className="text-xs sm:text-sm font-semibold text-cv-ink">
-                  {skill.id === "s5" ? (
-                    lang === "es" ? "IA Aplicada a Calidad" : lang === "pt" ? "IA Aplicada à Qualidade" : "AI Applied to Quality"
-                  ) : skill.id === "s6" ? (
-                    lang === "es" ? "Inglés — Avanzado" : lang === "pt" ? "Inglês — Avançado" : "English — Advanced"
-                  ) : skill.id === "s7" ? (
-                    lang === "pt" ? "Português — Inicial" : skill.name
-                  ) : skill.name}
-                </span>
-                <span className="font-mono text-[10px] bg-cv-accent2/50 text-cv-accent px-2 py-0.5 rounded uppercase font-medium">
-                  {lang === "es" ? skill.tag.es : lang === "pt" ? skill.tag.pt : skill.tag.en}
-                </span>
-              </div>
-            ))}
+          <div className="lg:col-span-6 space-y-4">
+            <span className="font-mono text-[11px] uppercase tracking-widest text-cv-accent font-bold block">
+              {lang === "es" ? "// Capacidades demostradas en 4 pilares" : lang === "pt" ? "// Capacidades demonstradas em 4 pilares" : "// Demonstrated capabilities in 4 pillars"}
+            </span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+              {SKILL_CATEGORIES.map((cat) => (
+                <div key={cat.id} className="bg-cv-white border border-cv-line p-4 rounded shadow-sm hover:border-cv-accent transition-all">
+                  <h4 className="font-mono text-[11px] font-bold uppercase tracking-wider text-cv-accent mb-2.5 pb-1 border-b border-cv-line/60">
+                    {lang === "es" ? cat.category.es : lang === "pt" ? cat.category.pt : cat.category.en}
+                  </h4>
+                  <ul className="space-y-1.5">
+                    {cat.skills.map((skill, sIdx) => (
+                      <li key={sIdx} className="flex items-center justify-between gap-2 text-xs">
+                        <span className="font-medium text-cv-ink leading-tight">{skill.name}</span>
+                        <span className="font-mono text-[9px] bg-cv-bg2/80 text-cv-ink2 px-1.5 py-0.5 rounded uppercase flex-shrink-0">
+                          {lang === "es" ? skill.tag.es : lang === "pt" ? skill.tag.pt : skill.tag.en}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -589,21 +602,34 @@ export default function App() {
       {/* RESULTS / ACHIEVEMENTS */}
       <section className="bg-cv-ink text-cv-bg py-16 sm:py-24" id="achievements">
         <div className="max-w-7xl mx-auto px-6 sm:px-12">
-          <div className="flex items-center gap-4 mb-12 border-b border-cv-bg2/10 pb-4">
-            <span className="font-mono text-xs sm:text-sm text-cv-accent font-semibold">02</span>
-            <h2 className="font-serif text-3xl sm:text-4xl text-cv-white">
-              {lang === "es" ? "Resultados comprobables" : lang === "pt" ? "Resultados comprováveis" : "Results that matter"}
-            </h2>
+          <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-12 border-b border-cv-bg2/10 pb-4">
+            <div className="flex items-center gap-4">
+              <span className="font-mono text-xs sm:text-sm text-cv-accent font-semibold">02</span>
+              <h2 className="font-serif text-3xl sm:text-4xl text-cv-white">
+                {lang === "es" ? "Qué he mejorado" : lang === "pt" ? "O que melhorei" : "What I have improved"}
+              </h2>
+            </div>
+            <span className="font-mono text-xs text-cv-accent uppercase tracking-wider">
+              {lang === "es" ? "Problema → Acción → Resultado medible" : lang === "pt" ? "Problema → Ação → Resultado mensurável" : "Problem → Action → Measurable outcome"}
+            </span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-            {ACHIEVEMENTS.map((ach) => (
-              <div 
+            {ACHIEVEMENTS.map((ach, index) => (
+              <motion.div 
                 key={ach.id} 
+                initial={{ scale: 0.8, opacity: 0, boxShadow: "0px 0px 0px transparent" }}
+                whileInView={{ 
+                  scale: [0.8, 1.05, 1], 
+                  opacity: 1, 
+                  boxShadow: ["0px 0px 0px transparent", "0px 0px 30px rgba(226,204,153, 0.8)", "0px 0px 0px transparent"]
+                }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.7, delay: index * 0.5, ease: "easeOut" }}
                 className="group relative border border-cv-bg2/10 hover:border-cv-accent rounded-sm p-6 sm:p-8 flex flex-col justify-between transition-all duration-300"
               >
                 {ach.accent && (
-                  <span className="absolute top-4 right-6 font-serif text-4xl sm:text-5xl text-cv-accent/30 group-hover:text-cv-accent/70 transition-colors">
+                  <span className="absolute top-4 right-6 font-serif text-3xl sm:text-4xl text-cv-accent opacity-90 drop-shadow-[0_0_8px_rgba(226,204,153,0.5)] group-hover:opacity-100 group-hover:drop-shadow-[0_0_15px_rgba(226,204,153,0.9)] group-hover:scale-110 transition-all duration-300">
                     {ach.accent}
                   </span>
                 )}
@@ -615,7 +641,7 @@ export default function App() {
                     {lang === "es" ? ach.text.es : lang === "pt" ? ach.text.pt : ach.text.en}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
@@ -670,15 +696,15 @@ export default function App() {
           <div className="flex items-center gap-4 mb-4 border-b border-cv-line pb-4">
             <span className="font-mono text-xs sm:text-sm text-cv-accent font-semibold">04</span>
             <h2 className="font-serif text-3xl sm:text-4xl text-cv-ink">
-              {lang === "es" ? "Construido, no solo gestionado" : lang === "pt" ? "Construído, não apenas gerenciado" : "Built, not just managed"}
+              {lang === "es" ? "Herramientas digitales para operaciones" : lang === "pt" ? "Ferramentas digitais para operações" : "Digital tools for operations"}
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-cv-ink2 max-w-xl mb-12 leading-relaxed">
             {lang === "es" ? 
-              "Implementación de aplicaciones web con IA y base de datos asociada para dar solución a problemas específicos en la industria. Diseño e implemento soluciones de calidad digitales personalizadas. Probá abajo los prototipos interactivos integrados:" : 
+              "Construyo herramientas para eliminar trabajo innecesario, simplificar procesos y reducir burocracia. Pruebe los prototipos interactivos integrados a continuación:" : 
              lang === "pt" ?
-              "Implementação de aplicações web com IA e banco de dados associado para solucionar problemas específicos na indústria. Desenho e implemento soluções de qualidade digitais personalizadas. Teste abaixo os protótipos interativos integrados:" :
-              "Implementation of AI-powered web applications and associated databases to solve specific industrial problems. I design and deploy custom digital quality solutions. Interact with the sandbox components below:"
+              "Desenvolvo ferramentas para eliminar trabalho desnecessário, simplificar processos e reduzir burocracia. Teste os protótipos interativos integrados abaixo:" :
+              "I build tools to remove unnecessary work, simplify processes and reduce bureaucracy. Interact with the sandbox components below:"
             }
           </p>
 
@@ -901,13 +927,13 @@ export default function App() {
                 >
                   {/* Thumbnail */}
                   <div 
-                    className="relative w-32 sm:w-40 flex-shrink-0 bg-cv-bg2/5 border-r border-cv-line cursor-pointer overflow-hidden"
+                    className="relative w-36 sm:w-48 p-2 flex-shrink-0 bg-cv-bg2/5 border-r border-cv-line cursor-pointer overflow-hidden flex items-center justify-center"
                     onClick={() => setCertModalImage(cert.thumbnail!)}
                   >
                     <img 
                       src={cert.thumbnail} 
                       alt={lang === "es" ? cert.name.es : lang === "pt" ? cert.name.pt : cert.name.en}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-auto max-h-full object-contain hover:scale-105 transition-transform duration-300"
                       loading="lazy"
                     />
                     <div className="absolute inset-0 bg-cv-black/0 hover:bg-cv-black/10 transition-colors flex items-center justify-center opacity-0 hover:opacity-100">
@@ -973,7 +999,7 @@ export default function App() {
         <div className="flex items-center gap-4 mb-12 border-b border-cv-line pb-4">
           <span className="font-mono text-xs sm:text-sm text-cv-accent font-semibold">06</span>
           <h2 className="font-serif text-3xl sm:text-4xl text-cv-ink">
-            {lang === "es" ? "Ideas en voz alta" : lang === "pt" ? "Idéias em voz alta" : "Thinking out loud"}
+            {lang === "es" ? "Insights & Perspectiva Práctica" : lang === "pt" ? "Insights & Perspectiva Prática" : "Insights & Practical Perspective"}
           </h2>
         </div>
 
@@ -1062,10 +1088,10 @@ export default function App() {
           
           <p className="text-sm sm:text-base text-cv-bg2/80 max-w-xl mx-auto mb-12 leading-relaxed">
             {lang === "es" ? 
-              "Disponible para roles de liderazgo en Excelencia Operacional, Gestión de Calidad e Ingeniería de Procesos en sectores de manufactura compleja, tecnología u operaciones industriales generales (presencial o remoto) con disponibilidad para relocalización nacional e internacional." : 
+              "Disponible para oportunidades en Calidad, Mejora de Procesos, Excelencia Operacional y Transformación Digital (presencial o remoto) con total disponibilidad para relocalización nacional e internacional." : 
              lang === "pt" ?
-              "Disponível para cargos de liderança em Excelência Operacional, Gestão de Qualidade e Engenharia de Processos em setores de manufatura complexa, tecnologia ou operações industriais em geral (presencial ou remoto) com total disponibilidade para relocação nacional e internacional." :
-              "Open to Senior Roles in Operational Excellence, Quality Management, and Process Engineering across complex manufacturing, technology, or industrial operations (on-site or remote) with relocation availability."}
+              "Disponível para oportunidades em Qualidade, Melhoria de Processos, Excelência Operacional e Transformação Digital (presencial ou remoto) com total disponibilidade para relocação nacional e internacional." :
+              "Open to opportunities in Quality, Process Improvement, Operational Excellence and Digital Transformation (on-site or remote) with relocation availability."}
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 lg:gap-6">
@@ -1078,15 +1104,15 @@ export default function App() {
             <a 
               href="https://linkedin.com/in/guillermo-canete" 
               target="_blank" 
-              rel="noopener noreferrer"
+              rel="noopener noreferrer" 
               className="px-6 py-4 bg-cv-bg/5 hover:bg-cv-accent hover:border-cv-accent border border-cv-bg2/20 rounded inline-flex items-center gap-3 text-xs sm:text-sm font-bold text-cv-white uppercase tracking-wider transition-all shadow-sm"
             >
               <Linkedin className="w-4 h-4 text-cv-accent group-hover:text-cv-white" /> linkedin.com/in/guillermo-canete
             </a>
             <a 
               href="https://wa.me/5492964413910" 
-              target="_blank"
-              rel="noopener noreferrer"
+              target="_blank" 
+              rel="noopener noreferrer" 
               className="px-6 py-4 bg-cv-bg/5 hover:bg-[#25D366]/20 hover:border-[#25D366] border border-cv-bg2/20 rounded inline-flex items-center gap-3 text-xs sm:text-sm font-bold text-cv-white uppercase tracking-wider transition-all shadow-sm"
             >
               <svg className="w-4 h-4 text-[#25D366] fill-[#25D366]" viewBox="0 0 24 24" fill="currentColor">
@@ -1101,10 +1127,10 @@ export default function App() {
       {/* FOOTER */}
       <footer className="bg-cv-ink border-t border-cv-bg2/10 text-cv-ink3 text-center py-6 font-mono text-[10px] sm:text-xs">
         <div>
-          Guillermo A. Cañete Ferreyra — Quality Management &amp; Process Engineering — Tierra del Fuego, Argentina
+          Guillermo A. Cañete Ferreyra — Quality &amp; Process Improvement Specialist — Tierra del Fuego, Argentina
         </div>
         <div className="mt-1.5 opacity-60">
-          {lang === "es" ? "Última actualización: 6/6/2026" : lang === "pt" ? "Última atualização: 6/6/2026" : "Last update: 6/6/2026"}
+          {lang === "es" ? "Última actualización: 2026" : lang === "pt" ? "Última atualização: 2026" : "Last update: 2026"}
         </div>
       </footer>
 

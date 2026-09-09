@@ -8,37 +8,37 @@ const __dirname = path.dirname(__filename);
 
 const translations = {
   es: {
-    title: "Especialista en Excelencia Operacional e Ingeniería de Procesos",
+    title: "QUALITY & PROCESS IMPROVEMENT SPECIALIST | DIGITAL SOLUTIONS & APPLIED AI",
     contact: "Contacto",
     location: "Tierra del Fuego, Argentina",
     summaryTitle: "Perfil Profesional",
-    summary: "Profesional en Excelencia Operacional e Ingeniería de Procesos con 14+ años de trayectoria en manufactura compleja (Motorola, Samsung, Huawei, Sony, Alcatel). Auditor certificado ISO 9001 · 14001 · 45001. Gestiono la calidad creando puentes activos entre Calidad, Ingeniería y Producción para resolver problemas desde una perspectiva holística. Agilizo la comunicación en equipos multidisciplinarios para disminuir costos, aumentar la producción y elevar la calidad de forma natural. Construyo mis propias herramientas digitales aplicando IA y estoy disponible para relocalización.",
+    summary: "Especialista en Calidad y Mejora de Procesos con más de 14 años identificando problemas operativos, encontrando su causa raíz, implementando soluciones prácticas y dejando el sistema mejor que antes en manufactura compleja y de alta confiabilidad (Motorola, Samsung, Huawei, Sony, Alcatel). Auditor certificado ISO 9001 · 14001 · 45001, con aplicación directa de herramientas Lean (balanceo de línea, trabajo estandarizado, VSM). Actúo como puente directo entre Calidad, Ingeniería y Producción en planta. Además de la mejora de procesos, desarrollo herramientas digitales y aplico soluciones de IA para automatizar tareas repetitivas, asegurar trazabilidad y erradicar la burocracia manual. Disponible para relocalización.",
     skillsTitle: "Habilidades Clave",
-    achievementsTitle: "Logros y Resultados Destacados",
+    achievementsTitle: "Qué he mejorado (Problema → Acción → Impacto)",
     experienceTitle: "Experiencia Profesional",
     certsTitle: "Educación y Certificaciones",
     certBgh: "Auditor Interno de Sistemas de Gestión Integrados: ISO 9001, ISO 14001, ISO 45001 — BGH"
   },
   en: {
-    title: "Operational Excellence & Process Engineering Specialist",
+    title: "QUALITY & PROCESS IMPROVEMENT SPECIALIST | DIGITAL SOLUTIONS & APPLIED AI",
     contact: "Contact Information",
     location: "Tierra del Fuego, Argentina",
     summaryTitle: "Professional Profile",
-    summary: "Operational Excellence & Process Engineering Professional with over 14 years in complex manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel). Certified ISO 9001 · 14001 · 45001 Auditor. I manage quality by building active bridges between Quality, Engineering, and Production to solve problems holistically. I streamline communication in cross-functional teams to lower costs, increase output, and naturally elevate quality. I build proprietary digital tools leveraging AI and am open to relocation.",
+    summary: "Quality & Process Improvement Specialist with 14+ years identifying shop-floor problems, finding root causes, implementing practical solutions, and leaving systems better than before in complex, high-reliability manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel). Certified Auditor for ISO 9001 · 14001 · 45001, applying hands-on Lean methods (line balancing, standard work, VSM). I serve as a direct bridge between Quality, Engineering, and Production on the plant floor. In addition to process optimization, I build custom digital tools and applied AI workflows to automate repetitive tasks, ensure traceability, and eliminate manual bureaucracy. Open to relocation and international assignments.",
     skillsTitle: "Core Competencies",
-    achievementsTitle: "Key Achievements & Metrics",
+    achievementsTitle: "What I Have Improved (Problem → Action → Impact)",
     experienceTitle: "Professional Experience",
     certsTitle: "Education & Certifications",
     certBgh: "Internal Auditor of Integrated Management Systems: ISO 9001, ISO 14001, ISO 45001 — BGH"
   },
   pt: {
-    title: "Especialista em Excelência Operacional e Engenharia de Processos",
+    title: "QUALITY & PROCESS IMPROVEMENT SPECIALIST | DIGITAL SOLUTIONS & APPLIED AI",
     contact: "Informações de Contato",
     location: "Tierra del Fuego, Argentina",
     summaryTitle: "Perfil Profissional",
-    summary: "Profissional em Excelência Operacional e Engenharia de Processos com 14+ anos em manufatura complexa (Motorola, Samsung, Huawei, Sony, Alcatel). Auditor ISO 9001 · 14001 · 45001. Gerencio a qualidade construindo pontes ativas entre Qualidade, Engenharia e Produção para resolver problemas de forma holística. Agilizo a comunicação em equipes multidisciplinares para reduzir custos, aumentar a produção e elevar a qualidade naturalmente. Desenvolvo minhas próprias ferramentas digitais aplicando IA e estou disponível para relocação.",
+    summary: "Especialista em Qualidade e Melhoria de Processos com mais de 14 anos identificando problemas na fábrica, encontrando a causa raiz, implementando soluções práticas e deixando o sistema melhor do que antes na manufatura complexa e de alta confiabilidade (Motorola, Samsung, Huawei, Sony, Alcatel). Auditor certificado ISO 9001 · 14001 · 45001, com aplicação direta de ferramentas Lean (balanceamento de linha, trabalho padronizado, VSM). Atuo como ponte direta entre Qualidade, Engenharia e Produção na fábrica. Além da otimização operacional, desenvolvo ferramentas digitais próprias e aplico IA para automatizar tarefas repetitivas, assegurar rastreabilidade e eliminar a burocracia manual. Disponível para relocação.",
     skillsTitle: "Habilidades Principais",
-    achievementsTitle: "Resultados e Métricas de Impacto",
+    achievementsTitle: "O que melhorei (Problema → Ação → Impacto)",
     experienceTitle: "Experiência Profissional",
     certsTitle: "Educação e Certificações",
     certBgh: "Auditor Interno de Sistemas de Gestão Integrados: ISO 9001, ISO 14001, ISO 45001 — BGH"
@@ -70,13 +70,13 @@ async function run() {
     const trans = translations[lang];
 
     // Filter skills (only name)
-    const skillsHtml = SKILLS.filter(s => s.id !== "s7" || lang === 'pt').map(s => {
-      const name = s.id === "s5" ? (
-        lang === "es" ? "IA Aplicada a Calidad" : lang === "pt" ? "IA Aplicada à Qualidade" : "AI Applied to Quality"
-      ) : s.id === "s6" ? (
-        lang === "es" ? "Inglés — Avanzado" : lang === "pt" ? "Inglês — Avançado" : "English — Advanced"
+    const skillsHtml = SKILLS.filter(s => s.id !== "s8" || lang === 'pt').map(s => {
+      const name = s.id === "s6" ? (
+        lang === "es" ? "Herramientas Digitales & IA Aplicada" : lang === "pt" ? "Ferramentas Digitais & IA Aplicada" : "Digital Tools & Applied AI"
       ) : s.id === "s7" ? (
-        lang === "pt" ? "Português — Inicial" : s.name
+        lang === "es" ? "Inglés — B2 | Competencia Profesional" : lang === "pt" ? "Inglês — B2 | Proficiência Profissional" : "English — B2 | Professional Working Proficiency"
+      ) : s.id === "s8" ? (
+        lang === "pt" ? "Português — Inicial / Básico" : s.name
       ) : s.name;
       return `<div class="skill-item">${name}</div>`;
     }).join('\n');
@@ -268,7 +268,7 @@ async function run() {
       <span>✉️ <a href="mailto:guillermo.canete@hotmail.com">guillermo.canete@hotmail.com</a></span>
       <span>📞 +54 9 2964 413910</span>
       <span>🔗 <a href="https://linkedin.com/in/guillermo-canete">linkedin.com/in/guillermo-canete</a></span>
-      <span>🌐 <a href="https://guillermocanete.github.io/CV/">guillermocanete.github.io/CV/</a></span>
+      <span>🌐 <a href="https://guillermocanete.github.io/cv/">guillermocanete.github.io/cv/</a></span>
     </div>
   </div>
 
