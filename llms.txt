@@ -1,9 +1,10 @@
-﻿# Guillermo Cañete — Operational Excellence Leader & Lean Manufacturing Specialist
+# Guillermo Cañete — Quality & Process Improvement Specialist
 
-> Professional portfolio & CV for Guillermo Cañete. Specializing in Lean Transformation, Continuous Improvement (Kaizen), Quality Management (ISO 9001 · 14001 · 45001), and AI-Assisted Manufacturing Systems.
+> Professional portfolio & CV for Guillermo Cañete. Specializing in solving operational problems through process improvement, data, and digital tools.
 
 - **Full Name**: Guillermo Cañete
-- **Title**: Operational Excellence Leader | Lean Manufacturing | AI-Enhanced Quality Systems
+- **Title**: Quality & Process Improvement Specialist | Digital Solutions & Applied AI
+- **Tagline**: I solve operational problems through process improvement, data and digital tools
 - **Location**: Tierra del Fuego, Argentina (Open to relocation and international assignments)
 - **Email**: guillermo.canete@hotmail.com
 - **Phone**: +54 9 2964 413910
@@ -14,23 +15,21 @@
 
 ## Professional Summary
 
-Operational Excellence Leader with 14+ years driving Lean transformation, quality management, and continuous improvement in complex, high-reliability manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel). Certified Auditor for ISO 9001 · 14001 · 45001, with hands-on application of Lean tools — Value Stream Mapping (VSM), line balancing, standard work — to raise throughput and First Pass Yield simultaneously. Acting as a bridge between Quality, Engineering, and Production, facilitating improvement workshops and training frontline teams to embed continuous improvement as a daily practice. Leads root-cause analysis and closed-loop CAPA programs with strict metrological traceability, defines and tracks KPIs across production flow, and builds proprietary AI-assisted tools to accelerate quality decision-making.
+I identify problems, simplify processes, eliminate unnecessary work, and build practical solutions. With 14+ years in complex, high-reliability manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel), I bridge Quality, Engineering, and Production on the plant floor. Certified Auditor for ISO 9001 · 14001 · 45001, applying practical Lean tools (line balancing, standard work, VSM) and building custom digital tools to resolve bottlenecks, lower costs, and secure Zero-Defect reliability.
 
 ---
 
-## Core Competencies & Skills
+## Core Competencies (4 Demonstrated Pillars)
 
-- **Lean Manufacturing**: Subject Matter Expert (SME), Kaizen, Value Stream Mapping (VSM), Line Balancing, Standard Work.
-- **Quality Systems & Standards**: ISO 9001, ISO 14001, ISO 45001 (Active Integrated Auditor), ISO 17025 (Metrology & Calibration).
-- **Core Tools & Failure Prevention**: APQP, PFMEA, DFMEA, Control Plans, CAPA (Closed-Loop), Root Cause Analysis (RCA), 8D, Ishikawa, 5 Whys.
-- **Process & Production Engineering**: Statistical Process Control (SPC), Process Flow Optimization, NPI (New Product Introduction).
-- **Digital Innovation & AI**: AI Applied to Manufacturing, Gemini / Claude AI Prompting & Workflows, Web App Development for Quality Tools.
-- **Project Management**: UTN FRBA Certified Project Management Expert (PMBOK / PMI methodology).
-- **Languages**: Spanish (Native), English (Advanced C1/B2+ Technical & Business), Portuguese (Basic / Relocation to Brazil).
+- **Problem Solving**: Root Cause Analysis (RCA - 5 Whys, 8D, Ishikawa), Closed-Loop CAPA, Failure Analysis, Zero Defect mindset, Data Analysis & Diagnostics.
+- **Process Improvement**: Line Balancing (+17% prod achieved), Standard Work & Ergonomics, Value Stream Mapping (VSM), Kaizen & Workplace Optimization.
+- **Quality Systems**: ISO 9001 · 14001 · 45001 (Active Integrated Internal Auditor), APQP & Control Plans, PFMEA / DFMEA, Metrology & ISO 17025 (Calibration & Traceability).
+- **Digital Solutions & Applied AI**: Custom Web Apps for Operations (PCB Defect Recorder, ISO Compliance Analyzer), Applied AI for Operations, Workflow Automation, Zero Paperwork & Bureaucracy Reduction.
+- **Languages**: Spanish (Native), English (B2 | Professional Working Proficiency), Portuguese (Basic / Relocation to Brazil).
 
 ---
 
-## Key Achievements & Proven Metrics
+## What I Have Improved (Problem → Action → Measurable Impact)
 
 - **+17% Production Increase**: Delivered on Alcatel 4007 mobile line through Lean assembly-line rebalancing and ergonomic workstation optimization, simultaneously exceeding First Pass Yield targets.
 - **+10% Planned Production Exceeded**: Delivered on Alcatel 4015 through tactical process-flow optimization, maintaining zero catastrophic defects.
