@@ -8,36 +8,36 @@ const __dirname = path.dirname(__filename);
 
 const translations = {
   es: {
-    title: "QUALITY & PROCESS IMPROVEMENT SPECIALIST | DIGITAL SOLUTIONS & APPLIED AI",
+    title: "QUALITY & PROCESS IMPROVEMENT SPECIALIST | SOLVING OPERATIONAL PROBLEMS THROUGH DATA, SIMPLIFICATION & DIGITAL TOOLS",
     contact: "Contacto",
     location: "Tierra del Fuego, Argentina",
     summaryTitle: "Perfil Profesional",
-    summary: "Especialista en Calidad y Mejora de Procesos con más de 14 años identificando problemas operativos, encontrando su causa raíz, implementando soluciones prácticas y dejando el sistema mejor que antes en manufactura compleja y de alta confiabilidad (Motorola, Samsung, Huawei, Sony, Alcatel). Auditor certificado ISO 9001 · 14001 · 45001, con aplicación directa de herramientas Lean (balanceo de línea, trabajo estandarizado, VSM). Actúo como puente directo entre Calidad, Ingeniería y Producción en planta. Además de la mejora de procesos, desarrollo herramientas digitales y aplico soluciones de IA para automatizar tareas repetitivas, asegurar trazabilidad y erradicar la burocracia manual. Disponible para relocalización.",
-    skillsTitle: "Habilidades Clave",
+    summary: "Especialista en Calidad y Mejora de Procesos con más de 14 años identificando problemas operativos, encontrando su causa raíz, implementando soluciones prácticas y dejando el sistema mejor que antes en manufactura compleja y de alta confiabilidad (Motorola, Samsung, Huawei, Sony, Alcatel). ISO 9001 / 14001 / 45001 Internal Auditor y conocimientos de TS16949, ANSI/ESD S20.20, con aplicación directa de herramientas Lean (balanceo de línea, trabajo estandarizado, VSM). Actúo como puente directo entre Calidad, Ingeniería y Producción en planta. Además de la mejora de procesos, desarrollo herramientas digitales y aplico soluciones de IA para automatizar tareas repetitivas, asegurar trazabilidad, reducir defectos y mejorar la confiabilidad del proceso. Disponible para relocalización.",
+    skillsTitle: "Habilidades Clave & Sistemas",
     achievementsTitle: "Qué he mejorado (Problema → Acción → Impacto)",
     experienceTitle: "Experiencia Profesional",
     certsTitle: "Educación y Certificaciones",
     certBgh: "Auditor Interno de Sistemas de Gestión Integrados: ISO 9001, ISO 14001, ISO 45001 — BGH"
   },
   en: {
-    title: "QUALITY & PROCESS IMPROVEMENT SPECIALIST | DIGITAL SOLUTIONS & APPLIED AI",
+    title: "QUALITY & PROCESS IMPROVEMENT SPECIALIST | SOLVING OPERATIONAL PROBLEMS THROUGH DATA, SIMPLIFICATION & DIGITAL TOOLS",
     contact: "Contact Information",
     location: "Tierra del Fuego, Argentina",
     summaryTitle: "Professional Profile",
-    summary: "Quality & Process Improvement Specialist with 14+ years identifying shop-floor problems, finding root causes, implementing practical solutions, and leaving systems better than before in complex, high-reliability manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel). Certified Auditor for ISO 9001 · 14001 · 45001, applying hands-on Lean methods (line balancing, standard work, VSM). I serve as a direct bridge between Quality, Engineering, and Production on the plant floor. In addition to process optimization, I build custom digital tools and applied AI workflows to automate repetitive tasks, ensure traceability, and eliminate manual bureaucracy. Open to relocation and international assignments.",
-    skillsTitle: "Core Competencies",
+    summary: "Quality & Process Improvement Specialist with 14+ years identifying shop-floor problems, finding root causes, implementing practical solutions, and leaving systems better than before in complex, high-reliability manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel). ISO 9001 / 14001 / 45001 Internal Auditor & working knowledge of TS16949, ANSI/ESD S20.20, applying hands-on Lean methods (line balancing, standard work, VSM). I serve as a direct bridge between Quality, Engineering, and Production on the plant floor. In addition to process optimization, I build custom digital tools and applied AI workflows to automate repetitive tasks, ensure traceability, reduce defects and improve process reliability. Open to relocation and international assignments.",
+    skillsTitle: "Core Competencies & Standards",
     achievementsTitle: "What I Have Improved (Problem → Action → Impact)",
     experienceTitle: "Professional Experience",
     certsTitle: "Education & Certifications",
     certBgh: "Internal Auditor of Integrated Management Systems: ISO 9001, ISO 14001, ISO 45001 — BGH"
   },
   pt: {
-    title: "QUALITY & PROCESS IMPROVEMENT SPECIALIST | DIGITAL SOLUTIONS & APPLIED AI",
+    title: "QUALITY & PROCESS IMPROVEMENT SPECIALIST | SOLVING OPERATIONAL PROBLEMS THROUGH DATA, SIMPLIFICATION & DIGITAL TOOLS",
     contact: "Informações de Contato",
     location: "Tierra del Fuego, Argentina",
     summaryTitle: "Perfil Profissional",
-    summary: "Especialista em Qualidade e Melhoria de Processos com mais de 14 anos identificando problemas na fábrica, encontrando a causa raiz, implementando soluções práticas e deixando o sistema melhor do que antes na manufatura complexa e de alta confiabilidade (Motorola, Samsung, Huawei, Sony, Alcatel). Auditor certificado ISO 9001 · 14001 · 45001, com aplicação direta de ferramentas Lean (balanceamento de linha, trabalho padronizado, VSM). Atuo como ponte direta entre Qualidade, Engenharia e Produção na fábrica. Além da otimização operacional, desenvolvo ferramentas digitais próprias e aplico IA para automatizar tarefas repetitivas, assegurar rastreabilidade e eliminar a burocracia manual. Disponível para relocação.",
-    skillsTitle: "Habilidades Principais",
+    summary: "Especialista em Qualidade e Melhoria de Processos com mais de 14 anos identificando problemas na fábrica, encontrando a causa raiz, implementando soluções práticas e deixando o sistema melhor do que antes na manufatura complexa e de alta confiabilidade (Motorola, Samsung, Huawei, Sony, Alcatel). Auditor Interno ISO 9001 / 14001 / 45001 e conhecimentos de TS16949, ANSI/ESD S20.20, com aplicação direta de ferramentas Lean (balanceamento de linha, trabalho padronizado, VSM). Atuo como ponte direta entre Qualidade, Engenharia e Produção na fábrica. Além da otimização operacional, desenvolvo ferramentas digitais próprias e aplico IA para automatizar tarefas repetitivas, assegurar rastreabilidade, reduzir defeitos e melhorar a confiabilidade do processo. Disponível para relocação.",
+    skillsTitle: "Habilidades Principais & Normas",
     achievementsTitle: "O que melhorei (Problema → Ação → Impacto)",
     experienceTitle: "Experiência Profissional",
     certsTitle: "Educação e Certificações",
@@ -46,14 +46,22 @@ const translations = {
 };
 
 function cleanHtmlDescription(desc: string): string {
-  // Convert standard <br/>● into bullet lists cleanly or keep as clean html
-  let html = desc.replace(/<br\s*\/?>●/g, '</li><li>');
-  if (html.includes('<li>')) {
-    html = '<ul style="margin: 4px 0 0 0; padding-left: 15px; font-size: 9.2pt;"><li>' + html.substring(html.indexOf('<li>') + 4) + '</li></ul>';
-    // Remove duplicate starting/ending points if any
-    html = html.replace(/<br\s*\/?>/g, '');
+  if (desc.includes('●')) {
+    const parts = desc.split(/●\s*/);
+    const intro = parts[0].replace(/<br\s*\/?>/g, '').trim();
+    const bullets = parts.slice(1).map(p => p.replace(/<br\s*\/?>/g, '').trim()).filter(Boolean);
+    let result = '';
+    if (intro) {
+      result += `<div style="margin-bottom: 3px; font-size: 9.2pt;">${intro}</div>`;
+    }
+    if (bullets.length > 0) {
+      result += '<ul style="margin: 2px 0 0 0; padding-left: 15px; font-size: 9.1pt;">' + 
+        bullets.map(b => `<li style="margin-bottom: 2px;">${b}</li>`).join('') + 
+        '</ul>';
+    }
+    return result;
   }
-  return html;
+  return desc;
 }
 
 async function run() {
@@ -70,13 +78,13 @@ async function run() {
     const trans = translations[lang];
 
     // Filter skills (only name)
-    const skillsHtml = SKILLS.filter(s => s.id !== "s8" || lang === 'pt').map(s => {
-      const name = s.id === "s6" ? (
+    const skillsHtml = SKILLS.filter(s => s.id !== "s9" || lang === 'pt').map(s => {
+      const name = s.id === "s7" ? (
         lang === "es" ? "Herramientas Digitales & IA Aplicada" : lang === "pt" ? "Ferramentas Digitais & IA Aplicada" : "Digital Tools & Applied AI"
-      ) : s.id === "s7" ? (
-        lang === "es" ? "Inglés — B2 | Competencia Profesional" : lang === "pt" ? "Inglês — B2 | Proficiência Profissional" : "English — B2 | Professional Working Proficiency"
       ) : s.id === "s8" ? (
-        lang === "pt" ? "Português — Inicial / Básico" : s.name
+        lang === "es" ? "Inglés — B2 | Competencia Profesional" : lang === "pt" ? "Inglês — B2 | Proficiência Profissional" : "English — B2 | Professional Working Proficiency"
+      ) : s.id === "s9" ? (
+        lang === "pt" ? "Português — Iniciante" : s.name
       ) : s.name;
       return `<div class="skill-item">${name}</div>`;
     }).join('\n');
@@ -191,7 +199,7 @@ async function run() {
     }
     .skills-list {
       display: grid;
-      grid-template-cols: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 4px 12px;
     }
     .skill-item {
@@ -205,7 +213,7 @@ async function run() {
     }
     .achievements-list {
       display: grid;
-      grid-template-cols: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 6px 16px;
     }
     .achievement-item {
@@ -246,7 +254,7 @@ async function run() {
     }
     .certs-grid {
       display: grid;
-      grid-template-cols: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 4px 16px;
     }
     .cert-item {

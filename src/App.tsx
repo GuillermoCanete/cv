@@ -437,23 +437,23 @@ export default function App() {
             </span>
             <span className="block font-serif text-lg sm:text-xl text-cv-ink italic font-normal mb-4">
               {lang === "es" 
-                ? "Resuelvo problemas operativos mediante mejora de procesos, datos y herramientas digitales" 
+                ? "Resuelvo problemas operativos mediante datos, simplificación y herramientas digitales" 
                 : lang === "pt" 
-                  ? "Resolvo problemas operacionais por meio de melhoria de processos, dados e ferramentas digitais" 
-                  : "I solve operational problems through process improvement, data and digital tools"}
+                  ? "Resolvo problemas operacionais por meio de dados, simplificação e ferramentas digitais" 
+                  : "Solving operational problems through data, simplification & digital tools"}
             </span>
             <p className="text-base sm:text-lg text-cv-ink2 max-w-xl leading-relaxed">
               {lang === "es" ? (
                 <>
-                  Identifico problemas, simplifico procesos, elimino trabajo innecesario y construyo soluciones prácticas. Con 14+ años en manufactura compleja y alta confiabilidad (Motorola, Samsung, Huawei, Sony, Alcatel), actúo como puente directo entre Calidad, Ingeniería y Producción en planta. Auditor certificado <strong>ISO 9001 · 14001 · 45001</strong>, aplico herramientas Lean prácticas (balanceo de líneas, trabajo estándar, VSM) y construyo herramientas digitales propias para resolver cuellos de botella, reducir costos y asegurar una calidad robusta con cero defectos. Disponible para relocalización.
+                  Identifico problemas, simplifico procesos, elimino trabajo innecesario y construyo soluciones prácticas. Con 14+ años en manufactura compleja y alta confiabilidad (Motorola, Samsung, Huawei, Sony, Alcatel), actúo como puente directo entre Calidad, Ingeniería y Producción en planta. <strong>ISO 9001 / 14001 / 45001 Internal Auditor</strong> y conocimientos de <strong>TS16949, ANSI/ESD S20.20</strong>, aplico herramientas Lean prácticas (balanceo de líneas, trabajo estándar, VSM) y construyo herramientas digitales propias para resolver cuellos de botella, reducir costos, reducir defectos y mejorar la confiabilidad del proceso. Disponible para relocalización.
                 </>
               ) : lang === "pt" ? (
                 <>
-                  Identifico problemas, simplifico processos, elimino trabalho desnecessário e construo soluções práticas. Com mais de 14 anos na manufatura complexa e de alta confiabilidade (Motorola, Samsung, Huawei, Sony, Alcatel), atuo como ponte direta entre Qualidade, Engenharia e Produção na fábrica. Auditor certificado <strong>ISO 9001 · 14001 · 45001</strong>, aplico ferramentas Lean práticas (balanceamento de linha, trabalho padrão, VSM) e desenvolvo ferramentas digitais próprias para resolver gargalos, reduzir custos e garantir zero defeitos. Disponível para relocação.
+                  Identifico problemas, simplifico processos, elimino trabalho desnecessário e construo soluções práticas. Com mais de 14 anos na manufatura complexa e de alta confiabilidade (Motorola, Samsung, Huawei, Sony, Alcatel), atuo como ponte direta entre Qualidade, Engenharia e Produção na fábrica. <strong>Auditor Interno ISO 9001 / 14001 / 45001</strong> e conhecimentos de <strong>TS16949, ANSI/ESD S20.20</strong>, aplico ferramentas Lean práticas (balanceamento de linha, trabalho padrão, VSM) e desenvolvo ferramentas digitais próprias para resolver gargalos, reduzir custos, reduzir defeitos e melhorar a confiabilidade do processo. Disponível para relocação.
                 </>
               ) : (
                 <>
-                  I identify problems, simplify processes, eliminate unnecessary work and build practical solutions. With 14+ years in complex, high-reliability manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel), I bridge Quality, Engineering, and Production on the plant floor. Certified Auditor for <strong>ISO 9001 · 14001 · 45001</strong>, applying practical Lean tools (Line Balancing, Standard Work, VSM) and building custom digital tools to resolve bottlenecks, lower costs, and secure Zero-Defect reliability. Open to relocation and international assignments.
+                  I identify problems, simplify processes, eliminate unnecessary work and build practical solutions. With 14+ years in complex, high-reliability manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel), I bridge Quality, Engineering, and Production on the plant floor. <strong>ISO 9001 / 14001 / 45001 Internal Auditor</strong> & working knowledge of <strong>TS16949, ANSI/ESD S20.20</strong>, applying practical Lean tools (Line Balancing, Standard Work, VSM) and building custom digital tools to resolve bottlenecks, lower costs, reduce defects and improve process reliability. Open to relocation and international assignments.
                 </>
               )}
             </p>
@@ -542,7 +542,7 @@ export default function App() {
                   A lo largo de más de 14 años en <strong>Grupo BGH</strong> entregando resultados para marcas globales de primer nivel (Motorola, Samsung, Huawei, Sony, Alcatel), aprendí que la mejora real no surge detrás de un escritorio: se logra recorriendo la línea, entendiendo dónde se pierde tiempo o material, encontrando la causa raíz y dejando el sistema mejor que antes.
                 </p>
                 <p>
-                  En lugar de sumar burocracia documental, diseño flujos de trabajo claros y construyo herramientas digitales para automatizar tareas repetitivas, asegurar cumplimiento normativo (<strong>ISO 9001, 14001, 45001, 17025</strong>) y brindar visibilidad inmediata tanto al operario como a la gerencia.
+                  En lugar de sumar burocracia documental, diseño flujos de trabajo claros y construyo herramientas digitales para automatizar tareas repetitivas, asegurar cumplimiento normativo (<strong>ISO 9001 / 14001 / 45001 Internal Auditor</strong> y conocimientos de <strong>TS16949, ANSI/ESD S20.20</strong>) y brindar visibilidad inmediata tanto al operario como a la gerencia.
                 </p>
               </>
             ) : lang === "pt" ? (
@@ -554,7 +554,7 @@ export default function App() {
                   Ao longo de mais de 14 anos no <strong>Grupo BGH</strong> entregando resultados para marcas globais líderes (Motorola, Samsung, Huawei, Sony, Alcatel), aprendi que a melhoria real não acontece atrás de uma mesa: acontece no chão de fábrica, entendendo onde se perde tempo ou material, encontrando a causa raiz e deixando o sistema melhor do que antes.
                 </p>
                 <p>
-                  Em vez de acrescentar burocracia, desenho fluxos de trabalho ágeis e desenvolvo ferramentas digitais para automatizar tarefas repetitivas, assegurar conformidade normativa (<strong>ISO 9001, 14001, 45001, 17025</strong>) e fornecer visibilidade imediata para operadores e liderança.
+                  Em vez de acrescentar burocracia, desenho fluxos de trabalho ágeis e desenvolvo ferramentas digitais para automatizar tarefas repetitivas, assegurar conformidade normativa (<strong>Auditor Interno ISO 9001 / 14001 / 45001</strong> e conhecimentos de <strong>TS16949, ANSI/ESD S20.20</strong>) e fornecer visibilidade imediata para operadores e liderança.
                 </p>
               </>
             ) : (
@@ -566,7 +566,7 @@ export default function App() {
                   Over 14+ years at <strong>Grupo BGH</strong> delivering for top global brands (Motorola, Samsung, Huawei, Sony, Alcatel), I learned that real improvement doesn't happen from behind a desk: it happens by walking the line, understanding where time and material are wasted, finding the root cause, and leaving the system better than before.
                 </p>
                 <p>
-                  Instead of adding layers of paperwork, I design streamlined workflows and build lightweight digital tools to automate repetitive tasks, ensure compliance (<strong>ISO 9001, 14001, 45001, 17025</strong>), and give operators and managers clear, actionable visibility.
+                  Instead of adding layers of paperwork, I design streamlined workflows and build lightweight digital tools to automate repetitive tasks, ensure compliance (<strong>ISO 9001 / 14001 / 45001 Internal Auditor</strong> & working knowledge of <strong>TS16949, ANSI/ESD S20.20</strong>), and give operators and managers clear, actionable visibility.
                 </p>
               </>
             )}

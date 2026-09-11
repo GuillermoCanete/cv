@@ -129,7 +129,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     skills: [
       { name: "Root Cause Analysis (RCA)", tag: { es: "5 Whys · 8D", en: "5 Whys · 8D", pt: "5 Whys · 8D" } },
       { name: "Closed-Loop CAPA", tag: { es: "Uso diario", en: "Daily use", pt: "Uso diário" } },
-      { name: "Failure Analysis", tag: { es: "Zero Defect", en: "Zero Defect", pt: "Zero Defect" } },
+      { name: "Failure Analysis", tag: { es: "Confiabilidad", en: "Reliability", pt: "Confiabilidade" } },
       { name: "Data Analysis & Diagnostics", tag: { es: "Práctico", en: "Practical", pt: "Prático" } }
     ]
   },
@@ -145,12 +145,12 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     id: "cat_quality_systems",
-    category: { es: "Quality Systems", en: "Quality Systems", pt: "Quality Systems" },
+    category: { es: "Quality Systems & Standards", en: "Quality Systems & Standards", pt: "Sistemas da Qualidade & Normas" },
     skills: [
-      { name: "ISO 9001 · 14001 · 45001", tag: { es: "Auditor", en: "Auditor", pt: "Auditor" } },
-      { name: "APQP & Control Plans", tag: { es: "NPI", en: "NPI", pt: "NPI" } },
-      { name: "PFMEA / DFMEA", tag: { es: "Prevención", en: "Prevention", pt: "Prevenção" } },
-      { name: "Metrología & ISO 17025", tag: { es: "Trazabilidad", en: "Traceability", pt: "Rastreabilidade" } }
+      { name: "Internal Auditor: ISO 9001 · ISO 14001 · ISO 45001", tag: { es: "Auditor", en: "Auditor", pt: "Auditor" } },
+      { name: "IATF 16949 (formerly TS 16949) · ISO/IEC 17025 · ANSI/ESD S20.20", tag: { es: "En planta", en: "Working Knowl.", pt: "Na fábrica" } },
+      { name: "Quality Tools: FMEA · Control Plans · SPC · CAPA · Root Cause Analysis", tag: { es: "Core Tools", en: "Core Tools", pt: "Core Tools" } },
+      { name: "Project Management Expert", tag: { es: "UTN FRBA", en: "UTN FRBA", pt: "UTN FRBA" } }
     ]
   },
   {
@@ -160,7 +160,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Custom Web Apps for Operations", tag: { es: "Cero burocracia", en: "Zero bureaucracy", pt: "Zero burocracia" } },
       { name: "Applied AI for Operations", tag: { es: "Utilidad real", en: "Real utility", pt: "Utilidade real" } },
       { name: "Workflow Automation", tag: { es: "Productividad", en: "Productivity", pt: "Produtividade" } },
-      { name: "English — B2", tag: { es: "Working Prof.", en: "Working Prof.", pt: "Working Prof." } }
+      { name: "English — B2 | Portuguese — Beginner", tag: { es: "Idiomas", en: "Languages", pt: "Idiomas" } }
     ]
   }
 ];
@@ -168,7 +168,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
 export const SKILLS: SkillItem[] = [
   { 
     id: "s1", 
-    name: "Root Cause Analysis (RCA) · CAPA", 
+    name: "Root Cause Analysis (RCA) · Closed-Loop CAPA", 
     tag: { es: "Uso diario", en: "Daily use", pt: "Uso diário" } 
   },
   { 
@@ -178,33 +178,38 @@ export const SKILLS: SkillItem[] = [
   },
   { 
     id: "s3", 
-    name: "Value Stream Mapping · Standard Work", 
+    name: "Value Stream Mapping (VSM) · Standard Work", 
     tag: { es: "Lean", en: "Lean", pt: "Lean" } 
   },
   { 
     id: "s4", 
-    name: "ISO 9001 / 14001 / 45001", 
+    name: "Internal Auditor: ISO 9001 · ISO 14001 · ISO 45001", 
     tag: { es: "Auditor", en: "Auditor", pt: "Auditor" } 
   },
   { 
     id: "s5", 
-    name: "APQP · PFMEA · Control Plans", 
-    tag: { es: "NPI", en: "NPI", pt: "NPI" } 
+    name: "Working Knowledge: IATF 16949 · ISO/IEC 17025 · ANSI/ESD S20.20", 
+    tag: { es: "En planta", en: "Plant Exp.", pt: "Na fábrica" } 
   },
   { 
     id: "s6", 
+    name: "Quality Tools: FMEA · Control Plans · SPC · CAPA · RCA", 
+    tag: { es: "Core Tools", en: "Core Tools", pt: "Core Tools" } 
+  },
+  { 
+    id: "s7", 
     name: "Digital Tools & Applied AI for Operations", 
     tag: { es: "Utilidad real", en: "Real utility", pt: "Utilidade real" } 
   },
   { 
-    id: "s7", 
+    id: "s8", 
     name: "English — B2 | Professional Working Proficiency", 
     tag: { es: "B2", en: "B2", pt: "B2" } 
   },
   { 
-    id: "s8", 
-    name: "Português — Inicial / Básico", 
-    tag: { es: "Inicial", en: "Basic", pt: "Relocação Brasil" } 
+    id: "s9", 
+    name: "Portuguese — Beginner", 
+    tag: { es: "Inicial", en: "Beginner", pt: "Iniciante" } 
   }
 ];
 
@@ -224,9 +229,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "+10%",
     icon: "📈",
     text: {
-      es: "Línea Alcatel 4015 — Problema: restricciones de flujo táctico durante la rampa de producción. Acción: estabilicé el flujo continuo de proceso y controlé tiempos de ciclo. Impacto: superé en un 10% la producción planificada manteniendo estricta estabilidad y cero defectos catastróficos.",
-      en: "Alcatel 4015 Line — Problem: tactical flow constraints during production ramp-up. Action: stabilized continuous process flow and cycle times. Impact: exceeded planned production by 10% while maintaining strict process stability and zero catastrophic defects.",
-      pt: "Linha Alcatel 4015 — Problema: restrições de fluxo tático na rampa de produção. Ação: estabilizei o fluxo contínuo e tempos de ciclo. Impacto: superei em 10% a produção planejada mantendo estrita estabilidade e zero defeitos catastróficos."
+      es: "Línea Alcatel 4015 — Problema: restricciones de flujo táctico durante la rampa de producción. Acción: estabilicé el flujo continuo de proceso y controlé tiempos de ciclo. Impacto: superé en un 10% la producción planificada, reduciendo defectos y mejorando la confiabilidad del proceso.",
+      en: "Alcatel 4015 Line — Problem: tactical flow constraints during production ramp-up. Action: stabilized continuous process flow and cycle times. Impact: exceeded planned production by 10%, reducing defect rates and improving process reliability.",
+      pt: "Linha Alcatel 4015 — Problema: restrições de fluxo tático na rampa de produção. Ação: estabilizei o fluxo contínuo e tempos de ciclo. Impacto: superei em 10% a produção planejada, reduzindo defeitos e melhorando a confiabilidade do processo."
     }
   },
   {
@@ -264,9 +269,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "5+ OEM",
     icon: "🌍",
     text: {
-      es: "Conformidad para Marcas Globales — Problema: exigentes y diversos estándares de calidad de clientes internacionales. Acción: coordiné especificaciones con proveedores en Asia/China, audité procesos e implementé planes de control APQP. Impacto: 100% de cumplimiento de calidad para Motorola, Samsung, Huawei, Sony y Alcatel.",
-      en: "Global Brands Compliance — Problem: demanding, diverse technical quality requirements from international clients. Action: coordinated specifications with Asian suppliers, audited process lines, and enforced APQP control plans. Impact: 100% quality compliance delivered for Motorola, Samsung, Huawei, Sony, and Alcatel.",
-      pt: "Conformidade para Marcas Globais — Problema: padrões técnicos exigentes e diversos de clientes globais. Ação: coordenei especificações com fornecedores na Ásia, auditei processos e executei planos de controle APQP. Impacto: 100% de conformidade de qualidade para Motorola, Samsung, Huawei, Sony e Alcatel."
+      es: "Conformidad para Marcas Globales — Problema: exigentes y diversos estándares de calidad de clientes internacionales. Acción: coordiné especificaciones con proveedores en Asia/China, audité procesos e implementé planes de control APQP. Impacto: aprobación sin desvíos críticos en auditorías de cliente y cumplimiento sostenido para Motorola, Samsung, Huawei, Sony y Alcatel.",
+      en: "Global Brands Compliance — Problem: demanding, diverse technical quality requirements from international clients. Action: coordinated specifications with Asian suppliers, audited process lines, and enforced APQP control plans. Impact: zero critical customer audit findings and sustained technical sign-off for Motorola, Samsung, Huawei, Sony, and Alcatel.",
+      pt: "Conformidade para Marcas Globais — Problema: padrões técnicos exigentes e diversos de clientes globais. Ação: coordenei especificações com fornecedores na Ásia, auditei processos e executei planos de controle APQP. Impacto: aprovação sem desvios críticos em auditorias de cliente e conformidade técnica contínua para Motorola, Samsung, Huawei, Sony e Alcatel."
     }
   }
 ];
@@ -286,9 +291,9 @@ export const EXPERIENCES: ExperienceItem[] = [
       pt: "Gestão de Qualidade e Melhoria Contínua" 
     },
     desc: {
-      es: "Responsable de resolver problemas operativos y elevar la confiabilidad en 2–3 líneas de producción activas mediante datos y análisis de causa raíz. Mis responsabilidades incluyen:<br/>● Liderar <strong>ANÁLISIS DE FALLAS (RCA)</strong> para encontrar causas raíz y eliminar defectos repetitivos.<br/>● Diseñar e implementar un ciclo cerrado de <strong>ACCIONES CORRECTIVAS Y PREVENTIVAS (CAPA)</strong> con seguimiento real.<br/>● Asegurar el control y <strong>TRAZABILIDAD</strong> de componentes críticos en todo el flujo de producción.<br/>● Liderar la <strong>VERIFICACIÓN Y VALIDACIÓN</strong> práctica de soluciones en planta.<br/>● Coordinar con <strong>PROVEEDORES INTERNACIONALES</strong> (Asia) el cumplimiento de especificaciones y resolución de no conformidades.<br/>● Construir herramientas digitales ligeras para agilizar diagnósticos y eliminar planillas innecesarias.",
-      en: "Responsible for solving operational problems and driving product reliability across 2–3 active production lines through data and root cause analysis. Key responsibilities include:<br/>● Leading <strong>FAILURE ANALYSIS (RCA)</strong> to uncover root causes and eliminate repetitive defects.<br/>● Designing and implementing closed-loop <strong>CORRECTIVE AND PREVENTIVE ACTIONS (CAPA)</strong> with tracked outcomes.<br/>● Managing control and <strong>TRACEABILITY</strong> of critical components throughout the production flow.<br/>● Leading hands-on <strong>VERIFICATION AND VALIDATION</strong> of implemented solutions on the shop floor.<br/>● Coordinating with <strong>INTERNATIONAL SUPPLIERS</strong> (Asia) for quality compliance and non-conformity resolution.<br/>● Building lightweight digital tools to speed up diagnostics and eliminate unnecessary manual paperwork.",
-      pt: "Responsável por solucionar problemas operacionais e elevar a confiabilidade em 2–3 linhas de produção ativas por meio de dados e análise de causa raiz. Principais responsabilidades:<br/>● Liderar <strong>ANÁLISE DE FALHAS (RCA)</strong> para descobrir causas raízes e eliminar defeitos repetitivos.<br/>● Projetar e implementar ciclo fechado de <strong>AÇÕES CORRETIVAS E PREVENTIVAS (CAPA)</strong> com acompanhamento real.<br/>● Gerenciar controle e <strong>RASTREABILIDADE</strong> de componentes críticos ao longo do fluxo de produção.<br/>● Liderar a <strong>VERIFICAÇÃO E VALIDAÇÃO</strong> prática de soluções na fábrica.<br/>● Coordenar com <strong>FORNECEDORES INTERNACIONAIS</strong> (Ásia) para conformidade de requisitos e resolução de não conformidades.<br/>● Desenvolver ferramentas digitais ágeis para acelerar diagnósticos e eliminar planilhas desnecessárias."
+      es: "Resolución de problemas operativos y elevación de confiabilidad en 2–3 líneas activas:<br/>● <strong>Fallas repetitivas en línea:</strong> Analicé causas raíz mediante 5 Porqués e Ishikawa e implementé acciones correctivas (CAPA), reduciendo defectos y mejorando la confiabilidad del proceso.<br/>● <strong>Desvíos en componentes importados:</strong> Identifiqué no conformidades, coordiné acciones con proveedores en Asia y rediseñé controles de trazabilidad en planta, previniendo paradas de línea.<br/>● <strong>Carga manual lenta de datos:</strong> Construí herramientas digitales y flujos automatizados de registro visual, simplificando reportes y eliminando la burocracia de planillas.",
+      en: "Solving operational problems and improving reliability across 2–3 active production lines:<br/>● <strong>Repetitive shop-floor defects:</strong> Analyzed root causes via 5 Whys/Ishikawa and implemented closed-loop CAPA, reducing defect rates and improving process reliability.<br/>● <strong>Imported component non-conformances:</strong> Identified quality gaps, coordinated corrective actions with Asian suppliers, and redesigned plant traceability controls, preventing line stoppages.<br/>● <strong>Slow manual data logging:</strong> Built lightweight digital tools and automated visual logging workflows, simplifying reporting and eliminating spreadsheet bureaucracy.",
+      pt: "Resolução de problemas operacionais e elevação de confiabilidade em 2–3 linhas ativas:<br/>● <strong>Falhas repetitivas na linha:</strong> Analisei causas raízes via 5 Porquês/Ishikawa e implementei ações corretivas (CAPA), reduzindo defeitos e melhorando a confiabilidade do processo.<br/>● <strong>Desvios em componentes importados:</strong> Identifiquei não conformidades, coordenei ações com fornecedores na Ásia e redesenhei controles de rastreabilidade na fábrica, prevenindo paradas.<br/>● <strong>Registro manual lento de dados:</strong> Desenvolvi ferramentas digitais e fluxos automatizados de captura visual, simplificando relatórios e eliminando a burocracia de planilhas."
     },
     highlight: { es: "Mejora Continua", en: "Continuous Improvement", pt: "Melhoria Contínua" }
   },
@@ -301,14 +306,14 @@ export const EXPERIENCES: ExperienceItem[] = [
       pt: "Outubro de 2022 – Presente (Função parcial / paralela)" 
     },
     role: { 
-      es: "Auditor Integrado (ISO 9001 / 14001 / 45001)", 
-      en: "Integrated ISO Auditor (9001 / 14001 / 45001)", 
-      pt: "Auditor Integrado (ISO 9001 / 14001 / 45001)" 
+      es: "Auditor Interno ISO 9001 / 14001 / 45001", 
+      en: "ISO 9001 / 14001 / 45001 Internal Auditor", 
+      pt: "Auditor Interno ISO 9001 / 14001 / 45001" 
     },
     desc: {
-      es: "Realización de 2–4 auditorías integradas anuales según el plan corporativo, verificando la conformidad real de los procesos en paralelo a mis funciones principales. Responsabilidades clave:<br/>● Verificar la <strong>CONFORMIDAD CON REQUISITOS</strong> y expectativas del cliente bajo la norma <strong>ISO 9001</strong>.<br/>● Evaluar la <strong>GESTIÓN AMBIENTAL</strong> y el cumplimiento normativo estricto bajo <strong>ISO 14001</strong>.<br/>● Auditar condiciones de <strong>SALUD Y SEGURIDAD OCUPACIONAL</strong> y prevención de riesgos bajo <strong>ISO 45001</strong>.<br/>● Detectar desviaciones, redactar informes claros y acordar planes de acción correctiva efectivos.",
-      en: "Conducting 2–4 integrated audits per year according to corporate plan, verifying real process compliance in parallel with my main role. Key responsibilities include:<br/>● Ensuring <strong>CONFORMITY WITH CUSTOMER REQUIREMENTS</strong> and expectations under <strong>ISO 9001</strong>.<br/>● Evaluating <strong>ENVIRONMENTAL MANAGEMENT</strong> and regulatory compliance under <strong>ISO 14001</strong>.<br/>● Auditing <strong>OCCUPATIONAL HEALTH AND SAFETY</strong> conditions and risk prevention under <strong>ISO 45001</strong>.<br/>● Identifying deviations, drafting clear audit reports, and agreeing on effective corrective action plans.",
-      pt: "Realização de 2–4 auditorias integradas anuais conforme o plano corporativo, verificando a conformidade real dos processos em paralelo com minhas funções. Principais responsabilidades:<br/>● Garantir a <strong>CONFORMIDADE COM REQUISITOS</strong> e expectativas do cliente sob <strong>ISO 9001</strong>.<br/>● Avaliar a <strong>GESTÃO AMBIENTAL</strong> e o cumprimento regulatório sob <strong>ISO 14001</strong>.<br/>● Auditar condições de <strong>SAÚDE E SEGURANÇA OCUPACIONAL</strong> e prevenção de riscos sob <strong>ISO 45001</strong>.<br/>● Identificar desvios, redigir relatórios claros e acordar planos de ação corretiva eficazes."
+      es: "Ejecución de 2–4 auditorías integradas anuales según el plan corporativo:<br/>● <strong>Brechas normativas y duplicación documental:</strong> Analicé procesos operativos en auditorías integradas e implementé hallazgos claros, asegurando conformidad y simplificando procedimientos.<br/>● <strong>Desvíos en seguridad y calidad:</strong> Identifiqué riesgos de proceso y coordiné planes de acción correctiva con los líderes de área, reduciendo recurrencias y fortaleciendo la prevención.",
+      en: "Executing 2–4 integrated internal audits per year according to corporate audit plan:<br/>● <strong>Compliance gaps and redundant paperwork:</strong> Analyzed operational processes during integrated audits and implemented actionable findings, securing full compliance and simplifying procedures.<br/>● <strong>Safety and quality process deviations:</strong> Identified operational risks and coordinated closed-loop corrective action plans with area leads, reducing recurrence and strengthening prevention.",
+      pt: "Execução de 2–4 auditorias integradas anuais conforme o plano corporativo:<br/>● <strong>Lacunas normativas e duplicação documental:</strong> Analisei processos operacionais em auditorias integradas e implementei recomendações acionáveis, garantindo conformidade e simplificando procedimentos.<br/>● <strong>Desvios em segurança e qualidade:</strong> Identifiquei riscos de processo e coordenei planos de ação corretiva com líderes de área, reduzindo reincidências e fortalecendo a prevenção."
     }
   },
   {
@@ -325,9 +330,9 @@ export const EXPERIENCES: ExperienceItem[] = [
       pt: "Engenheiro de Processos Sênior" 
     },
     desc: {
-      es: "Diseño y estabilización de procesos de fabricación para una línea multi-producto, eliminando ineficiencias de ensamble y asegurando repetibilidad. Responsabilidades clave:<br/>● Diseñar el <strong>FLUJO DE PROCESO</strong> completo y aplicar <strong>CONTROL ESTADÍSTICO (SPC)</strong> para estabilizar variables críticas.<br/>● Facilitar <strong>TALLERES DE CAPACITACIÓN PRÁCTICA</strong> al personal sobre estándares de manufactura y trabajo estandarizado.<br/>● Realizar <strong>ANÁLISIS DE FALLAS DE PROCESO</strong> enfocado en prevenir desvíos y paradas no programadas.<br/>● Desarrollar <strong>INSTRUCCIONES DE TRABAJO CLARAS</strong> y documentación operativa sin ambigüedades.",
-      en: "Design and stabilization of manufacturing processes for a multi-product line, removing assembly waste and ensuring repeatability. Key responsibilities:<br/>● Designing complete <strong>PROCESS FLOWS</strong> and applying <strong>STATISTICAL PROCESS CONTROL (SPC)</strong> to stabilize critical variables.<br/>● Facilitating <strong>HANDS-ON TRAINING WORKSHOPS</strong> for shop floor staff on manufacturing standards and standardized work.<br/>● Conducting <strong>PROCESS FAILURE ANALYSIS</strong> to prevent production deviations and unscheduled downtime.<br/>● Developing <strong>CLEAR WORK INSTRUCTIONS</strong> and straightforward operational documentation.",
-      pt: "Projeto e estabilização de processos de fabricação para linha multi-produto, eliminando desperdícios de montagem e garantindo repetibilidade. Principais responsabilidades:<br/>● Projetar <strong>FLUXOS DE PROCESSO</strong> completos e aplicar <strong>CONTROLE ESTATÍSTICO DE PROCESSO (SPC)</strong>.<br/>● Facilitar <strong>WORKSHOPS PRÁTICOS</strong> para a equipe sobre padrões de manufatura e trabalho padronizado.<br/>● Realizar <strong>ANÁLISE DE FALHAS DE PROCESSO</strong> para prevenir desvios e paradas não programadas.<br/>● Elaborar <strong>INSTRUÇÕES DE TRABALHO CLARAS</strong> e documentação operacional sem ambiguidades."
+      es: "Diseño y estabilización de procesos de fabricación para una línea multi-producto:<br/>● <strong>Inestabilidad en flujo de ensamble:</strong> Rediseñé el flujo de proceso e implementé Control Estadístico (SPC) en parámetros críticos, mejorando la repetibilidad y reduciendo tiempos muertos.<br/>● <strong>Variabilidad operativa entre turnos:</strong> Simplifiqué instrucciones de trabajo e implementé talleres prácticos de trabajo estandarizado, capacitando al personal operativo y reduciendo errores de ensamble.",
+      en: "Manufacturing process design and stabilization for a multi-product production line:<br/>● <strong>Assembly line flow instability:</strong> Redesigned process flows and implemented Statistical Process Control (SPC) on critical parameters, improving repeatability and reducing downtime.<br/>● <strong>Cross-shift operational variability:</strong> Simplified work instructions and implemented hands-on standardized work workshops, training shop-floor operators and reducing assembly defects.",
+      pt: "Projeto e estabilização de processos de fabricação para linha multiproduto:<br/>● <strong>Instabilidade no fluxo de montagem:</strong> Redesenhei o fluxo de processo e implementei Controle Estatístico (SPC), melhorando a repetibilidade e reduzindo tempos mortos.<br/>● <strong>Variabilidade operacional entre turnos:</strong> Simplifiquei instruções de trabalho e implementei workshops práticos de trabalho padronizado, capacitando operadores e reduzindo erros de montagem."
     }
   },
   {
@@ -344,9 +349,9 @@ export const EXPERIENCES: ExperienceItem[] = [
       pt: "Técnico Metrologista / Laboratório de Engenharia" 
     },
     desc: {
-      es: "Calibración de 50–100 instrumentos anuales de medición críticos para la manufactura de hardware electrónico, asegurando trazabilidad metrológica ininterrumpida. Responsabilidades clave:<br/>● Ejecutar calibraciones de alta precisión bajo los principios de la norma <strong>ISO 17025</strong>.<br/>● Asegurar la <strong>TRAZABILIDAD METROLÓGICA</strong> ininterrumpida de equipos de prueba en planta.<br/>● Calibrar instrumentación compleja: <strong>GENERADORES DE RADIOFRECUENCIA (RF)</strong> y <strong>SISTEMAS GPS</strong>.<br/>● Certificar dispositivos de prueba de seguridad funcional (ej. <strong>HI-POT TESTERS</strong>) con tolerancia cero a desviaciones.",
-      en: "Calibration of 50–100 critical measurement instruments per year for electronic hardware manufacturing, ensuring uninterrupted metrological traceability. Key responsibilities:<br/>● Executing high-precision calibrations under <strong>ISO 17025</strong> principles.<br/>● Ensuring uninterrupted <strong>METROLOGICAL TRACEABILITY</strong> for production test equipment.<br/>● Calibrating complex instrumentation: <strong>RADIO FREQUENCY (RF) GENERATORS</strong> and <strong>GPS SYSTEMS</strong>.<br/>● Certifying functional safety test devices (e.g., <strong>HI-POT TESTERS</strong>) with zero tolerance for deviations.",
-      pt: "Calibração de 50–100 instrumentos críticos de medição por ano para fabricação eletrônica, garantindo rastreabilidade metrológica ininterrupta. Principais responsabilidades:<br/>● Executar calibrações de alta precisão sob os princípios da norma <strong>ISO 17025</strong>.<br/>● Garantir a <strong>RASTREABILIDADE METROLÓGICA</strong> ininterrupta para equipamentos de teste na fábrica.<br/>● Calibrar instrumentação complexa: <strong>GERADORES DE RADIOFREQUÊNCIA (RF)</strong> e <strong>SISTEMAS GPS</strong>.<br/>● Certificar dispositivos de teste de segurança funcional (ex. <strong>TESTADORES HI-POT</strong>) com tolerância zero a desvios."
+      es: "Calibración de 50–100 instrumentos de medición anuales bajo norma ISO 17025:<br/>● <strong>Riesgo de deriva en equipos de alta frecuencia:</strong> Calibré generadores de RF, GPS y testers Hi-Pot bajo norma ISO 17025, asegurando trazabilidad ininterrumpida y reduciendo incertidumbre de medición.<br/>● <strong>Descalibración imprevista en estaciones de prueba:</strong> Implementé cronogramas de calibración preventiva y verificación de patrones, eliminando paradas de línea por instrumentos fuera de tolerancia.",
+      en: "Calibration of 50–100 annual measurement instruments under ISO 17025 principles:<br/>● <strong>Measurement drift in high-frequency equipment:</strong> Calibrated RF generators, GPS systems, and Hi-Pot testers under ISO 17025, securing uninterrupted traceability and reducing measurement uncertainty.<br/>● <strong>Unscheduled test station drift:</strong> Implemented preventive calibration schedules and reference checks, eliminating line stoppages caused by out-of-spec test equipment.",
+      pt: "Calibração de 50–100 instrumentos anuais de medição sob a norma ISO 17025:<br/>● <strong>Risco de desvio em equipamentos de alta frequência:</strong> Calibrei geradores de RF, GPS e testadores Hi-Pot sob norma ISO 17025, garantindo rastreabilidade ininterrupta e reduzindo incertezas.<br/>● <strong>Descalibração imprevista em postos de teste:</strong> Implementei cronogramas de calibração preventiva e padrões de referência, eliminando paradas na linha por instrumentos fora de tolerância."
     }
   },
   {
@@ -363,9 +368,9 @@ export const EXPERIENCES: ExperienceItem[] = [
       pt: "Engenheiro de Processos — Telefonia Móvel (Marcas Globais)" 
     },
     desc: {
-      es: "Diseño del proceso de fabricación de celulares para 5+ marcas globales de primer nivel como Motorola, Huawei, ZTE, Alcatel y Sony. Lideré el lanzamiento en planta de la marca Alcatel, superando los objetivos de producción y calidad desde el primer modelo. Responsabilidades clave:<br/>● Aplicar metodologías de <strong>PLANIFICACIÓN DE CALIDAD (APQP)</strong> y herramientas <strong>CORE TOOLS</strong> (FMEA, Control Plan).<br/>● Realizar el <strong>BALANCEO DE OPERACIONES</strong> de línea para maximizar throughput y estabilidad.<br/>● Coordinar con <strong>PROVEEDORES INTERNACIONALES</strong> (China) el cumplimiento de estándares y resolución de no conformidades en componentes.<br/>● Disminuir los <strong>COSTOS DE MANUFACTURA</strong> mediante mejoras prácticas en puestos de ensamble.<br/>● Confeccionar <strong>INSTRUCCIONES DE TRABAJO</strong> visuales y dar soporte técnico directo en línea.<br/><br/><strong>⚡ Logros destacados en este rol:</strong><br/>● <strong>+17%</strong> de producción en Alcatel 4007 mediante rebalanceo Lean y optimización ergonómica, superando el First Pass Yield.<br/>● <strong>+10%</strong> sobre la producción planificada en Alcatel 4015 con cero defectos catastróficos.<br/>● <strong>−2 días</strong> de onboarding mediante programa de capacitación peer-to-peer 1-a-1 entre turnos.<br/>● <strong>−3 puestos</strong> optimizados en microondas Samsung a través del rebalanceo Lean.",
-      en: "Design of mobile phone manufacturing processes for 5+ top-tier global brands such as Motorola, Huawei, ZTE, Alcatel, and Sony. Led the manufacturing launch of the Alcatel brand on the plant floor, exceeding production and quality targets from the first model. Key responsibilities:<br/>● Applying <strong>QUALITY PLANNING (APQP)</strong> methodologies and <strong>CORE TOOLS</strong> (FMEA, Control Plan).<br/>● Performing assembly <strong>LINE BALANCING</strong> to maximize throughput and process stability.<br/>● Coordinating with <strong>INTERNATIONAL SUPPLIERS</strong> (China) on quality compliance and component non-conformity resolution.<br/>● Lowering <strong>MANUFACTURING COSTS</strong> through practical improvements at assembly stations.<br/>● Drafting visual <strong>WORK INSTRUCTIONS</strong> and providing direct on-line technical support.<br/><br/><strong>⚡ Key achievements in this role:</strong><br/>● <strong>+17%</strong> production increase on Alcatel 4007 through Lean rebalancing and ergonomics, exceeding First Pass Yield.<br/>● <strong>+10%</strong> above planned production on Alcatel 4015 with zero catastrophic defects.<br/>● <strong>−2 days</strong> onboarding reduction through a peer-to-peer 1-on-1 cross-shift training program.<br/>● <strong>−3 operator roles</strong> reallocated on Samsung microwave line through Lean rebalancing.",
-      pt: "Projeto do processo de fabricação de celulares para 5+ marcas globais de grande porte como Motorola, Huawei, ZTE, Alcatel e Sony. Liderei o lançamento da marca Alcatel na fábrica, superando as metas de produção e qualidade desde o primeiro modelo. Principais responsabilidades:<br/>● Aplicar metodologias de <strong>PLANEJAMENTO DE QUALIDADE (APQP)</strong> e ferramentas <strong>CORE TOOLS</strong> (FMEA, Control Plan).<br/>● Realizar o <strong>BALANCEAMENTO DE LINHA</strong> para maximizar produtividade e estabilidade.<br/>● Coordenar com <strong>FORNECEDORES INTERNACIONAIS</strong> (China) o cumprimento de padrões e resolução de não conformidades em componentes.<br/>● Reduzir <strong>CUSTOS DE MANUFATURA</strong> por meio de melhorias práticas nos postos de montagem.<br/>● Elaborar <strong>INSTRUÇÕES DE TRABALHO</strong> visuais e dar suporte técnico direto na linha.<br/><br/><strong>⚡ Conquistas destacadas neste cargo:</strong><br/>● <strong>+17%</strong> de produção no Alcatel 4007 por meio de rebalanceamento Lean e ergonomia, superando o First Pass Yield.<br/>● <strong>+10%</strong> acima da produção planejada no Alcatel 4015 com zero defeitos catastróficos.<br/>● <strong>−2 dias</strong> de onboarding por meio de treinamento peer-to-peer 1-a-1 entre turnos.<br/>● <strong>−3 postos</strong> otimizados na linha Samsung através do rebalanceamento Lean."
+      es: "Diseño y balanceo de líneas de ensamble para marcas globales (Motorola, Sony, Huawei, Alcatel):<br/>● <strong>Cuellos de botella en ensamble:</strong> Rediseñé el balanceo de línea y optimicé ergonomía en Alcatel 4007 y 4015, logrando +17% de producción superando metas de First Pass Yield.<br/>● <strong>Altos costos de mano de obra:</strong> Analicé tiempos de ciclo y redistribuí tareas estándar en microondas Samsung, reasignando 3 puestos de operarios sin comprometer confiabilidad.<br/>● <strong>Curva lenta de aprendizaje en lanzamientos:</strong> Construí e implementé un programa de capacitación peer-to-peer 1-a-1 entre turnos, reduciendo 2 días el onboarding con calidad desde el primer día.<br/>● <strong>Complejidad de especificaciones multinacionales:</strong> Implementé APQP, PFMEA y Planes de Control, y coordiné con proveedores en China la resolución de no conformidades para 5+ marcas globales.",
+      en: "Assembly line design and balancing for global brands (Motorola, Sony, Huawei, Alcatel):<br/>● <strong>Assembly bottlenecks and imbalance:</strong> Redesigned line balancing and optimized ergonomics for Alcatel 4007/4015, delivering a +17% production increase while exceeding First Pass Yield.<br/>● <strong>High assembly labor costs:</strong> Analyzed cycle times and reallocated standard work on Samsung microwave line, saving 3 operator stations without compromising reliability.<br/>● <strong>Slow ramp-up learning curve:</strong> Built and implemented a peer-to-peer 1-on-1 cross-shift coaching model, cutting onboarding time by 2 days with full quality from day one.<br/>● <strong>Multinational specification complexity:</strong> Implemented APQP, PFMEA, and Control Plans, and coordinated component quality resolutions with suppliers in China for 5+ global brands.",
+      pt: "Projeto e balanceamento de linhas de montagem para marcas globais (Motorola, Sony, Huawei, Alcatel):<br/>● <strong>Gargalos e desbalanceamento na montagem:</strong> Redesenhei o balanceamento de linha e otimizei ergonomia no Alcatel 4007/4015, alcançando +17% de produção superando metas de First Pass Yield.<br/>● <strong>Custos elevados de mão de obra:</strong> Analisei tempos de ciclo e redistribuí tarefas padronizadas na linha Samsung, realocando 3 postos sem comprometer a confiabilidade.<br/>● <strong>Curva lenta de aprendizado em lançamentos:</strong> Desenvolvi e implementei treinamento peer-to-peer 1-a-1 entre turnos, reduzindo em 2 dias o onboarding com qualidade desde o primeiro dia.<br/>● <strong>Complexidade de especificações multinacionais:</strong> Implementei APQP, PFMEA e Planos de Controle, e coordenei com fornecedores na China a resolução de não conformidades para 5+ marcas globais."
     },
     highlight: { 
       es: "Lanzamiento Alcatel · +17% producción · Motorola · Sony · Huawei · ZTE", 
@@ -387,9 +392,9 @@ export const EXPERIENCES: ExperienceItem[] = [
       pt: "Analista de Qualidade NPI (Novos Lançamentos)" 
     },
     desc: {
-      es: "Aseguramiento de la calidad en 11–15 lanzamientos de Nuevos Productos (NPI) en fases de industrialización. Responsabilidades clave:<br/>● Auditar actividades de cada lanzamiento para verificar la conformidad con <strong>ISO 9001</strong> e <strong>ISO/TS 16949</strong>.<br/>● Elaborar <strong>PLANES DE CONTROL</strong> e instrucciones de inspección de nuevos componentes.<br/>● Participar activamente en la confección de <strong>FMEAs DE DISEÑO Y PROCESO</strong>.<br/>● Coordinar con <strong>PROVEEDORES INTERNACIONALES</strong> (China) el cumplimiento de requisitos de calidad en componentes entrantes.<br/>● Realizar la <strong>TRADUCCIÓN TÉCNICA</strong> de inglés a español de especificaciones corporativas.<br/>● Confeccionar <strong>INFORMES TÉCNICOS DE LANZAMIENTO</strong> claros para la gerencia y clientes globales.",
-      en: "Quality assurance across 11–15 New Product Introduction (NPI) launches during industrialization phases. Key responsibilities:<br/>● Auditing launch activities to verify compliance with <strong>ISO 9001</strong> and <strong>ISO/TS 16949</strong> standards.<br/>● Developing <strong>CONTROL PLANS</strong> and inspection instructions for new components.<br/>● Participating actively in the development of <strong>DESIGN AND PROCESS FMEAs</strong>.<br/>● Coordinating with <strong>INTERNATIONAL SUPPLIERS</strong> (China) on incoming component quality requirements compliance.<br/>● Performing <strong>TECHNICAL TRANSLATION</strong> (English to Spanish) of corporate specifications.<br/>● Drafting clear <strong>LAUNCH TECHNICAL REPORTS</strong> for management and global clients.",
-      pt: "Garantia de qualidade em 11–15 lançamentos de Novos Produtos (NPI) em fases de industrialização. Principais responsabilidades:<br/>● Auditar atividades de lançamento para verificar conformidade com as normas <strong>ISO 9001</strong> e <strong>ISO/TS 16949</strong>.<br/>● Elaborar <strong>PLANOS DE CONTROLE</strong> e instruções de inspeção para novos componentes.<br/>● Participar ativamente na elaboração de <strong>FMEAs DE PROJETO E PROCESSO</strong>.<br/>● Coordenar com <strong>FORNECEDORES INTERNACIONAIS</strong> (China) o cumprimento de requisitos de qualidade em componentes recebidos.<br/>● Realizar a <strong>TRADUÇÃO TÉCNICA</strong> (inglês para espanhol) de especificações corporativas.<br/>● Elaborar <strong>RELATÓRIOS TÉCNICOS DE LANÇAMENTO</strong> claros para a gerência e clientes globais."
+      es: "Aseguramiento de calidad en 11–15 lanzamientos de Nuevos Productos (NPI):<br/>● <strong>Riesgo de desvíos en nuevos modelos:</strong> Audité procesos de industrialización bajo normas ISO 9001 e ISO/TS 16949, identificando y corrigiendo brechas antes del inicio de producción masiva.<br/>● <strong>Falta de pautas de inspección estandarizadas:</strong> Construí planes de control, instrucciones visuales de inspección y participé en PFMEAs, asegurando control de variables críticas.<br/>● <strong>Discrepancias técnicas con el exterior:</strong> Traduje especificaciones de ingeniería en inglés y coordiné la resolución de no conformidades directamente con proveedores en China.",
+      en: "Quality assurance across 11–15 New Product Introduction (NPI) launches:<br/>● <strong>Deviation risks on new models:</strong> Audited industrialization ramp-ups under ISO 9001 and ISO/TS 16949, identifying and closing operational gaps before mass production start.<br/>● <strong>Lack of standardized inspection guidelines:</strong> Built Control Plans, visual inspection work instructions, and participated in PFMEAs, securing critical parameter control.<br/>● <strong>Technical discrepancies with overseas vendors:</strong> Translated English engineering specifications and coordinated component non-conformity resolutions directly with suppliers in China.",
+      pt: "Garantia de qualidade em 11–15 lançamentos de Novos Produtos (NPI):<br/>● <strong>Risco de desvios em novos modelos:</strong> Auditei processos de industrialização sob normas ISO 9001 e ISO/TS 16949, identificando e corrigindo lacunas antes do início da produção.<br/>● <strong>Falta de padronização de inspeção:</strong> Desenvolvi Planos de Controle, instruções visuais e participei de PFMEAs, garantindo o controle de variáveis críticas.<br/>● <strong>Discrepâncias técnicas com o exterior:</strong> Traduzi especificações técnicas em inglês e coordenei a resolução de não conformidades diretamente com fornecedores na China."
     }
   }
 ];
@@ -398,42 +403,42 @@ export const PROJECTS: ProjectItem[] = [
   {
     id: "defect-recorder",
     tag: { 
-      es: "Herramienta Operativa · Cero Burocracia · 2025", 
-      en: "Operations Tool · Zero Bureaucracy · 2025", 
-      pt: "Ferramenta Operacional · Zero Burocracia · 2025" 
+      es: "Elimina Registro Manual · Datos de Línea · 2025", 
+      en: "Eliminates Manual Logging · Shop-Floor Data · 2025", 
+      pt: "Elimina Registro Manual · Dados de Fábrica · 2025" 
     },
     title: "PCB Defect Recorder",
     desc: {
-      es: "Problema: carga manual lenta de defectos en planillas con poca visibilidad espacial. Solución: registro visual instantáneo sobre la imagen del PCB. Impacto: menor tiempo de carga para el operario y mapa de calor en tiempo real para ingeniería.",
-      en: "Problem: slow manual defect logging on spreadsheets with zero spatial visibility. Solution: instant visual logging directly on the PCB image. Impact: less data-entry time for operators and real-time heatmap visibility for process engineers.",
-      pt: "Problema: inserção manual lenta de defeitos em planilhas sem visibilidade espacial. Solução: registro visual instantâneo na imagem da placa PCB. Impacto: menos tempo de digitação para o operador e mapa de calor em tempo real para a engenharia."
+      es: "Elimina la carga manual lenta de defectos en planillas y los errores de transcripción en planta. Permite a los operarios registrar fallas con un clic directo sobre la placa, generando mapas de calor en tiempo real y diagnósticos instantáneos para ingeniería de procesos.",
+      en: "Eliminates slow manual spreadsheet logging and transcription errors on the shop floor. Enables operators to log defects with a single click directly onto real board images, generating real-time heatmaps and immediate diagnostics for process engineering.",
+      pt: "Elimina o registro manual lento de defeitos em planilhas e erros de transcrição na fábrica. Permite aos operadores registrar falhas com um clique direto na placa, gerando mapas de calor em tempo real e diagnósticos instantâneos para a engenharia."
     },
     features: [
-      { es: "Problema resuelto: elimina planillas manuales de carga de fallas", en: "Problem solved: eliminates manual spreadsheet defect entry", pt: "Problema resolvido: elimina planilhas manuais de registro de falhas" },
-      { es: "Solución práctica: clic directo sobre la placa y registro en coordenadas", en: "Practical solution: click coordinates directly on board image", pt: "Solução prática: clique direto na placa e registro em coordenadas" },
-      { es: "Impacto operativo: estadísticas automáticas y mapa de calor en vivo", en: "Operational impact: automated live statistics & defect heatmap", pt: "Impacto operacional: estatísticas automáticas e mapa de calor ao vivo" },
-      { es: "100% local y seguro — sin servidores externos ni latencia", en: "100% local and secure — no external servers or latency", pt: "100% local e seguro — sem servidores externos ou latência" }
+      { es: "Problema eliminado: erradica planillas de cálculo manuales y demoras de registro", en: "Problem eliminated: eliminates manual spreadsheets and delayed data logging", pt: "Problema resolvido: elimina planilhas manuais e atrasos no registro" },
+      { es: "Simplificación operativa: registro visual en un clic sobre coordenadas reales", en: "Operational simplification: one-click visual logging on exact board coordinates", pt: "Simplificação operacional: registro visual em um clique nas coordenadas reais" },
+      { es: "Resultado inmediato: mapa de calor en vivo para identificar cuellos de botella de calidad", en: "Immediate outcome: live defect heatmaps pinpointing quality bottlenecks", pt: "Resultado imediato: mapa de calor ao vivo identificando gargalos de qualidade" },
+      { es: "Funcionamiento ágil: 100% autónomo y local, sin servidores ni latencia de red", en: "Agile execution: 100% autonomous and local, no server dependency or network lag", pt: "Execução ágil: 100% autônomo e local, sem servidores ou lentidão de rede" }
     ],
     link: "https://guillermocanete.github.io/DefectRecorder/"
   },
   {
     id: "iso-analyzer",
     tag: { 
-      es: "Herramienta Digital con IA · Auditorías Ágiles · En desarrollo", 
-      en: "AI Digital Tool · Agile Auditing · In Development", 
-      pt: "Ferramenta Digital com IA · Auditorias Ágeis · Em desenvolvimento" 
+      es: "Elimina Burocracia Documental · Auditorías Ágiles · En desarrollo", 
+      en: "Eliminates Document Bureaucracy · Agile Auditing · In Development", 
+      pt: "Elimina Burocracia Documental · Auditorias Ágeis · Em desenvolvimento" 
     },
     title: "ISO Compliance Analyzer",
     desc: {
-      es: "Problema: auditorías documentales lentas y detección tardía de gaps normativos. Solución: escaneo asistido por IA frente a cláusulas ISO 9001/14001/45001. Impacto: detección inmediata de no conformidades potenciales y reducción de burocracia documental.",
-      en: "Problem: slow manual document reviews and late compliance gap detection. Solution: AI-assisted scanning against ISO 9001/14001/45001 clauses. Impact: immediate detection of potential non-conformities and reduction of redundant paperwork.",
-      pt: "Problema: revisões documentais manuais lentas e detecção tardia de lacunas. Solução: análise com IA cruzando procedimentos com cláusulas ISO 9001/14001/45001. Impacto: detecção imediata de não conformidades e corte de burocracia documental."
+      es: "Elimina horas de lectura manual y detección tardía de desvíos en auditorías de sistemas de gestión. Cruza la documentación de procesos frente a cláusulas de ISO 9001, 14001 y 45001 para detectar vacíos normativos antes de una auditoría.",
+      en: "Eliminates hours of manual document review and late non-conformance detection in management system audits. Automatically scans process documentation against ISO 9001, 14001, and 45001 clauses to spot compliance gaps before auditors arrive.",
+      pt: "Elimina horas de revisão documental manual e detecção tardia de desvios em auditorias de sistemas de gestão. Cruza a documentação com cláusulas da ISO 9001, 14001 e 45001 para identificar lacunas antes da auditoria."
     },
     features: [
-      { es: "Problema resuelto: revisiones manuales de cientos de páginas de procedimientos", en: "Problem solved: manual review of hundreds of procedure pages", pt: "Problema resolvido: revisão manual de centenas de páginas de procedimentos" },
-      { es: "Solución práctica: cruce inteligente de texto contra puntos de la norma", en: "Practical solution: intelligent text mapping against standard clauses", pt: "Solução prática: cruzamento inteligente de texto com os requisitos da norma" },
-      { es: "Impacto operativo: identificación de cláusulas no cubiertas y duplicadas", en: "Operational impact: identifies uncovered clauses and redundant text", pt: "Impacto operacional: identifica cláusulas não cobertas e textos duplicados" },
-      { es: "Sistemas cubiertos: ISO 9001 · 14001 · 45001", en: "Covered standards: ISO 9001 · 14001 · 45001", pt: "Normas cobertas: ISO 9001 · 14001 · 45001" }
+      { es: "Problema eliminado: lectura manual de cientos de páginas de procedimientos redundantes", en: "Problem eliminated: manual reading through hundreds of redundant procedure pages", pt: "Problema eliminado: leitura manual de centenas de páginas de procedimentos redundantes" },
+      { es: "Simplificación operativa: mapeo directo de requisitos normativos frente a procedimientos vigentes", en: "Operational simplification: direct mapping of standard requirements against live procedures", pt: "Simplificação operacional: mapeamento direto de requisitos normativos com procedimentos vigentes" },
+      { es: "Resultado inmediato: detección temprana de cláusulas no cubiertas y reducción de burocracia", en: "Immediate outcome: early detection of uncovered clauses and removal of redundant paperwork", pt: "Resultado imediato: detecção prévia de requisitos não atendidos e corte de burocracia" },
+      { es: "Alcance normativo: aplicable a sistemas integrados ISO 9001 · 14001 · 45001", en: "Standard scope: applicable to integrated ISO 9001 · 14001 · 45001 systems", pt: "Escopo normativo: aplicável a sistemas integrados ISO 9001 · 14001 · 45001" }
     ],
     wip: true
   }
@@ -443,9 +448,9 @@ export const CERTS: CertItem[] = [
   { 
     icon: "🏅", 
     name: { 
-      es: "ISO 9001 / 14001 / 45001 Auditor", 
-      en: "ISO 9001 / 14001 / 45001 Auditor", 
-      pt: "Auditor ISO 9001 / 14001 / 45001" 
+      es: "ISO 9001 / 14001 / 45001 Internal Auditor", 
+      en: "ISO 9001 / 14001 / 45001 Internal Auditor", 
+      pt: "Auditor Interno ISO 9001 / 14001 / 45001" 
     }, 
     org: { 
       es: "BGH S.A. / IGS Consulting · 2022", 
