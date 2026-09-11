@@ -1,10 +1,10 @@
 # Guillermo Cañete — Quality & Process Improvement Specialist
 
-> Professional portfolio & CV for Guillermo Cañete. Specializing in solving operational problems through process improvement, data, and digital tools.
+> Professional portfolio & CV for Guillermo Cañete. Specializing in solving operational problems through data, simplification, and digital tools.
 
 - **Full Name**: Guillermo Cañete
-- **Title**: Quality & Process Improvement Specialist | Digital Solutions & Applied AI
-- **Tagline**: I solve operational problems through process improvement, data and digital tools
+- **Title**: Quality & Process Improvement Specialist | Solving Operational Problems Through Data, Simplification & Digital Tools
+- **Tagline**: Solving operational problems through data, simplification & digital tools
 - **Location**: Tierra del Fuego, Argentina (Open to relocation and international assignments)
 - **Email**: guillermo.canete@hotmail.com
 - **Phone**: +54 9 2964 413910
@@ -15,28 +15,28 @@
 
 ## Professional Summary
 
-I identify problems, simplify processes, eliminate unnecessary work, and build practical solutions. With 14+ years in complex, high-reliability manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel), I bridge Quality, Engineering, and Production on the plant floor. Certified Auditor for ISO 9001 · 14001 · 45001, applying practical Lean tools (line balancing, standard work, VSM) and building custom digital tools to resolve bottlenecks, lower costs, and secure Zero-Defect reliability.
+I identify problems, simplify processes, eliminate unnecessary work, and build practical solutions. With 14+ years in complex, high-reliability manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel), I bridge Quality, Engineering, and Production on the plant floor. ISO 9001 / 14001 / 45001 Internal Auditor with working knowledge of TS16949 and ANSI/ESD S20.20, applying practical Lean tools (line balancing, standard work, VSM) and building custom digital tools to resolve bottlenecks, lower costs, reduce defects, and improve process reliability.
 
 ---
 
 ## Core Competencies (4 Demonstrated Pillars)
 
-- **Problem Solving**: Root Cause Analysis (RCA - 5 Whys, 8D, Ishikawa), Closed-Loop CAPA, Failure Analysis, Zero Defect mindset, Data Analysis & Diagnostics.
+- **Problem Solving**: Root Cause Analysis (RCA - 5 Whys, 8D, Ishikawa), Closed-Loop CAPA, Failure Analysis (Reliability), Data Analysis & Diagnostics.
 - **Process Improvement**: Line Balancing (+17% prod achieved), Standard Work & Ergonomics, Value Stream Mapping (VSM), Kaizen & Workplace Optimization.
-- **Quality Systems**: ISO 9001 · 14001 · 45001 (Active Integrated Internal Auditor), APQP & Control Plans, PFMEA / DFMEA, Metrology & ISO 17025 (Calibration & Traceability).
+- **Quality Systems & Standards**: Internal Auditor: ISO 9001 · ISO 14001 · ISO 45001; Working Knowledge: IATF 16949 (formerly TS 16949) · ISO/IEC 17025 · ANSI/ESD S20.20; Quality Tools: FMEA · Control Plans · SPC · CAPA · Root Cause Analysis; Project Management Expert (UTN FRBA).
 - **Digital Solutions & Applied AI**: Custom Web Apps for Operations (PCB Defect Recorder, ISO Compliance Analyzer), Applied AI for Operations, Workflow Automation, Zero Paperwork & Bureaucracy Reduction.
-- **Languages**: Spanish (Native), English (B2 | Professional Working Proficiency), Portuguese (Basic / Relocation to Brazil).
+- **Languages**: Spanish (Native), English (B2 | Professional Working Proficiency), Portuguese (Beginner).
 
 ---
 
 ## What I Have Improved (Problem → Action → Measurable Impact)
 
-- **+17% Production Increase**: Delivered on Alcatel 4007 mobile line through Lean assembly-line rebalancing and ergonomic workstation optimization, simultaneously exceeding First Pass Yield targets.
-- **+10% Planned Production Exceeded**: Delivered on Alcatel 4015 through tactical process-flow optimization, maintaining zero catastrophic defects.
-- **-3 Operator Roles Reallocated**: Optimized labor efficiency on Samsung microwave line through Lean line rebalancing, lowering manufacturing costs without compromising reliability.
-- **-2 Days Onboarding Time Cut**: Designed and facilitated a peer-to-peer 1-on-1 cross-shift training program for new product launches, accelerating skill acquisition.
-- **Closed-Loop CAPA Success**: Eliminated recurrence of critical defects across multiple high-tech electronic manufacturing lines.
-- **5+ Global Brands Compliance**: Ensured quality and process standards for Motorola, Samsung, Huawei, Sony, and Alcatel on the plant floor.
+- **+17% Production Increase (Alcatel 4007)**: Problem: assembly-line bottlenecks and station cycle time imbalances. Action: rebalanced Lean line operations and optimized workstation ergonomics. Impact: 17% production increase delivered while simultaneously exceeding First Pass Yield targets.
+- **+10% Planned Production Exceeded (Alcatel 4015)**: Problem: tactical flow constraints during production ramp-up. Action: stabilized continuous process flow and cycle times. Impact: exceeded planned production by 10%, reducing defect rates and improving process reliability.
+- **-3 Operator Roles Reallocated (Samsung Microwave)**: Problem: excess labor cost and uneven workstation loading. Action: applied Lean line rebalancing and standard task reallocation. Impact: successfully reallocated 3 operator roles, lowering manufacturing labor costs without compromising reliability.
+- **-2 Days Onboarding Time Cut (Launch Training Model)**: Problem: slow operator learning curve during rapid product launches. Action: designed a peer-to-peer 1-on-1 coaching program between experienced and incoming shift workers. Impact: cut onboarding time by 2 days while achieving full required quality from day one.
+- **Closed-Loop CAPA Success**: Problem: repetitive defect patterns in complex electronics manufacturing. Action: led deep root-cause investigations (Ishikawa, 5 Whys) and implemented robust preventive controls. Impact: permanently eliminated recurrence of critical defects across multiple production lines.
+- **Global Brands Compliance**: Problem: demanding, diverse technical quality requirements from international clients. Action: coordinated specifications with Asian suppliers, audited process lines, and enforced APQP control plans. Impact: zero critical customer audit findings and sustained technical sign-off for Motorola, Samsung, Huawei, Sony, and Alcatel.
 
 ---
 
@@ -44,51 +44,51 @@ I identify problems, simplify processes, eliminate unnecessary work, and build p
 
 ### Grupo BGH — Quality Management & Continuous Improvement
 *May 2025 – Present | Full-time | On-site | Tierra del Fuego, Argentina*
-- Leading failure analysis and root-cause investigations across 2–3 active production lines to ensure a zero-defect mindset.
-- Designing and implementing closed-loop Corrective and Preventive Actions (CAPA) with tracked outcomes.
-- Managing control and traceability of critical components throughout production flow.
-- Coordinating with international suppliers (Asia) for component quality compliance and non-conformity resolution.
+- **Repetitive shop-floor defects**: Analyzed root causes via 5 Whys/Ishikawa and implemented closed-loop CAPA, reducing defect rates and improving process reliability.
+- **Imported component non-conformances**: Identified quality gaps, coordinated corrective actions with Asian suppliers, and redesigned plant traceability controls, preventing line stoppages.
+- **Slow manual data logging**: Built lightweight digital tools and automated visual logging workflows, simplifying reporting and eliminating spreadsheet bureaucracy.
 
-### Grupo BGH — Integrated ISO Auditor (ISO 9001 / 14001 / 45001)
+### Grupo BGH — ISO 9001 / 14001 / 45001 Internal Auditor
 *October 2022 – Present | Part-time / Parallel Function*
-- Conducting 2–4 annual integrated internal audits across the plant.
-- Ensuring compliance with customer expectations (ISO 9001), environmental regulations (ISO 14001), and occupational safety standards (ISO 45001).
+- **Compliance gaps and redundant paperwork**: Analyzed operational processes during integrated audits and implemented actionable findings, securing full compliance and simplifying procedures.
+- **Safety and quality process deviations**: Identified operational risks and coordinated closed-loop corrective action plans with area leads, reducing recurrence and strengthening prevention.
 
 ### Grupo BGH — Senior Process Engineer
 *August 2019 – February 2024*
-- Designed complete process flow and applied Statistical Process Control (SPC) for a multi-product manufacturing line.
-- Facilitated technical training workshops on Lean and critical manufacturing standards.
-- Performed process failure analysis to prevent catastrophic deviations.
+- **Assembly line flow instability**: Redesigned process flows and implemented Statistical Process Control (SPC) on critical parameters, improving repeatability and reducing downtime.
+- **Cross-shift operational variability**: Simplified work instructions and implemented hands-on standardized work workshops, training shop-floor operators and reducing assembly defects.
 
 ### Grupo BGH — Metrology & Engineering Laboratory Specialist
 *February 2017 – August 2019*
-- Executed high-precision calibrations for 50–100 instruments annually under ISO 17025 principles.
-- Ensured uninterrupted metrological traceability for RF (Radio Frequency) generators, GPS simulators, and Hi-Pot safety testers.
+- **Measurement drift in high-frequency equipment**: Calibrated RF generators, GPS systems, and Hi-Pot testers under ISO 17025, securing uninterrupted traceability and reducing measurement uncertainty.
+- **Unscheduled test station drift**: Implemented preventive calibration schedules and reference checks, eliminating line stoppages caused by out-of-spec test equipment.
 
 ### Grupo BGH — Process Engineer — Mobile Business Unit (Global Brands)
 *March 2014 – February 2017*
-- Led manufacturing launch of Alcatel brand; engineered phone assembly lines for Motorola, Huawei, ZTE, Sony, and Alcatel.
-- Delivered +17% productivity increase on Alcatel 4007; applied APQP, PFMEA, Control Plans, and line balancing.
-- Coordinated with overseas suppliers in China for incoming component quality compliance.
+- **Assembly bottlenecks and imbalance**: Redesigned line balancing and optimized ergonomics for Alcatel 4007/4015, delivering a +17% production increase while exceeding First Pass Yield.
+- **High assembly labor costs**: Analyzed cycle times and reallocated standard work on Samsung microwave line, saving 3 operator stations without compromising reliability.
+- **Slow ramp-up learning curve**: Built and implemented a peer-to-peer 1-on-1 cross-shift coaching model, cutting onboarding time by 2 days with full quality from day one.
+- **Multinational specification complexity**: Implemented APQP, PFMEA, and Control Plans, and coordinated component quality resolutions with suppliers in China for 5+ global brands.
 
 ### Grupo BGH — NPI Quality Analyst (New Product Introduction)
 *May 2012 – February 2014*
-- Quality assurance across 11–15 NPI launches under ISO 9001 and ISO/TS 16949 standards.
-- Authored inspection instructions, control plans, and participated in DFMEA/PFMEA development.
+- **Deviation risks on new models**: Audited industrialization ramp-ups under ISO 9001 and ISO/TS 16949, identifying and closing operational gaps before mass production start.
+- **Lack of standardized inspection guidelines**: Built Control Plans, visual inspection work instructions, and participated in PFMEAs, securing critical parameter control.
+- **Technical discrepancies with overseas vendors**: Translated English engineering specifications and coordinated component non-conformity resolutions directly with suppliers in China.
 
 ---
 
 ## Proprietary Software & AI Projects
 
-1. **PCB Defect Recorder**: Web application logging defects directly onto product images with real-time heatmaps and automated statistics. (URL: https://guillermocanete.github.io/DefectRecorder/)
-2. **ISO Compliance Analyzer**: AI-driven compliance tool scanning documentation against ISO 9001/14001/45001 clauses to identify gaps and redundancies.
+1. **PCB Defect Recorder**: Eliminates slow manual spreadsheet logging and transcription errors on the shop floor. Enables operators to log defects with a single click directly onto real board images, generating real-time heatmaps and immediate diagnostics for process engineering. (URL: https://guillermocanete.github.io/DefectRecorder/)
+2. **ISO Compliance Analyzer**: Eliminates hours of manual document review and late non-conformance detection in management system audits. Automatically scans process documentation against ISO 9001, 14001, and 45001 clauses to spot compliance gaps before auditors arrive.
 
 ---
 
 ## Certifications & Education
 
-- **ISO 9001 / 14001 / 45001 Integrated Auditor**: BGH S.A. / IGS Consulting (2022)
-- **Project Management Expert**: UTN FRBA (PMBOK / PMI Standard) — Blockchain Verified (2016)
+- **ISO 9001 / 14001 / 45001 Internal Auditor**: BGH S.A. / IGS Consulting (2022)
+- **Project Management Expert**: UTN FRBA (PMBOK / PMI Standard) (2016)
 - **APQP with Emphasis on FMEA & Control Plan**: Shinka Engineering (2012)
 - **GenAI in Data Analytics**: Meta (2026)
 - **Generative AI Agents with Vertex AI & Flutter**: Coursera / Google Cloud (2026)
