@@ -618,26 +618,26 @@ export default function App() {
             {ACHIEVEMENTS.map((ach, index) => (
               <motion.div 
                 key={ach.id} 
-                initial={{ scale: 0.8, opacity: 0, boxShadow: "0px 0px 0px transparent" }}
-                whileInView={{ 
-                  scale: [0.8, 1.05, 1], 
-                  opacity: 1, 
-                  boxShadow: ["0px 0px 0px transparent", "0px 0px 30px rgba(226,204,153, 0.8)", "0px 0px 0px transparent"]
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-30px" }}
+                transition={{ 
+                  duration: 0.45, 
+                  delay: index * 0.08, 
+                  ease: [0.25, 0.1, 0.25, 1.0] 
                 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.7, delay: index * 0.5, ease: "easeOut" }}
-                className="group relative border border-cv-bg2/10 hover:border-cv-accent rounded-sm p-6 sm:p-8 flex flex-col justify-between transition-all duration-300"
+                className="group relative bg-cv-ink/60 border border-cv-bg2/10 hover:border-cv-accent/50 rounded-sm p-6 sm:p-8 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-black/25"
               >
                 {ach.accent && (
-                  <span className="absolute top-4 right-6 font-serif text-3xl sm:text-4xl text-cv-accent opacity-90 drop-shadow-[0_0_8px_rgba(226,204,153,0.5)] group-hover:opacity-100 group-hover:drop-shadow-[0_0_15px_rgba(226,204,153,0.9)] group-hover:scale-110 transition-all duration-300">
+                  <span className="absolute top-4 right-6 font-serif text-2xl sm:text-3xl text-cv-accent font-semibold tracking-tight transition-transform duration-300 group-hover:scale-105 select-none">
                     {ach.accent}
                   </span>
                 )}
                 <div>
-                  <div className="text-3xl mb-4 text-cv-accent group-hover:scale-110 transition-transform origin-left w-fit select-none">
+                  <div className="text-2xl sm:text-3xl mb-4 text-cv-accent transition-transform duration-300 group-hover:translate-x-1 origin-left w-fit select-none">
                     {ach.icon}
                   </div>
-                  <p className="text-xs sm:text-sm text-cv-bg2 leading-relaxed opacity-90 pr-12">
+                  <p className="text-xs sm:text-sm text-cv-bg2 leading-relaxed opacity-90 pr-12 group-hover:opacity-100 transition-opacity duration-300">
                     {lang === "es" ? ach.text.es : lang === "pt" ? ach.text.pt : ach.text.en}
                   </p>
                 </div>
