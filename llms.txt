@@ -68,9 +68,9 @@ I identify problems, simplify processes, eliminate unnecessary work, and build p
 
 ### Grupo BGH — Process Technician | Acting Process Engineering Responsibilities
 *March 2014 – February 2017*
-*Assumed process engineering responsibilities after the Process Engineer position became vacant, managing the launch and stabilization of Alcatel production lines:*
-- **Alcatel 4007 (+17% prod) & Alcatel 4015 (+10% prod)**: Redesigned line balancing and workstation ergonomics, eliminating bottlenecks and exceeding First Pass Yield targets.
-- **Launch training model (-2 days onboarding)**: Designed and implemented a peer-to-peer 1-on-1 cross-shift coaching program, achieving full required quality from day one.
+*Assumed process engineering responsibilities after the Process Engineer position became vacant, leading the industrialization and launch of 10+ Alcatel smartphone models:*
+- **10+ model launches (highlighting 4007 & 4015)**: Designed assembly flows and line balancing for over a dozen phone models; delivered a +17% production increase on Alcatel 4007 and +10% on 4015 while exceeding First Pass Yield targets.
+- **Launch training model (-2 days onboarding)**: Designed and implemented a peer-to-peer 1-on-1 cross-shift coaching program, achieving full required quality from day one across each new model.
 - **Assembly line stabilization**: Implemented continuous balancing guidelines, standard cycle times, and ergonomic improvements, sustaining high reliability across mobile phone lines.
 
 ### Grupo BGH — NPI Quality Analyst (New Product Introduction)
