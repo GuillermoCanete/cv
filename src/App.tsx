@@ -1241,7 +1241,7 @@ export default function App() {
                 Guillermo Cañete
               </h3>
               <p className="font-mono text-[10px] sm:text-xs text-cv-accent uppercase tracking-wider mt-1">
-                {lang === "es" ? "Gestión de Calidad e Ingeniería de Procesos" : lang === "pt" ? "Gestão de Qualidade e Engenharia de Processos" : "Quality Management & Process Engineering"}
+                {lang === "es" ? "Calidad y Mejora de Procesos · Soluciones Digitales" : lang === "pt" ? "Qualidade e Melhoria de Processos · Soluções Digitais" : "Quality & Process Improvement · Digital Solutions"}
               </p>
             </div>
           </div>
