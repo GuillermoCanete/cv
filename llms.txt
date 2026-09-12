@@ -31,7 +31,7 @@ I identify problems, simplify processes, eliminate unnecessary work, and build p
 
 ## What I Have Improved (Problem → Action → Measurable Impact)
 
-- **+17% Production Increase (Alcatel 4007)**: Problem: assembly-line bottlenecks and station cycle time imbalances. Action: rebalanced Lean line operations and optimized workstation ergonomics. Impact: 17% production increase delivered while simultaneously exceeding First Pass Yield targets.
+- **+17% Production Increase (Alcatel 4007)**: Problem: assembly-line bottlenecks and station cycle time imbalances. Action: rebalanced Lean line operations and optimized workstation ergonomics. Impact: increased Alcatel 4007 line output by 17%.
 - **+10% Planned Production Exceeded (Alcatel 4015)**: Problem: tactical flow constraints during production ramp-up. Action: stabilized continuous process flow and cycle times. Impact: exceeded planned production by 10%, reducing defect rates and improving process reliability.
 - **-3 Operator Roles Reallocated (Samsung Microwave)**: Problem: excess labor cost and uneven workstation loading. Action: actively collaborated in Lean line rebalancing and standard task reallocation. Impact: successfully reallocated 3 operator roles, lowering manufacturing labor costs without compromising reliability.
 - **-2 Days Onboarding Time Cut (Launch Training Model)**: Problem: slow operator learning curve during rapid product launches. Action: designed a peer-to-peer 1-on-1 coaching program between experienced and incoming shift workers. Impact: cut onboarding time by 2 days while achieving full required quality from day one.
@@ -69,7 +69,7 @@ I identify problems, simplify processes, eliminate unnecessary work, and build p
 ### Grupo BGH — Process Technician | Acting Process Engineering Responsibilities
 *March 2014 – February 2017*
 *Assumed process engineering responsibilities after the Process Engineer position became vacant, leading the industrialization and launch of 10+ Alcatel smartphone models:*
-- **10+ model launches (highlighting 4007 & 4015)**: Designed assembly flows and line balancing for over a dozen phone models; delivered a +17% production increase on Alcatel 4007 and +10% on 4015 while exceeding First Pass Yield targets.
+- **10+ model launches (highlighting 4007 & 4015)**: Designed assembly flows and line balancing for over a dozen phone models; increased Alcatel 4007 line output by +17% and 4015 by +10% through Lean line balancing and ergonomic optimization.
 - **Launch training model (-2 days onboarding)**: Designed and implemented a peer-to-peer 1-on-1 cross-shift coaching program, achieving full required quality from day one across each new model.
 - **Assembly line stabilization**: Implemented continuous balancing guidelines, standard cycle times, and ergonomic improvements, sustaining high reliability across mobile phone lines.
 
