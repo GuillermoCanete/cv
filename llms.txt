@@ -33,7 +33,7 @@ I identify problems, simplify processes, eliminate unnecessary work, and build p
 
 - **+17% Production Increase (Alcatel 4007)**: Problem: assembly-line bottlenecks and station cycle time imbalances. Action: rebalanced Lean line operations and optimized workstation ergonomics. Impact: 17% production increase delivered while simultaneously exceeding First Pass Yield targets.
 - **+10% Planned Production Exceeded (Alcatel 4015)**: Problem: tactical flow constraints during production ramp-up. Action: stabilized continuous process flow and cycle times. Impact: exceeded planned production by 10%, reducing defect rates and improving process reliability.
-- **-3 Operator Roles Reallocated (Samsung Microwave)**: Problem: excess labor cost and uneven workstation loading. Action: applied Lean line rebalancing and standard task reallocation. Impact: successfully reallocated 3 operator roles, lowering manufacturing labor costs without compromising reliability.
+- **-3 Operator Roles Reallocated (Samsung Microwave)**: Problem: excess labor cost and uneven workstation loading. Action: actively collaborated in Lean line rebalancing and standard task reallocation. Impact: successfully reallocated 3 operator roles, lowering manufacturing labor costs without compromising reliability.
 - **-2 Days Onboarding Time Cut (Launch Training Model)**: Problem: slow operator learning curve during rapid product launches. Action: designed a peer-to-peer 1-on-1 coaching program between experienced and incoming shift workers. Impact: cut onboarding time by 2 days while achieving full required quality from day one.
 - **Closed-Loop CAPA Success**: Problem: repetitive defect patterns in complex electronics manufacturing. Action: led deep root-cause investigations (Ishikawa, 5 Whys) and implemented robust preventive controls. Impact: permanently eliminated recurrence of critical defects across multiple production lines.
 - **Global Brands Compliance**: Problem: demanding, diverse technical quality requirements from international clients. Action: coordinated specifications with Asian suppliers, audited process lines, and enforced APQP control plans. Impact: zero critical customer audit findings and sustained technical sign-off for Motorola, Samsung, Huawei, Sony, and Alcatel.
@@ -58,26 +58,28 @@ I identify problems, simplify processes, eliminate unnecessary work, and build p
 *Manufacturing process design, workstation layout, line balancing, and operator training:*
 - **Assembly line flow instability**: Redesigned process flows and implemented Statistical Process Control (SPC) on critical parameters, improving repeatability and reducing downtime.
 - **Cross-shift operational variability**: Designed workstation layouts, simplified work instructions, and conducted hands-on standardized work workshops, training shop-floor operators and reducing defects.
+- **Operational digitization (paperless shop floor)**: Implemented digital Work Instructions (WIs) directly at workstation displays, replacing paper binders and ensuring operators always access the latest approved version.
 
 ### Grupo BGH — Process Technician — Metrology & Engineering Laboratory
 *February 2017 – August 2019*
 *Relocated to Metrology & Engineering Laboratory following the closure of the Mobile Phones division. Calibration under ISO 17025:*
 - **Measurement drift in high-frequency equipment**: Calibrated RF generators, GPS systems, and Hi-Pot testers under ISO 17025, securing uninterrupted traceability and reducing measurement uncertainty.
-- **Unscheduled test station drift**: Implemented preventive calibration schedules and reference checks, eliminating line stoppages caused by out-of-spec test equipment.
+- **Adherence to calibration schedules**: Rigorously followed established preventive calibration schedules and reference checks, preventing line stoppages due to out-of-tolerance instruments.
 
 ### Grupo BGH — Process Technician | Acting Process Engineering Responsibilities
 *March 2014 – February 2017*
-*Assumed process engineering responsibilities after the Process Engineer position became vacant, managing the launch and stabilization of Alcatel and global brand production lines:*
+*Assumed process engineering responsibilities after the Process Engineer position became vacant, managing the launch and stabilization of Alcatel production lines:*
 - **Alcatel 4007 (+17% prod) & Alcatel 4015 (+10% prod)**: Redesigned line balancing and workstation ergonomics, eliminating bottlenecks and exceeding First Pass Yield targets.
-- **Samsung Microwave line (-3 operator roles)**: Analyzed cycle times and reallocated standard work, lowering manufacturing labor costs without compromising reliability.
 - **Launch training model (-2 days onboarding)**: Designed and implemented a peer-to-peer 1-on-1 cross-shift coaching program, achieving full required quality from day one.
-- **Global brand technical compliance**: Implemented APQP, PFMEA, and Control Plans, coordinating component quality resolutions directly with suppliers in China for 5+ global brands.
+- **Assembly line stabilization**: Implemented continuous balancing guidelines, standard cycle times, and ergonomic improvements, sustaining high reliability across mobile phone lines.
 
 ### Grupo BGH — NPI Quality Analyst (New Product Introduction)
 *May 2012 – February 2014*
+*Quality assurance across 11–15 New Product Introduction (NPI) launches for Motorola, Huawei, ZTE, and Samsung Microwave:*
+- **Samsung Microwave labor optimization (-3 operator roles)**: Actively collaborated in cycle time analysis and standard work reallocation, contributing to the efficient reallocation of 3 operator stations without compromising reliability.
+- **Technical discrepancies with suppliers in China**: Translated English engineering specifications and coordinated component non-conformity resolutions directly with suppliers in China for Motorola, Huawei, and ZTE launches.
 - **Deviation risks on new models**: Audited industrialization ramp-ups under ISO 9001 and ISO/TS 16949, identifying and closing operational gaps before mass production start.
-- **Lack of standardized inspection guidelines**: Built Control Plans, visual inspection work instructions, and participated in PFMEAs, securing critical parameter control.
-- **Technical discrepancies with overseas vendors**: Translated English engineering specifications and coordinated component non-conformity resolutions directly with suppliers in China.
+- **Inspection guidelines & control plans**: Built Control Plans, visual inspection work instructions, and participated in PFMEAs, securing critical parameter control.
 
 ---
 
