@@ -24,8 +24,15 @@ I identify problems, simplify processes, eliminate unnecessary work, and build p
 - **Problem Solving**: Root Cause Analysis (RCA - 5 Whys, 8D, Ishikawa), Closed-Loop CAPA, Failure Analysis (Reliability), Data Analysis & Diagnostics.
 - **Process Improvement**: Line Balancing (+17% prod achieved), Standard Work & Ergonomics, Value Stream Mapping (VSM), Kaizen & Workplace Optimization.
 - **Quality Systems & Standards**: Internal Auditor: ISO 9001 · ISO 14001 · ISO 45001; Working Knowledge: IATF 16949 (formerly TS 16949) · ISO/IEC 17025 · ANSI/ESD S20.20; Quality Tools: FMEA · Control Plans · SPC · CAPA · Root Cause Analysis; Project Management Expert (UTN FRBA).
-- **Digital Solutions & Applied AI**: Custom Web Apps for Operations (PCB Defect Recorder, ISO Compliance Analyzer), Applied AI for Operations, Workflow Automation, Zero Paperwork & Bureaucracy Reduction.
-- **Languages**: Spanish (Native), English (B2 | Professional Working Proficiency), Portuguese (Beginner).
+- **Digital Solutions & Applied AI**: Custom Web Apps for Operations (PCB Defect Recorder, ISO Compliance Analyzer), Applied AI for Operations, Workflow Automation, Digital Work Instructions (Paperless Shop Floor).
+
+---
+
+## Languages & International Mobility
+
+- **English**: B2 — Professional Working Proficiency (Technical engineering specifications, international audits, and direct supplier coordination in Asia / China).
+- **Spanish**: Native Language (Fluent technical, operational, and executive communication on the plant floor, team coaching, and project leadership).
+- **Portuguese**: Beginner (Actively learning · Full availability and strong interest in relocation to Brazil or regional Latin American assignments).
 
 ---
 

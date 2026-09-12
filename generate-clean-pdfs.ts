@@ -14,8 +14,10 @@ const translations = {
     summaryTitle: "Perfil Profesional",
     summary: "Especialista en Calidad y Mejora de Procesos con más de 14 años identificando problemas operativos, encontrando su causa raíz, implementando soluciones prácticas y dejando el sistema mejor que antes en manufactura compleja y de alta confiabilidad (Motorola, Samsung, Huawei, Sony, Alcatel). ISO 9001 / 14001 / 45001 Internal Auditor y conocimientos de TS16949, ANSI/ESD S20.20, con aplicación directa de herramientas Lean (balanceo de línea, trabajo estandarizado, VSM). Actúo como puente directo entre Calidad, Ingeniería y Producción en planta. Además de la mejora de procesos, desarrollo herramientas digitales y aplico soluciones de IA para automatizar tareas repetitivas, asegurar trazabilidad, reducir defectos y mejorar la confiabilidad del proceso. Disponible para relocalización.",
     skillsTitle: "Habilidades Clave & Sistemas",
+    languagesTitle: "Idiomas",
+    languagesText: "<strong>Español:</strong> Nativo &nbsp;|&nbsp; <strong>Inglés:</strong> B2 (Competencia Profesional Completa — Especificaciones técnicas, auditorías y proveedores en Asia) &nbsp;|&nbsp; <strong>Portugués:</strong> Iniciante (En aprendizaje activo — Disponibilidad para relocalización en Brasil)",
     achievementsTitle: "Qué he mejorado (Problema → Acción → Impacto)",
-    experienceTitle: "Experiencia Profesional",
+    experienceTitle: "Experiencia Laboral",
     certsTitle: "Educación y Certificaciones",
     certBgh: "Auditor Interno de Sistemas de Gestión Integrados: ISO 9001, ISO 14001, ISO 45001 — BGH"
   },
@@ -26,8 +28,10 @@ const translations = {
     summaryTitle: "Professional Profile",
     summary: "Quality & Process Improvement Specialist with 14+ years identifying shop-floor problems, finding root causes, implementing practical solutions, and leaving systems better than before in complex, high-reliability manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel). ISO 9001 / 14001 / 45001 Internal Auditor & working knowledge of TS16949, ANSI/ESD S20.20, applying hands-on Lean methods (line balancing, standard work, VSM). I serve as a direct bridge between Quality, Engineering, and Production on the plant floor. In addition to process optimization, I build custom digital tools and applied AI workflows to automate repetitive tasks, ensure traceability, reduce defects and improve process reliability. Open to relocation and international assignments.",
     skillsTitle: "Core Competencies & Standards",
+    languagesTitle: "Languages & International Mobility",
+    languagesText: "<strong>English:</strong> B2 (Professional Working Proficiency — Technical documentation, international audits & Asian supplier coordination) &nbsp;|&nbsp; <strong>Spanish:</strong> Native Language &nbsp;|&nbsp; <strong>Portuguese:</strong> Beginner (Actively learning — Open to relocation to Brazil)",
     achievementsTitle: "What I Have Improved (Problem → Action → Impact)",
-    experienceTitle: "Professional Experience",
+    experienceTitle: "Work Experience",
     certsTitle: "Education & Certifications",
     certBgh: "Internal Auditor of Integrated Management Systems: ISO 9001, ISO 14001, ISO 45001 — BGH"
   },
@@ -38,6 +42,8 @@ const translations = {
     summaryTitle: "Perfil Profissional",
     summary: "Especialista em Qualidade e Melhoria de Processos com mais de 14 anos identificando problemas na fábrica, encontrando a causa raiz, implementando soluções práticas e deixando o sistema melhor do que antes na manufatura complexa e de alta confiabilidade (Motorola, Samsung, Huawei, Sony, Alcatel). Auditor Interno ISO 9001 / 14001 / 45001 e conhecimentos de TS16949, ANSI/ESD S20.20, com aplicação direta de ferramentas Lean (balanceamento de linha, trabalho padronizado, VSM). Atuo como ponte direta entre Qualidade, Engenharia e Produção na fábrica. Além da otimização operacional, desenvolvo ferramentas digitais próprias e aplico IA para automatizar tarefas repetitivas, assegurar rastreabilidade, reduzir defeitos e melhorar a confiabilidade do processo. Disponível para relocação.",
     skillsTitle: "Habilidades Principais & Normas",
+    languagesTitle: "Idiomas & Mobilidade",
+    languagesText: "<strong>Espanhol:</strong> Língua Materna &nbsp;|&nbsp; <strong>Inglês:</strong> B2 (Proficiência Profissional — Especificações técnicas, auditorias e fornecedores na Ásia) &nbsp;|&nbsp; <strong>Português:</strong> Iniciante (Em aprendizado ativo — Disponibilidade para relocação no Brasil)",
     achievementsTitle: "O que melhorei (Problema → Ação → Impacto)",
     experienceTitle: "Experiência Profissional",
     certsTitle: "Educação e Certificações",
@@ -78,13 +84,11 @@ async function run() {
     const trans = translations[lang];
 
     // Filter skills (only name)
-    const skillsHtml = SKILLS.filter(s => s.id !== "s9" || lang === 'pt').map(s => {
+    const skillsHtml = SKILLS.map(s => {
       const name = s.id === "s7" ? (
         lang === "es" ? "Herramientas Digitales & IA Aplicada" : lang === "pt" ? "Ferramentas Digitais & IA Aplicada" : "Digital Tools & Applied AI"
       ) : s.id === "s8" ? (
-        lang === "es" ? "Inglés — B2 | Competencia Profesional" : lang === "pt" ? "Inglês — B2 | Proficiência Profissional" : "English — B2 | Professional Working Proficiency"
-      ) : s.id === "s9" ? (
-        lang === "pt" ? "Português — Iniciante" : s.name
+        lang === "es" ? "Instrucciones de Trabajo Digitales (Paperless)" : lang === "pt" ? "Instruções de Trabalho Digitais (Paperless)" : "Digital Work Instructions (Paperless)"
       ) : s.name;
       return `<div class="skill-item">${name}</div>`;
     }).join('\n');
@@ -286,6 +290,11 @@ async function run() {
   <div class="section-title">${trans.skillsTitle}</div>
   <div class="skills-list">
     ${skillsHtml}
+  </div>
+
+  <div class="section-title">${trans.languagesTitle}</div>
+  <div class="languages-box" style="font-size: 8.5pt; color: #4a4640; background: #fdfcf8; padding: 4px 8px; border: 1px solid #d0ccc4; border-radius: 2px;">
+    ${trans.languagesText}
   </div>
 
   <div class="section-title">${trans.achievementsTitle}</div>

@@ -160,8 +160,52 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Custom Web Apps for Operations", tag: { es: "Cero burocracia", en: "Zero bureaucracy", pt: "Zero burocracia" } },
       { name: "Applied AI for Operations", tag: { es: "Utilidad real", en: "Real utility", pt: "Utilidade real" } },
       { name: "Workflow Automation", tag: { es: "Productividad", en: "Productivity", pt: "Produtividade" } },
-      { name: "English — B2 | Portuguese — Beginner", tag: { es: "Idiomas", en: "Languages", pt: "Idiomas" } }
+      { name: "Digital Work Instructions (Paperless)", tag: { es: "En planta", en: "Shop floor", pt: "Na fábrica" } }
     ]
+  }
+];
+
+export interface LanguageItem {
+  id: string;
+  name: MultilingualText;
+  level: MultilingualText;
+  badge: MultilingualText;
+  desc: MultilingualText;
+}
+
+export const LANGUAGES: LanguageItem[] = [
+  {
+    id: "en",
+    name: { es: "Inglés", en: "English", pt: "Inglês" },
+    level: { es: "B2 — Competencia Profesional Completa", en: "B2 — Professional Working Proficiency", pt: "B2 — Proficiência Profissional" },
+    badge: { es: "B2", en: "B2", pt: "B2" },
+    desc: {
+      es: "Comprensión y redacción de especificaciones técnicas, auditorías en inglés y coordinación directa con proveedores internacionales en Asia.",
+      en: "Technical engineering specifications, international audit interactions, and direct coordination with Asian suppliers.",
+      pt: "Compreensão e redação de especificações técnicas, auditorias em inglês e coordenação direta com fornecedores internacionais na Ásia."
+    }
+  },
+  {
+    id: "es",
+    name: { es: "Español", en: "Spanish", pt: "Espanhol" },
+    level: { es: "Nativo", en: "Native Language", pt: "Língua Materna" },
+    badge: { es: "Nativo", en: "Native", pt: "Nativo" },
+    desc: {
+      es: "Comunicación técnica, operativa y ejecutiva fluida en planta, capacitación de equipos y liderazgo de proyectos.",
+      en: "Fluent technical, operational, and executive communication on the plant floor, team coaching, and project leadership.",
+      pt: "Comunicação técnica, operacional e executiva fluida na fábrica, treinamento de equipes e liderança de projetos."
+    }
+  },
+  {
+    id: "pt",
+    name: { es: "Portugués", en: "Portuguese", pt: "Português" },
+    level: { es: "Iniciante", en: "Beginner", pt: "Iniciante" },
+    badge: { es: "Iniciante", en: "Beginner", pt: "Iniciante" },
+    desc: {
+      es: "En aprendizaje activo. Interés y total disponibilidad para relocalización en Brasil o proyectos regionales en América Latina.",
+      en: "Actively studying. Strong interest and immediate availability for relocation to Brazil or regional Latin American operations.",
+      pt: "Em aprendizado ativo. Interesse e total disponibilidade para relocação no Brasil ou projetos regionais na América Latina."
+    }
   }
 ];
 
@@ -203,13 +247,8 @@ export const SKILLS: SkillItem[] = [
   },
   { 
     id: "s8", 
-    name: "English — B2 | Professional Working Proficiency", 
-    tag: { es: "B2", en: "B2", pt: "B2" } 
-  },
-  { 
-    id: "s9", 
-    name: "Portuguese — Beginner", 
-    tag: { es: "Inicial", en: "Beginner", pt: "Iniciante" } 
+    name: "Digital Work Instructions (Paperless Shop Floor)", 
+    tag: { es: "En planta", en: "Shop floor", pt: "Na fábrica" } 
   }
 ];
 

@@ -31,7 +31,8 @@ import {
   PROJECTS, 
   CERTS, 
   ARTICLES, 
-  Article 
+  Article,
+  LANGUAGES 
 } from "./data";
 
 // @ts-ignore
@@ -417,7 +418,7 @@ export default function App() {
                 className="w-full h-full object-cover rounded-full group-hover/avatar:opacity-90 transition-opacity" 
                 referrerPolicy="no-referrer"
               />
-              <div className="absolute bottom-1 right-1 bg-green-600 w-3.5 h-3.5 rounded-full border-2 border-cv-white" title="Active"></div>
+              <div className="absolute bottom-1 right-1 bg-green-600 w-3.5 h-3.5 rounded-full border-2 border-cv-white" title={lang === "es" ? "Disponible" : lang === "pt" ? "Disponível" : "Available"}></div>
             </div>
 
             <div className="flex-1">
@@ -496,8 +497,15 @@ export default function App() {
             <a 
               href="https://linkedin.com/in/guillermo-canete" 
               target="_blank" 
-              rel="noopener noreferrer"
-              className="px-6 py-3 border border-cv-ink text-cv-ink text-xs font-bold tracking-wider uppercase rounded-sm hover:bg-cv-ink hover:text-cv-bg transition-all inline-flex items-center gap-2" title={lang === "pt" ? "Disposição para relocalização no Brasil" : ""}
+              rel="noopener noreferrer" 
+              className="px-6 py-3 border border-cv-ink text-cv-ink text-xs font-bold tracking-wider uppercase rounded-sm hover:bg-cv-ink hover:text-cv-bg transition-all inline-flex items-center gap-2" 
+              title={
+                lang === "pt" 
+                  ? "Disposição para relocalização no Brasil" 
+                  : lang === "en" 
+                    ? "Open to relocation and international assignments" 
+                    : "Disponible para relocalización"
+              }
             >
               LinkedIn <ArrowUpRight className="w-4 h-4" />
             </a>
@@ -597,6 +605,60 @@ export default function App() {
             </div>
           </div>
         </div>
+
+        {/* Dedicated Languages Section */}
+        <div className="mt-12 pt-8 border-t border-cv-line">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+            <div className="flex items-center gap-2.5">
+              <span className="text-xl">🌐</span>
+              <h3 className="font-serif text-2xl text-cv-ink">
+                {lang === "es" ? "Competencia Lingüística & Movilidad" : lang === "pt" ? "Competência Linguística & Mobilidade" : "Language Proficiency & Mobility"}
+              </h3>
+            </div>
+            <span className="font-mono text-[10px] sm:text-xs text-cv-accent uppercase tracking-wider font-bold">
+              {lang === "es" ? "Disponible para relocalización internacional" : lang === "pt" ? "Disponível para relocação internacional" : "Open to International Relocation & Assignments"}
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {LANGUAGES.map((item) => (
+              <div 
+                key={item.id} 
+                className={`bg-cv-white border rounded p-5 shadow-sm hover:border-cv-accent transition-all flex flex-col justify-between ${
+                  item.id === "en" ? "border-cv-accent/50 ring-1 ring-cv-accent/10" : "border-cv-line"
+                }`}
+              >
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-2.5 pb-2 border-b border-cv-line/50">
+                    <div className="flex items-center gap-2">
+                      {item.id === "en" ? <FlagUS /> : item.id === "es" ? <FlagAR /> : <FlagBR />}
+                      <h4 className="font-mono text-sm font-bold text-cv-ink">
+                        {lang === "es" ? item.name.es : lang === "pt" ? item.name.pt : item.name.en}
+                      </h4>
+                    </div>
+                    <span className={`font-mono text-[10px] px-2 py-0.5 rounded font-bold uppercase ${
+                      item.id === "en" 
+                        ? "bg-cv-accent text-cv-white" 
+                        : "bg-cv-bg2 text-cv-ink2 border border-cv-line"
+                    }`}>
+                      {lang === "es" ? item.badge.es : lang === "pt" ? item.badge.pt : item.badge.en}
+                    </span>
+                  </div>
+                  
+                  <div className={`text-xs font-semibold mb-2 ${
+                    item.id === "en" ? "text-cv-accent" : "text-cv-ink"
+                  }`}>
+                    {lang === "es" ? item.level.es : lang === "pt" ? item.level.pt : item.level.en}
+                  </div>
+                  
+                  <p className="text-xs text-cv-ink2 leading-relaxed">
+                    {lang === "es" ? item.desc.es : lang === "pt" ? item.desc.pt : item.desc.en}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* RESULTS / ACHIEVEMENTS */}
@@ -652,7 +714,7 @@ export default function App() {
         <div className="flex items-center gap-4 mb-12 border-b border-cv-line pb-4">
           <span className="font-mono text-xs sm:text-sm text-cv-accent font-semibold">03</span>
           <h2 className="font-serif text-3xl sm:text-4xl text-cv-ink">
-            {lang === "es" ? "Experiencia consolidada" : lang === "pt" ? "Experiência consolidada" : "Proven career path"}
+            {lang === "es" ? "Experiencia laboral" : lang === "pt" ? "Experiência profissional" : "Work Experience"}
           </h2>
         </div>
 
@@ -783,7 +845,7 @@ export default function App() {
                     onClick={clearSimulatedDefects}
                     className="font-mono text-[9px] bg-red-950/40 text-red-500 border border-red-500/30 px-2 py-0.5 rounded hover:bg-cv-accent hover:text-cv-white hover:border-cv-accent transition-colors cursor-pointer"
                   >
-                    {lang === "es" ? "LIMPIAR INDICE" : lang === "pt" ? "LIMPAR REGISTRO" : "CLEAR LEDGER"} ({simulatedDefects.length})
+                    {lang === "es" ? "LIMPIAR REGISTRO" : lang === "pt" ? "LIMPAR REGISTRO" : "CLEAR LOG"} ({simulatedDefects.length})
                   </button>
                 </div>
 
@@ -847,7 +909,7 @@ export default function App() {
               {/* Interactive Dashboard Area */}
               <div className="relative bg-[#1a2218] p-6 flex flex-col gap-4 border-b border-cv-line select-none">
                 <span className="font-mono text-[9px] text-[#6a8a6a] tracking-wider block">
-                  {lang === "es" ? "SIMULAR PORCENTAJES EN VIVO" : lang === "pt" ? "SIMULAR PORCENTAGENS AO VIVO" : "CLIK SLIDERS TO ADJUST COMPLIANCE METRICS"}
+                  {lang === "es" ? "SIMULAR PORCENTAJES EN VIVO" : lang === "pt" ? "SIMULAR PORCENTAGENS AO VIVO" : "CLICK SLIDERS TO ADJUST COMPLIANCE METRICS"}
                 </span>
 
                 {/* Vertical compliance sliders */}
@@ -1157,7 +1219,7 @@ export default function App() {
               <button 
                 onClick={handleCloseArticle}
                 className="p-1.5 hover:bg-cv-bg2 rounded text-cv-ink2 hover:text-cv-accent transition-colors cursor-pointer"
-                title="Close Window"
+                title={lang === "es" ? "Cerrar ventana" : lang === "pt" ? "Fechar janela" : "Close window"}
               >
                 <X className="w-5 h-5" />
               </button>
@@ -1267,7 +1329,7 @@ export default function App() {
           >
             <img 
               src={certModalImage} 
-              alt="Certificate" 
+              alt={lang === "es" ? "Certificado" : lang === "pt" ? "Certificado" : "Certificate"} 
               className="max-h-[80vh] md:max-h-[85vh] w-auto max-w-full rounded-lg border-2 border-cv-accent2/50 shadow-2xl object-contain bg-cv-white cursor-zoom-out"
               onClick={() => setCertModalImage(null)}
             />
