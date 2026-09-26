@@ -620,8 +620,8 @@ export default function App() {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {LANGUAGES.map((item) => (
+          <div className={`grid grid-cols-1 ${lang === "pt" ? "md:grid-cols-3" : "md:grid-cols-2 max-w-4xl"} gap-5`}>
+            {LANGUAGES.filter((item) => lang === "pt" || item.id !== "pt").map((item) => (
               <div 
                 key={item.id} 
                 className={`bg-cv-white border rounded p-5 shadow-sm hover:border-cv-accent transition-all flex flex-col justify-between ${

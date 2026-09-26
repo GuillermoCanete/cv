@@ -104,14 +104,14 @@ export const STATS: StatItem[] = [
   {
     number: "−2d",
     label: { 
-      es: "Reducción en tiempo de onboarding", 
-      en: "Onboarding time reduction", 
-      pt: "Redução no tempo de onboarding" 
+      es: "Tiempo de capacitación y ramp-up", 
+      en: "Training & ramp-up acceleration", 
+      pt: "Tempo de treinamento e ramp-up" 
     },
     sub: { 
-      es: "Capacitación peer-to-peer 1-a-1 entre turnos", 
-      en: "Peer-to-peer 1-on-1 cross-shift training", 
-      pt: "Treinamento peer-to-peer 1-a-1 entre turnos" 
+      es: "Producción y calidad alcanzadas 2 días antes de lo programado", 
+      en: "Target output & quality reached 2 days ahead of schedule", 
+      pt: "Produção e qualidade atingidas 2 dias antes do previsto" 
     }
   }
 ];
@@ -288,9 +288,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "−2d",
     icon: "🎯",
     text: {
-      es: "Capacitación en Lanzamientos — Problema: curva de aprendizaje lenta para personal nuevo en lanzamientos de producto. Acción: diseñé un programa peer-to-peer 1-a-1 donde operarios experimentados acompañaban al personal entrante entre turnos. Impacto: reduje 2 días el tiempo de onboarding alcanzando la calidad requerida desde el inicio.",
-      en: "Launch Training Model — Problem: slow operator learning curve during rapid product launches. Action: designed a peer-to-peer 1-on-1 coaching program between experienced and incoming shift workers. Impact: cut onboarding time by 2 days while achieving full required quality from day one.",
-      pt: "Treinamento em Lançamentos — Problema: curva lenta de aprendizado de novos operadores. Ação: desenhei um programa peer-to-peer 1-a-1 de acompanhamento entre turnos. Impacto: reduzi o onboarding em 2 dias atingindo o padrão de qualidade logo no início."
+      es: "Capacitación en Lanzamientos — Problema: curva de aprendizaje lenta para personal nuevo en lanzamientos de producto. Acción: diseñé un programa de coaching peer-to-peer 1-a-1 entre turnos. Impacto: reduje el tiempo de capacitación y ramp-up en 2 días, alcanzando el nivel de producción y la calidad requeridos 2 días antes de lo programado.",
+      en: "Launch Training Model — Problem: slow operator learning curve during rapid product launches. Action: designed a peer-to-peer 1-on-1 cross-shift coaching program. Impact: reduced training and ramp-up time by 2 days, reaching target production volume and quality standards 2 days ahead of schedule.",
+      pt: "Treinamento em Lançamentos — Problema: curva lenta de aprendizado de novos operadores em lançamentos. Ação: desenhei um programa peer-to-peer 1-a-1 de acompanhamento entre turnos. Impacto: reduzi o tempo de treinamento e ramp-up em 2 dias, atingindo o nível de produção e qualidade exigidos 2 dias antes do previsto."
     }
   },
   {
@@ -407,9 +407,9 @@ export const EXPERIENCES: ExperienceItem[] = [
       pt: "Técnico de Processos | Responsabilidades de Engenharia de Processos" 
     },
     desc: {
-      es: "Asumí responsabilidades de ingeniería de procesos tras quedar vacante el puesto, liderando la industrialización y lanzamiento de más de 10 modelos de smartphones Alcatel:<br/>● <strong>10+ lanzamientos de modelos (destacando 4007 y 4015):</strong> Diseñé el flujo de ensamble y balanceo de línea para más de una decena de modelos de celulares; logré +17% de aumento de producción en Alcatel 4007 y +10% en 4015 mediante balanceo Lean y optimización ergonómica.<br/>● <strong>Capacitación en lanzamientos (-2 días onboarding):</strong> Diseñé e implementé programa de coaching peer-to-peer 1-a-1 entre turnos, alcanzando calidad requerida desde el primer día en cada nuevo modelo.<br/>● <strong>Estabilización de líneas de ensamble:</strong> Implementé pautas de balanceo continuo, tiempos de ciclo estándar y mejoras ergonómicas, manteniendo alta confiabilidad en líneas de telefonía móvil.",
-      en: "Assumed process engineering responsibilities after the Process Engineer position became vacant, leading the industrialization and launch of 10+ Alcatel smartphone models:<br/>● <strong>10+ model launches (highlighting 4007 & 4015):</strong> Designed assembly flows and line balancing for over a dozen phone models; increased line output by +17% on Alcatel 4007 and +10% on 4015 through Lean line balancing and ergonomic optimization.<br/>● <strong>Launch training model (-2 days onboarding):</strong> Designed and implemented a peer-to-peer 1-on-1 cross-shift coaching program, achieving full required quality from day one across each new model.<br/>● <strong>Assembly line stabilization:</strong> Implemented continuous balancing guidelines, standard cycle times, and ergonomic improvements, sustaining high reliability across mobile phone lines.",
-      pt: "Assumi responsabilidades de engenharia de processos após o cargo ficar em aberto, liderando a industrialização e lançamento de mais de 10 modelos de smartphones Alcatel:<br/>● <strong>Mais de 10 lançamentos de modelos (destaque 4007 e 4015):</strong> Projetei o fluxo de montagem e balanceamento de linha para mais de uma dezena de modelos de celulares; alcancei aumento de produção de +17% no Alcatel 4007 e +10% no 4015 através de balanceamento Lean e otimização ergonômica.<br/>● <strong>Treinamento em lançamentos (-2 dias onboarding):</strong> Desenvolvi e implementei programa peer-to-peer 1-a-1 entre turnos, atingindo padrão de qualidade logo no início em cada novo modelo.<br/>● <strong>Estabilização de linhas de montagem:</strong> Implementei diretrizes de balanceamento contínuo, tempos de ciclo padrão e melhorias ergonômicas, mantendo alta confiabilidade nas linhas de telefonia móvel."
+      es: "Asumí responsabilidades de ingeniería de procesos tras quedar vacante el puesto, liderando la industrialización y lanzamiento de más de 10 modelos de smartphones Alcatel:<br/>● <strong>10+ lanzamientos de modelos (destacando 4007 y 4015):</strong> Diseñé el flujo de ensamble y balanceo de línea para más de una decena de modelos de celulares; logré +17% de aumento de producción en Alcatel 4007 y +10% en 4015 mediante balanceo Lean y optimización ergonómica.<br/>● <strong>Capacitación y ramp-up (-2 días):</strong> Diseñé e implementé un programa de coaching peer-to-peer 1-a-1 entre turnos, reduciendo en 2 días el tiempo de capacitación y ramp-up, alcanzando el nivel de producción y calidad requeridos 2 días antes de lo programado.<br/>● <strong>Estabilización de líneas de ensamble:</strong> Implementé pautas de balanceo continuo, tiempos de ciclo estándar y mejoras ergonómicas, manteniendo alta confiabilidad en líneas de telefonía móvil.",
+      en: "Assumed process engineering responsibilities after the Process Engineer position became vacant, leading the industrialization and launch of 10+ Alcatel smartphone models:<br/>● <strong>10+ model launches (highlighting 4007 & 4015):</strong> Designed assembly flows and line balancing for over a dozen phone models; increased line output by +17% on Alcatel 4007 and +10% on 4015 through Lean line balancing and ergonomic optimization.<br/>● <strong>Training & ramp-up acceleration (-2 days):</strong> Designed and implemented a peer-to-peer 1-on-1 cross-shift coaching program, reducing training and ramp-up time by 2 days and reaching target production output and quality standards 2 days ahead of schedule.<br/>● <strong>Assembly line stabilization:</strong> Implemented continuous balancing guidelines, standard cycle times, and ergonomic improvements, sustaining high reliability across mobile phone lines.",
+      pt: "Assumi responsabilidades de engenharia de processos após o cargo ficar em aberto, liderando a industrialização e lançamento de mais de 10 modelos de smartphones Alcatel:<br/>● <strong>Mais de 10 lançamentos de modelos (destaque 4007 e 4015):</strong> Projetei o fluxo de montagem e balanceamento de linha para mais de uma dezena de modelos de celulares; alcancei aumento de produção de +17% no Alcatel 4007 e +10% no 4015 através de balanceamento Lean e otimização ergonômica.<br/>● <strong>Treinamento e ramp-up (-2 dias):</strong> Desenvolvi e implementei um programa peer-to-peer 1-a-1 entre turnos, reduzindo em 2 dias o tempo de treinamento e ramp-up, atingindo o nível de produção e qualidade exigidos 2 dias antes do previsto.<br/>● <strong>Estabilização de linhas de montagem:</strong> Implementei diretrizes de balanceamento contínuo, tempos de ciclo padrão e melhorias ergonômicas, mantendo alta confiabilidade nas linhas de telefonia móvel."
     },
     highlight: { 
       es: "10+ Lanzamientos Alcatel · +17% producción (4007) · Balanceo de línea", 
