@@ -198,12 +198,12 @@ export const LANGUAGES: LanguageItem[] = [
   },
   {
     id: "pt",
-    name: { es: "Portugués", en: "Portuguese", pt: "Português" },
-    level: { es: "Iniciante", en: "Beginner", pt: "Iniciante" },
-    badge: { es: "Iniciante", en: "Beginner", pt: "Iniciante" },
+    name: { es: "", en: "", pt: "Português" },
+    level: { es: "", en: "", pt: "Iniciante" },
+    badge: { es: "", en: "", pt: "Iniciante" },
     desc: {
-      es: "En aprendizaje activo. Interés y total disponibilidad para relocalización en Brasil o proyectos regionales en América Latina.",
-      en: "Actively studying. Strong interest and immediate availability for relocation to Brazil or regional Latin American operations.",
+      es: "",
+      en: "",
       pt: "Em aprendizado ativo. Interesse e total disponibilidade para relocação no Brasil ou projetos regionais na América Latina."
     }
   }

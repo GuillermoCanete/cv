@@ -113,4 +113,3 @@ I identify problems, simplify processes, eliminate unnecessary work, and build p
 ## Downloadable Resumes (PDF)
 - Spanish: https://guillermocanete.github.io/cv/Guillermo_Canete_CV_es.pdf
 - English: https://guillermocanete.github.io/cv/Guillermo_Canete_CV_en.pdf
-- Portuguese: https://guillermocanete.github.io/cv/Guillermo_Canete_CV_pt.pdf
