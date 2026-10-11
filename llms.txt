@@ -96,17 +96,22 @@ I identify problems, simplify processes, eliminate unnecessary work, and build p
 
 ---
 
-## Certifications & Education
+## Certifications & Education (Grouped by Specialization)
 
+### Quality Systems, Standards & Industrial Processes
 - **ISO 9001 / 14001 / 45001 Internal Auditor**: BGH S.A. / IGS Consulting (2022)
-- **Project Management Expert**: UTN FRBA (PMBOK / PMI Standard) (2016)
 - **APQP with Emphasis on FMEA & Control Plan**: Shinka Engineering (2012)
-- **GenAI in Data Analytics**: Meta (2026)
-- **Generative AI Agents with Vertex AI & Flutter**: Coursera / Google Cloud (2026)
+- **Project Management Expert**: UTN FRBA (PMBOK / PMI Standard) (2016)
+- **Business Analysis & Process Management**: Coursera (2025)
+
+### Leadership, Coaching & Talent Development
+- **Develop Talent and Coach for Success**: Harvard Business Review / Coursera (2026)
 - **Authority, Management & Leadership**: UNAM (2026)
 - **Human Talent Management**: UNAM (2026)
-- **Develop Talent and Coach for Success**: Harvard Business Review / Coursera (2026)
-- **Business Analysis & Process Management**: Coursera (2025)
+
+### Technology, Data & Applied Artificial Intelligence
+- **GenAI in Data Analytics**: Meta (2026)
+- **Generative AI Agents with Vertex AI & Flutter**: Coursera / Google Cloud (2026)
 - **Claude 101, Claude Code 101 & AI Fluency**: Anthropic Education (2026)
 
 ---
