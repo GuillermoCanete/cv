@@ -589,6 +589,26 @@ export const CERTS: CertItem[] = [
     thumbnail: "/cv/certificates/thumbs/talento_humano.png"
   },
   { 
+    icon: "🎯", 
+    name: { 
+      es: "Desarrollo de Talento y Coaching para el Éxito", 
+      en: "Develop Talent and Coach for Success", 
+      pt: "Desenvolvimento de Talentos e Coaching para o Sucesso" 
+    }, 
+    org: { 
+      es: "Harvard Business Review / Coursera · Oct 2026", 
+      en: "Harvard Business Review / Coursera · Oct 2026", 
+      pt: "Harvard Business Review / Coursera · Out 2026" 
+    },
+    description: {
+      es: "Estrategias para seleccionar y fidelizar talento, aplicando técnicas de coaching que impulsan el rendimiento. Acompañamiento a colaboradores frente a desafíos y desarrollo de nuevas habilidades para mantener la competitividad.",
+      en: "Strategies to attract, hire, and engage talent, applying performance-boosting coaching techniques. Guiding team members through challenges and developing new capabilities to sustain organizational competitiveness.",
+      pt: "Estratégias para selecionar e engajar talentos, aplicando técnicas de coaching que impulsionam o desempenho. Orientação a colaboradores diante de desafios e desenvolvimento de novas habilidades na equipe."
+    },
+    link: "https://coursera.org/verify/4FH89W7TJ8BK",
+    thumbnail: "/cv/certificates/thumbs/develop_talent_coach.png"
+  },
+  { 
     icon: "🚀", 
     name: { 
       es: "Agentes de IA Generativa con Vertex AI y Flutter", 
