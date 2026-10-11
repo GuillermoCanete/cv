@@ -30,6 +30,7 @@ import {
   EXPERIENCES, 
   PROJECTS, 
   CERTS, 
+  CERT_CATEGORIES,
   ARTICLES, 
   Article,
   LANGUAGES 
@@ -972,84 +973,113 @@ export default function App() {
 
       {/* CERTIFICATIONS */}
       <section className="px-6 sm:px-12 py-16 sm:py-24 max-w-7xl mx-auto" id="certs">
-        <div className="flex items-center gap-4 mb-12 border-b border-cv-line pb-4">
-          <span className="font-mono text-xs sm:text-sm text-cv-accent font-semibold">05</span>
-          <h2 className="font-serif text-3xl sm:text-4xl text-cv-ink">
-            {lang === "es" ? "Certificaciones" : lang === "pt" ? "Certificações" : "Specialist Certifications"}
-          </h2>
+        <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-12 border-b border-cv-line pb-4">
+          <div className="flex items-center gap-4">
+            <span className="font-mono text-xs sm:text-sm text-cv-accent font-semibold">05</span>
+            <h2 className="font-serif text-3xl sm:text-4xl text-cv-ink">
+              {lang === "es" ? "Educación & Certificaciones" : lang === "pt" ? "Educação & Certificações" : "Specialist Certifications & Education"}
+            </h2>
+          </div>
+          <span className="font-mono text-xs text-cv-accent uppercase tracking-wider">
+            {lang === "es" ? "Organizado por Especialización" : lang === "pt" ? "Organizado por Especialização" : "Grouped by Specialization"}
+          </span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {CERTS.map((cert, index) => {
-            if (cert.thumbnail) {
-              return (
-                <div 
-                  key={index} 
-                  className="group bg-cv-white border border-cv-line rounded-lg shadow-sm hover:border-cv-accent hover:shadow-md transition-all duration-300 flex overflow-hidden"
-                >
-                  {/* Thumbnail */}
-                  <div 
-                    className="relative w-36 sm:w-48 p-2 flex-shrink-0 bg-cv-bg2/5 border-r border-cv-line cursor-pointer overflow-hidden flex items-center justify-center"
-                    onClick={() => setCertModalImage(cert.thumbnail!)}
-                  >
-                    <img 
-                      src={cert.thumbnail} 
-                      alt={lang === "es" ? cert.name.es : lang === "pt" ? cert.name.pt : cert.name.en}
-                      className="w-full h-auto max-h-full object-contain hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-cv-black/0 hover:bg-cv-black/10 transition-colors flex items-center justify-center opacity-0 hover:opacity-100">
-                      <span className="bg-cv-black/60 text-white text-[10px] font-mono uppercase tracking-wider px-2 py-1 rounded">
-                        {lang === "es" ? "Ver" : lang === "pt" ? "Ver" : "View"}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="flex-1 p-5 flex flex-col justify-center min-w-0">
-                    <div className="flex items-start gap-2 mb-1">
-                      <span className="text-lg flex-shrink-0">{cert.icon}</span>
-                      <h4 className="text-sm font-bold text-cv-ink group-hover:text-cv-accent transition-colors leading-tight">
-                        {lang === "es" ? cert.name.es : lang === "pt" ? cert.name.pt : cert.name.en}
-                      </h4>
-                    </div>
-                    <p className="font-mono text-[10px] text-cv-ink3 uppercase tracking-wide mb-2 pl-7">
-                      {lang === "es" ? cert.org.es : lang === "pt" ? cert.org.pt : cert.org.en}
-                    </p>
-                    {cert.description && (
-                      <p className="text-xs text-cv-ink2 leading-relaxed pl-7 line-clamp-3">
-                        {lang === "es" ? cert.description.es : lang === "pt" ? cert.description.pt : cert.description.en}
-                      </p>
-                    )}
-                    {cert.link && (
-                      <a 
-                        href={cert.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="inline-flex items-center gap-1.5 mt-2 pl-7 text-[10px] font-mono uppercase tracking-wider text-cv-accent hover:text-cv-ink transition-colors"
-                      >
-                        <ExternalLink className="w-3 h-3" />
-                        {lang === "es" ? "Ver certificado" : lang === "pt" ? "Ver certificado" : "View certificate"}
-                      </a>
-                    )}
-                  </div>
-                </div>
-              );
-            }
-
-            // Fallback for certs without thumbnails (compact card)
+        <div className="space-y-12">
+          {CERT_CATEGORIES.map((cat) => {
+            const categoryCerts = CERTS.filter((c) => c.category === cat.id);
             return (
-              <div 
-                key={index} 
-                className="bg-cv-white border border-cv-line p-6 rounded-lg shadow-sm hover:border-cv-accent transition-all duration-300"
-              >
-                <div className="text-2xl mb-3">{cert.icon}</div>
-                <h4 className="text-sm font-bold text-cv-ink mb-1">
-                  {lang === "es" ? cert.name.es : lang === "pt" ? cert.name.pt : cert.name.en}
-                </h4>
-                <p className="font-mono text-[11px] text-cv-ink3 uppercase">
-                  {lang === "es" ? cert.org.es : lang === "pt" ? cert.org.pt : cert.org.en}
-                </p>
+              <div key={cat.id} className="border-b border-cv-line/60 pb-12 last:border-b-0 last:pb-0">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+                  <div>
+                    <h3 className="font-mono text-xs sm:text-sm font-bold uppercase tracking-wider text-cv-accent flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-cv-accent inline-block"></span>
+                      {lang === "es" ? cat.title.es : lang === "pt" ? cat.title.pt : cat.title.en}
+                    </h3>
+                    <p className="text-xs text-cv-ink3 mt-0.5 pl-4">
+                      {lang === "es" ? cat.subtitle.es : lang === "pt" ? cat.subtitle.pt : cat.subtitle.en}
+                    </p>
+                  </div>
+                  <span className="font-mono text-[10px] text-cv-ink2 bg-cv-bg2 border border-cv-line px-2.5 py-1 rounded font-bold uppercase self-start sm:self-auto">
+                    {lang === "es" ? cat.badge.es : lang === "pt" ? cat.badge.pt : cat.badge.en} ({categoryCerts.length})
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {categoryCerts.map((cert, index) => {
+                    if (cert.thumbnail) {
+                      return (
+                        <div 
+                          key={index} 
+                          className="group bg-cv-white border border-cv-line rounded-lg shadow-sm hover:border-cv-accent hover:shadow-md transition-all duration-300 flex overflow-hidden"
+                        >
+                          {/* Thumbnail */}
+                          <div 
+                            className="relative w-36 sm:w-48 p-2 flex-shrink-0 bg-cv-bg2/5 border-r border-cv-line cursor-pointer overflow-hidden flex items-center justify-center"
+                            onClick={() => setCertModalImage(cert.thumbnail!)}
+                          >
+                            <img 
+                              src={cert.thumbnail} 
+                              alt={lang === "es" ? cert.name.es : lang === "pt" ? cert.name.pt : cert.name.en}
+                              className="w-full h-auto max-h-full object-contain hover:scale-105 transition-transform duration-300"
+                              loading="lazy"
+                            />
+                            <div className="absolute inset-0 bg-cv-black/0 hover:bg-cv-black/10 transition-colors flex items-center justify-center opacity-0 hover:opacity-100">
+                              <span className="bg-cv-black/60 text-white text-[10px] font-mono uppercase tracking-wider px-2 py-1 rounded">
+                                {lang === "es" ? "Ver" : lang === "pt" ? "Ver" : "View"}
+                              </span>
+                            </div>
+                          </div>
+
+                          {/* Content */}
+                          <div className="flex-1 p-5 flex flex-col justify-center min-w-0">
+                            <div className="flex items-start gap-2 mb-1">
+                              <span className="text-lg flex-shrink-0">{cert.icon}</span>
+                              <h4 className="text-sm font-bold text-cv-ink group-hover:text-cv-accent transition-colors leading-tight">
+                                {lang === "es" ? cert.name.es : lang === "pt" ? cert.name.pt : cert.name.en}
+                              </h4>
+                            </div>
+                            <p className="font-mono text-[10px] text-cv-ink3 uppercase tracking-wide mb-2 pl-7">
+                              {lang === "es" ? cert.org.es : lang === "pt" ? cert.org.pt : cert.org.en}
+                            </p>
+                            {cert.description && (
+                              <p className="text-xs text-cv-ink2 leading-relaxed pl-7 line-clamp-3">
+                                {lang === "es" ? cert.description.es : lang === "pt" ? cert.description.pt : cert.description.en}
+                              </p>
+                            )}
+                            {cert.link && (
+                              <a 
+                                href={cert.link} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="inline-flex items-center gap-1.5 mt-2 pl-7 text-[10px] font-mono uppercase tracking-wider text-cv-accent hover:text-cv-ink transition-colors"
+                              >
+                                <ExternalLink className="w-3 h-3" />
+                                {lang === "es" ? "Ver certificado" : lang === "pt" ? "Ver certificado" : "View certificate"}
+                              </a>
+                            )}
+                          </div>
+                        </div>
+                      );
+                    }
+
+                    // Fallback for certs without thumbnails (compact card)
+                    return (
+                      <div 
+                        key={index} 
+                        className="bg-cv-white border border-cv-line p-6 rounded-lg shadow-sm hover:border-cv-accent transition-all duration-300"
+                      >
+                        <div className="text-2xl mb-3">{cert.icon}</div>
+                        <h4 className="text-sm font-bold text-cv-ink mb-1">
+                          {lang === "es" ? cert.name.es : lang === "pt" ? cert.name.pt : cert.name.en}
+                        </h4>
+                        <p className="font-mono text-[11px] text-cv-ink3 uppercase">
+                          {lang === "es" ? cert.org.es : lang === "pt" ? cert.org.pt : cert.org.en}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             );
           })}

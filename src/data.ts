@@ -44,6 +44,15 @@ export interface ProjectItem {
   wip?: boolean;
 }
 
+export type CertCategoryType = "quality" | "leadership" | "tech";
+
+export interface CertCategory {
+  id: CertCategoryType;
+  title: MultilingualText;
+  subtitle: MultilingualText;
+  badge: MultilingualText;
+}
+
 export interface CertItem {
   icon: string;
   name: MultilingualText;
@@ -51,6 +60,7 @@ export interface CertItem {
   link?: string;
   description?: MultilingualText;
   thumbnail?: string;
+  category: CertCategoryType;
 }
 
 export interface Article {
@@ -488,9 +498,68 @@ export const PROJECTS: ProjectItem[] = [
   }
 ];
 
+export const CERT_CATEGORIES: CertCategory[] = [
+  {
+    id: "quality",
+    title: {
+      es: "Sistemas de Gestión, Calidad & Procesos Industriales",
+      en: "Quality Systems, Standards & Industrial Processes",
+      pt: "Sistemas de Gestão, Qualidade & Processos Industriais"
+    },
+    subtitle: {
+      es: "Normas ISO, APQP/FMEA, Metodología PMI y Análisis de Procesos",
+      en: "ISO Standards, APQP/FMEA, PMI Methodology & Process Analysis",
+      pt: "Normas ISO, APQP/FMEA, Metodologia PMI e Análise de Processos"
+    },
+    badge: {
+      es: "Calidad & Planta",
+      en: "Quality & Plant",
+      pt: "Qualidade & Fábrica"
+    }
+  },
+  {
+    id: "leadership",
+    title: {
+      es: "Liderazgo, Coaching & Desarrollo de Talento",
+      en: "Leadership, Coaching & Talent Development",
+      pt: "Liderança, Coaching & Desenvolvimento de Talentos"
+    },
+    subtitle: {
+      es: "Formación ejecutiva en coaching, dirección y gestión estratégica del capital humano",
+      en: "Executive training in coaching, management & strategic human capital development",
+      pt: "Formação executiva em coaching, direção e gestão estratégica do capital humano"
+    },
+    badge: {
+      es: "Liderazgo & Coaching",
+      en: "Leadership & Coaching",
+      pt: "Liderança & Coaching"
+    }
+  },
+  {
+    id: "tech",
+    title: {
+      es: "Tecnología, Datos e Inteligencia Artificial Aplicada",
+      en: "Technology, Data & Applied Artificial Intelligence",
+      pt: "Tecnologia, Dados e Inteligência Artificial Aplicada"
+    },
+    subtitle: {
+      es: "Analítica de datos con IA, modelos generativos y automatización de operaciones",
+      en: "AI data analytics, generative models & operations automation",
+      pt: "Analítica de dados com IA, modelos generativos e automação operacional"
+    },
+    badge: {
+      es: "Datos & IA Aplicada",
+      en: "Data & Applied AI",
+      pt: "Dados & IA Aplicada"
+    }
+  }
+];
+
 export const CERTS: CertItem[] = [
+  // --- 1. Sistemas de Gestión, Calidad & Procesos Industriales ---
   { 
     icon: "🏅", 
+    category: "quality",
     name: { 
       es: "ISO 9001 / 14001 / 45001 Internal Auditor", 
       en: "ISO 9001 / 14001 / 45001 Internal Auditor", 
@@ -509,7 +578,49 @@ export const CERTS: CertItem[] = [
     thumbnail: "/cv/certificates/thumbs/auditor_iso.jpeg"
   },
   { 
+    icon: "🔧", 
+    category: "quality",
+    name: { 
+      es: "APQP con Énfasis en FMEA y Plan de Control", 
+      en: "APQP with Emphasis on FMEA & Control Plan", 
+      pt: "APQP com Ênfase em FMEA e Plano de Controle" 
+    }, 
+    org: { 
+      es: "Shinka Ingeniería · Jul 2012", 
+      en: "Shinka Engineering · Jul 2012", 
+      pt: "Shinka Engenharia · Jul 2012" 
+    },
+    description: {
+      es: "Planificación Anticipada de la Calidad del Producto (APQP) con énfasis en Análisis de Modos y Efectos de Falla (FMEA) y Plan de Control.",
+      en: "Advanced Product Quality Planning (APQP) with emphasis on Failure Mode & Effects Analysis (FMEA) and Control Plan.",
+      pt: "Planejamento Avançado da Qualidade do Produto (APQP) com ênfase em Análise de Modos e Efeitos de Falha (FMEA) e Plano de Controle."
+    },
+    thumbnail: "/cv/certificates/thumbs/apqp.png"
+  },
+  { 
+    icon: "🎓", 
+    category: "quality",
+    name: { 
+      es: "Experto en Project Management", 
+      en: "Project Management Expert", 
+      pt: "Especialista em Gestão de Projetos" 
+    }, 
+    org: { 
+      es: "UTN FRBA · Certificación Profesional · Ene 2016", 
+      en: "UTN FRBA · Professional Certification · Jan 2016", 
+      pt: "UTN FRBA · Certificação Profissional · Jan 2016" 
+    },
+    description: {
+      es: "Análisis profundo y aplicación práctica del estándar PMI® y el PMBOK® Guide para la gestión efectiva de proyectos.",
+      en: "In-depth analysis and practical application of the PMI® standard and PMBOK® Guide for effective project management.",
+      pt: "Análise aprofundada e aplicação prática do padrão PMI® e PMBOK® Guide para uma gestão eficaz de projetos."
+    },
+    link: "https://validator.centrodeelearning.com/validator/A1jHOzkl0I",
+    thumbnail: "/cv/certificates/thumbs/project_management.png"
+  },
+  { 
     icon: "📊", 
+    category: "quality",
     name: { 
       es: "Análisis de Negocios y Gestión de Procesos", 
       en: "Business Analysis & Process Management", 
@@ -528,28 +639,32 @@ export const CERTS: CertItem[] = [
     link: "/cv/certificates/cert_business_analysis.pdf",
     thumbnail: "/cv/certificates/thumbs/business_analysis.png"
   },
+
+  // --- 2. Liderazgo, Coaching & Desarrollo de Talento ---
   { 
-    icon: "🤖", 
+    icon: "🎯", 
+    category: "leadership",
     name: { 
-      es: "GenAI in Data Analytics (IA Generativa en Análisis de Datos)", 
-      en: "GenAI in Data Analytics", 
-      pt: "GenAI in Data Analytics" 
+      es: "Desarrollo de Talento y Coaching para el Éxito", 
+      en: "Develop Talent and Coach for Success", 
+      pt: "Desenvolvimento de Talentos e Coaching para o Sucesso" 
     }, 
     org: { 
-      es: "Meta · Credencial Jun 2026", 
-      en: "Meta · Credential Jun 2026", 
-      pt: "Meta · Credential Jun 2026" 
+      es: "Harvard Business Review / Coursera · Oct 2026", 
+      en: "Harvard Business Review / Coursera · Oct 2026", 
+      pt: "Harvard Business Review / Coursera · Out 2026" 
     },
     description: {
-      es: "Qué es la IA generativa y sus implicaciones en el contexto de análisis de datos. Estrategias básicas para incorporar herramientas de IA generativa en tareas de análisis de datos.",
-      en: "What generative AI is and its implication in the data analytics context. Basic strategies for incorporating generative AI tools in data analytics tasks.",
-      pt: "O que é a IA generativa e suas implicações no contexto de análise de dados. Estratégias básicas para incorporar ferramentas de IA generativa em tarefas de análise de dados."
+      es: "Estrategias para seleccionar y fidelizar talento, aplicando técnicas de coaching que impulsan el rendimiento. Acompañamiento a colaboradores frente a desafíos y desarrollo de nuevas habilidades para mantener la competitividad.",
+      en: "Strategies to attract, hire, and engage talent, applying performance-boosting coaching techniques. Guiding team members through challenges and developing new capabilities to sustain organizational competitiveness.",
+      pt: "Estratégias para selecionar e engajar talentos, aplicando técnicas de coaching que impulsionam o desempenho. Orientação a colaboradores diante de desafios e desenvolvimento de novas habilidades na equipe."
     },
-    link: "/cv/certificates/cert_genai_data_analytics.pdf",
-    thumbnail: "/cv/certificates/thumbs/genai_data.png"
+    link: "https://coursera.org/verify/4FH89W7TJ8BK",
+    thumbnail: "/cv/certificates/thumbs/develop_talent_coach.png"
   },
   { 
     icon: "👑", 
+    category: "leadership",
     name: { 
       es: "Autoridad, Dirección y Liderazgo", 
       en: "Authority, Management & Leadership", 
@@ -570,6 +685,7 @@ export const CERTS: CertItem[] = [
   },
   { 
     icon: "🧑‍💼", 
+    category: "leadership",
     name: { 
       es: "Gestión del Talento Humano", 
       en: "Human Talent Management", 
@@ -588,28 +704,32 @@ export const CERTS: CertItem[] = [
     link: "/cv/certificates/cert_talento_humano.pdf",
     thumbnail: "/cv/certificates/thumbs/talento_humano.png"
   },
+
+  // --- 3. Tecnología, Datos e Inteligencia Artificial Aplicada ---
   { 
-    icon: "🎯", 
+    icon: "🤖", 
+    category: "tech",
     name: { 
-      es: "Desarrollo de Talento y Coaching para el Éxito", 
-      en: "Develop Talent and Coach for Success", 
-      pt: "Desenvolvimento de Talentos e Coaching para o Sucesso" 
+      es: "GenAI in Data Analytics (IA Generativa en Análisis de Datos)", 
+      en: "GenAI in Data Analytics", 
+      pt: "GenAI in Data Analytics" 
     }, 
     org: { 
-      es: "Harvard Business Review / Coursera · Oct 2026", 
-      en: "Harvard Business Review / Coursera · Oct 2026", 
-      pt: "Harvard Business Review / Coursera · Out 2026" 
+      es: "Meta · Credencial Jun 2026", 
+      en: "Meta · Credential Jun 2026", 
+      pt: "Meta · Credential Jun 2026" 
     },
     description: {
-      es: "Estrategias para seleccionar y fidelizar talento, aplicando técnicas de coaching que impulsan el rendimiento. Acompañamiento a colaboradores frente a desafíos y desarrollo de nuevas habilidades para mantener la competitividad.",
-      en: "Strategies to attract, hire, and engage talent, applying performance-boosting coaching techniques. Guiding team members through challenges and developing new capabilities to sustain organizational competitiveness.",
-      pt: "Estratégias para selecionar e engajar talentos, aplicando técnicas de coaching que impulsionam o desempenho. Orientação a colaboradores diante de desafios e desenvolvimento de novas habilidades na equipe."
+      es: "Qué es la IA generativa y sus implicaciones en el contexto de análisis de datos. Estrategias básicas para incorporar herramientas de IA generativa en tareas de análisis de datos.",
+      en: "What generative AI is and its implication in the data analytics context. Basic strategies for incorporating generative AI tools in data analytics tasks.",
+      pt: "O que é a IA generativa e suas implicações no contexto de análise de dados. Estratégias básicas para incorporar ferramentas de IA generativa em tarefas de análise de dados."
     },
-    link: "https://coursera.org/verify/4FH89W7TJ8BK",
-    thumbnail: "/cv/certificates/thumbs/develop_talent_coach.png"
+    link: "/cv/certificates/cert_genai_data_analytics.pdf",
+    thumbnail: "/cv/certificates/thumbs/genai_data.png"
   },
   { 
     icon: "🚀", 
+    category: "tech",
     name: { 
       es: "Agentes de IA Generativa con Vertex AI y Flutter", 
       en: "Generative AI Agents with Vertex AI & Flutter", 
@@ -630,6 +750,7 @@ export const CERTS: CertItem[] = [
   },
   { 
     icon: "🤖", 
+    category: "tech",
     name: { 
       es: "Claude 101 — Uso Profesional con IA", 
       en: "Claude 101 — AI Professional Use", 
@@ -650,6 +771,7 @@ export const CERTS: CertItem[] = [
   },
   { 
     icon: "⚡", 
+    category: "tech",
     name: { 
       es: "Claude Code 101", 
       en: "Claude Code 101", 
@@ -670,6 +792,7 @@ export const CERTS: CertItem[] = [
   },
   { 
     icon: "🧠", 
+    category: "tech",
     name: { 
       es: "Marco de Competencia y Fundamentos de IA", 
       en: "AI Fluency Framework & Foundations", 
@@ -687,45 +810,6 @@ export const CERTS: CertItem[] = [
     },
     link: "/cv/certificates/cert_ai_fluency.pdf",
     thumbnail: "/cv/certificates/thumbs/ai_fluency.png"
-  },
-  { 
-    icon: "🔧", 
-    name: { 
-      es: "APQP con Énfasis en FMEA y Plan de Control", 
-      en: "APQP with Emphasis on FMEA & Control Plan", 
-      pt: "APQP com Ênfase em FMEA e Plano de Controle" 
-    }, 
-    org: { 
-      es: "Shinka Ingeniería · Jul 2012", 
-      en: "Shinka Engineering · Jul 2012", 
-      pt: "Shinka Engenharia · Jul 2012" 
-    },
-    description: {
-      es: "Planificación Anticipada de la Calidad del Producto (APQP) con énfasis en Análisis de Modos y Efectos de Falla (FMEA) y Plan de Control.",
-      en: "Advanced Product Quality Planning (APQP) with emphasis on Failure Mode & Effects Analysis (FMEA) and Control Plan.",
-      pt: "Planejamento Avançado da Qualidade do Produto (APQP) com ênfase em Análise de Modos e Efeitos de Falha (FMEA) e Plano de Controle."
-    },
-    thumbnail: "/cv/certificates/thumbs/apqp.png"
-  },
-  { 
-    icon: "🎓", 
-    name: { 
-      es: "Experto en Project Management", 
-      en: "Project Management Expert", 
-      pt: "Especialista em Gestão de Projetos" 
-    }, 
-    org: { 
-      es: "UTN FRBA · Certificación Profesional · Ene 2016", 
-      en: "UTN FRBA · Professional Certification · Jan 2016", 
-      pt: "UTN FRBA · Certificação Profissional · Jan 2016" 
-    },
-    description: {
-      es: "Análisis profundo y aplicación práctica del estándar PMI® y el PMBOK® Guide para la gestión efectiva de proyectos.",
-      en: "In-depth analysis and practical application of the PMI® standard and PMBOK® Guide for effective project management.",
-      pt: "Análise aprofundada e aplicação prática do padrão PMI® e PMBOK® Guide para uma gestão eficaz de projetos."
-    },
-    link: "https://validator.centrodeelearning.com/validator/A1jHOzkl0I",
-    thumbnail: "/cv/certificates/thumbs/project_management.png"
   }
 ];
 

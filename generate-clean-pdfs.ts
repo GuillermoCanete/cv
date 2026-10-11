@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { EXPERIENCES, CERTS, ACHIEVEMENTS, SKILLS } from './src/data.ts';
+import { EXPERIENCES, CERTS, CERT_CATEGORIES, ACHIEVEMENTS, SKILLS } from './src/data.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -116,14 +116,24 @@ async function run() {
       `;
     }).join('\n');
 
-    // Filter certifications
-    const certsHtml = CERTS.map(c => {
-      const name = c.name[lang];
-      const org = c.org[lang];
-      return `
+    // Group certifications by category
+    const certsCategoriesHtml = CERT_CATEGORIES.map(cat => {
+      const categoryCerts = CERTS.filter(c => c.category === cat.id);
+      const itemsHtml = categoryCerts.map(c => `
         <div class="cert-item">
-          <strong>${c.icon} ${name}</strong><br/>
-          <span style="font-size: 8.3pt; color: #666;">${org}</span>
+          <strong>${c.icon} ${c.name[lang]}</strong><br/>
+          <span style="font-size: 8pt; color: #666;">${c.org[lang]}</span>
+        </div>
+      `).join('\n');
+
+      return `
+        <div class="cert-category-block" style="margin-bottom: 7px;">
+          <div style="font-size: 8.5pt; font-weight: 700; color: #c84b1a; text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 3px; border-bottom: 1px solid #e8e4dc; padding-bottom: 1px;">
+            ${cat.title[lang]}
+          </div>
+          <div class="certs-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3px 14px;">
+            ${itemsHtml}
+          </div>
         </div>
       `;
     }).join('\n');
@@ -308,8 +318,8 @@ async function run() {
   </div>
 
   <div class="section-title">${trans.certsTitle}</div>
-  <div class="certs-grid">
-    ${certsHtml}
+  <div class="certs-container">
+    ${certsCategoriesHtml}
   </div>
 </body>
 </html>
