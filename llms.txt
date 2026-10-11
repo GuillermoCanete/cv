@@ -105,6 +105,7 @@ I identify problems, simplify processes, eliminate unnecessary work, and build p
 - **Generative AI Agents with Vertex AI & Flutter**: Coursera / Google Cloud (2026)
 - **Authority, Management & Leadership**: UNAM (2026)
 - **Human Talent Management**: UNAM (2026)
+- **Develop Talent and Coach for Success**: Harvard Business Review / Coursera (2026)
 - **Business Analysis & Process Management**: Coursera (2025)
 - **Claude 101, Claude Code 101 & AI Fluency**: Anthropic Education (2026)
 
