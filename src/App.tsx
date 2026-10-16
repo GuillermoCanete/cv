@@ -212,6 +212,44 @@ export default function App() {
     c91: 60,
   });
 
+  // Warehouse Simulator States (FloorSync Demo)
+  const [simulatedStock, setSimulatedStock] = useState([
+    { id: "p1", name: "Conector SMD 40P", stock: 12, min: 15 },
+    { id: "p2", name: "Soldadura SAC305", stock: 45, min: 20 },
+    { id: "p3", name: "Tornillo Torx M2.5", stock: 120, min: 50 },
+  ]);
+  const [stockAlertMessage, setStockAlertMessage] = useState<string | null>(null);
+
+  const handleSimulateStockPull = (id: string) => {
+    setSimulatedStock((prev) =>
+      prev.map((item) => {
+        if (item.id === id) {
+          const nextVal = Math.max(0, item.stock - 5);
+          if (nextVal <= item.min) {
+            setStockAlertMessage(
+              lang === "es"
+                ? `⚠️ Alerta: Stock crítico en ${item.name} (${nextVal} u) · Reabastecimiento disparado`
+                : lang === "pt"
+                ? `⚠️ Alerta: Estoque crítico em ${item.name} (${nextVal} u) · Reabastecimento acionado`
+                : `⚠️ Alert: Critical stock on ${item.name} (${nextVal} u) · Reorder triggered`
+            );
+          }
+          return { ...item, stock: nextVal };
+        }
+        return item;
+      })
+    );
+  };
+
+  const handleResetStock = () => {
+    setSimulatedStock([
+      { id: "p1", name: "Conector SMD 40P", stock: 12, min: 15 },
+      { id: "p2", name: "Soldadura SAC305", stock: 45, min: 20 },
+      { id: "p3", name: "Tornillo Torx M2.5", stock: 120, min: 50 },
+    ]);
+    setStockAlertMessage(null);
+  };
+
   useEffect(() => {
     localStorage.setItem("gc-lang", lang);
   }, [lang]);
@@ -435,27 +473,27 @@ export default function App() {
 
           <div className="mb-8">
             <span className="block font-mono text-xs sm:text-sm text-cv-accent font-bold uppercase tracking-wider mb-2">
-              {lang === "es" ? "ESPECIALISTA EN CALIDAD Y MEJORA DE PROCESOS" : lang === "pt" ? "ESPECIALISTA EM QUALIDADE E MELHORIA DE PROCESSOS" : "QUALITY & PROCESS IMPROVEMENT SPECIALIST"}
+              {lang === "es" ? "ESPECIALISTA EN CALIDAD OPERATIVA & DIGITALIZACIÓN DE PLANTA" : lang === "pt" ? "ESPECIALISTA EM QUALIDADE OPERACIONAL & DIGITALIZAÇÃO INDUSTRIAL" : "OPERATIONAL QUALITY & PLANT DIGITALIZATION SPECIALIST"}
             </span>
             <span className="block font-serif text-lg sm:text-xl text-cv-ink italic font-normal mb-4">
               {lang === "es" 
-                ? "Resuelvo problemas operativos mediante datos, simplificación y herramientas digitales" 
+                ? "Reduzco el Costo de No Calidad (COPQ), tiempos de ciclo y riesgos de parada combinando rigor normativo con herramientas digitales a medida." 
                 : lang === "pt" 
-                  ? "Resolvo problemas operacionais por meio de dados, simplificação e ferramentas digitais" 
-                  : "Solving operational problems through data, simplification & digital tools"}
+                  ? "Reduzo o Custo da Não Qualidade (COPQ), tempos de ciclo e riscos de parada combinando rigor normativo com ferramentas digitais sob medida." 
+                  : "Reducing Cost of Poor Quality (COPQ), cycle times, and line downtime risks by combining regulatory rigor with custom digital tools."}
             </span>
             <p className="text-base sm:text-lg text-cv-ink2 max-w-xl leading-relaxed">
               {lang === "es" ? (
                 <>
-                  Identifico problemas, simplifico procesos, elimino trabajo innecesario y construyo soluciones prácticas. Con 14+ años en manufactura compleja y alta confiabilidad (Motorola, Samsung, Huawei, Sony, Alcatel), actúo como puente directo entre Calidad, Ingeniería y Producción en planta. <strong>ISO 9001 / 14001 / 45001 Internal Auditor</strong> y conocimientos de <strong>TS16949, ANSI/ESD S20.20</strong>, aplico herramientas Lean prácticas (balanceo de líneas, trabajo estándar, VSM) y construyo herramientas digitales propias para resolver cuellos de botella, reducir costos, reducir defectos y mejorar la confiabilidad del proceso. Disponible para relocalización.
+                  En manufactura de alta exigencia, la brecha entre Calidad, Procesos y Sistemas suele costar semanas de desvíos y miles de dólares en planillas manuales y scrap. Con 14+ años en líneas complejas (Motorola, Samsung, Huawei, Sony, Alcatel), cierro esa brecha desde el primer día: estabilizo líneas con balanceo Lean y trabajo estándar, audito bajo estándares internacionales (<strong>Auditor Interno ISO 9001 / 14001 / 45001</strong>, <strong>IATF 16949</strong>) y desarrollo herramientas digitales propias para eliminar cuellos de botella sin depender de largos desarrollos de IT. Disponible para relocalización.
                 </>
               ) : lang === "pt" ? (
                 <>
-                  Identifico problemas, simplifico processos, elimino trabalho desnecessário e construo soluções práticas. Com mais de 14 anos na manufatura complexa e de alta confiabilidade (Motorola, Samsung, Huawei, Sony, Alcatel), atuo como ponte direta entre Qualidade, Engenharia e Produção na fábrica. <strong>Auditor Interno ISO 9001 / 14001 / 45001</strong> e conhecimentos de <strong>TS16949, ANSI/ESD S20.20</strong>, aplico ferramentas Lean práticas (balanceamento de linha, trabalho padrão, VSM) e desenvolvo ferramentas digitais próprias para resolver gargalos, reduzir custos, reduzir defeitos e melhorar a confiabilidade do processo. Disponível para relocação.
+                  Na manufatura de alta exigência, a lacuna entre Qualidade, Processos e TI costuma custar semanas de desvios e milhares de dólares em planilhas manuais e refugo. Com mais de 14 anos em linhas complexas (Motorola, Samsung, Huawei, Sony, Alcatel), fecho essa lacuna desde o primeiro dia: estabilizo linhas com balanceamento Lean e trabalho padronizado, audito sob normas internacionais (<strong>Auditor Interno ISO 9001 / 14001 / 45001</strong>, <strong>IATF 16949</strong>) e desenvolvo ferramentas digitais próprias para eliminar gargalos sem depender da burocracia de TI. Disponível para relocação.
                 </>
               ) : (
                 <>
-                  I identify problems, simplify processes, eliminate unnecessary work and build practical solutions. With 14+ years in complex, high-reliability manufacturing (Motorola, Samsung, Huawei, Sony, Alcatel), I bridge Quality, Engineering, and Production on the plant floor. <strong>ISO 9001 / 14001 / 45001 Internal Auditor</strong> & working knowledge of <strong>TS16949, ANSI/ESD S20.20</strong>, applying practical Lean tools (Line Balancing, Standard Work, VSM) and building custom digital tools to resolve bottlenecks, lower costs, reduce defects and improve process reliability. Open to relocation and international assignments.
+                  In high-reliability manufacturing, the gap between Quality, Engineering, and IT often costs weeks of deviations and thousands of dollars in manual spreadsheets and scrap. With 14+ years on complex plant floors (Motorola, Samsung, Huawei, Sony, Alcatel), I bridge that gap from day one: stabilizing lines via Lean balancing and standard work, auditing under international standards (<strong>ISO 9001 / 14001 / 45001 Internal Auditor</strong>, <strong>IATF 16949</strong>), and developing custom digital tools to eliminate bottlenecks without waiting for corporate IT backlogs. Open to relocation.
                 </>
               )}
             </p>
@@ -762,16 +800,16 @@ export default function App() {
               {lang === "es" ? "Herramientas digitales para operaciones" : lang === "pt" ? "Ferramentas digitais para operações" : "Digital tools for operations"}
             </h2>
           </div>
-          <p className="text-xs sm:text-sm text-cv-ink2 max-w-xl mb-12 leading-relaxed">
+          <p className="text-xs sm:text-sm text-cv-ink2 max-w-2xl mb-12 leading-relaxed">
             {lang === "es" ? 
-              "Construyo herramientas para eliminar trabajo innecesario, simplificar procesos y reducir burocracia. Pruebe los prototipos interactivos integrados a continuación:" : 
+              "Mientras la industria tradicional espera meses por tickets de sistemas o consultorías costosas, desarrollo herramientas operativas ligeras y autónomas que resuelven cuellos de botella en días. Pruebe los prototipos interactivos integrados a continuación:" : 
              lang === "pt" ?
-              "Desenvolvo ferramentas para eliminar trabalho desnecessário, simplificar processos e reduzir burocracia. Teste os protótipos interativos integrados abaixo:" :
-              "I build tools to remove unnecessary work, simplify processes and reduce bureaucracy. Interact with the sandbox components below:"
+              "Enquanto a indústria tradicional espera meses por tickets de TI ou consultorias caras, desenvolvo ferramentas operacionais leves e autônomas que resolvem gargalos em dias. Teste os protótipos interativos integrados abaixo:" :
+              "While traditional industry waits months for IT ticketing backlogs or expensive consultants, I build lightweight, autonomous operational tools that resolve shop-floor bottlenecks in days. Interact with the sandbox prototypes below:"
             }
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             
             {/* Interactive PCB Defect Recorder Card */}
             <div className="bg-cv-white rounded border border-cv-line overflow-hidden flex flex-col justify-between shadow-md">
@@ -896,6 +934,100 @@ export default function App() {
               </div>
             </div>
 
+            {/* Interactive Gestión de Almacén Industrial Card */}
+            <div className="bg-cv-white rounded border border-cv-line overflow-hidden flex flex-col justify-between shadow-md">
+              <div className="bg-cv-ink p-4 text-cv-bg2 flex items-center justify-between border-b border-cv-line">
+                <span className="font-mono text-[10px] sm:text-xs tracking-widest text-[#8a857c] uppercase font-bold">
+                  PROTOTYPE SANDBOX // ALMACÉN (6H BUILD)
+                </span>
+                <span className="px-2 py-0.5 bg-blue-600 text-cv-white rounded font-mono text-[9px] font-bold">
+                  LIVE CLOUD DEMO
+                </span>
+              </div>
+
+              {/* Interactive Stock & Requisition Area */}
+              <div className="relative bg-[#0d1520] p-4 flex flex-col gap-3 border-b border-cv-line select-none">
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-[9px] text-[#7890a8] tracking-wider block uppercase">
+                    {lang === "es" ? "📦 SIMULAR PEDIDO DE LÍNEA (-5 U)" : lang === "pt" ? "📦 SIMULAR REQUISIÇÃO DE LINHA (-5 U)" : "📦 SIMULATE SHOP-FLOOR ORDER (-5 U)"}
+                  </span>
+                  <button 
+                    onClick={handleResetStock}
+                    className="font-mono text-[9px] text-cv-accent hover:underline cursor-pointer"
+                  >
+                    {lang === "es" ? "Reiniciar" : lang === "pt" ? "Reiniciar" : "Reset"}
+                  </button>
+                </div>
+
+                {/* Stock table */}
+                <div className="space-y-2">
+                  {simulatedStock.map((item) => (
+                    <div 
+                      key={item.id} 
+                      className={`flex items-center justify-between p-2 rounded border text-xs font-mono transition-colors ${
+                        item.stock <= item.min 
+                          ? "bg-amber-950/40 border-amber-500/50 text-amber-300" 
+                          : "bg-slate-900/60 border-slate-800 text-slate-200"
+                      }`}
+                    >
+                      <div>
+                        <div className="font-semibold text-[11px]">{item.name}</div>
+                        <div className="text-[9px] opacity-70">
+                          {lang === "es" ? `Stock: ${item.stock} u (Mín: ${item.min})` : lang === "pt" ? `Estoque: ${item.stock} u (Mín: ${item.min})` : `Stock: ${item.stock} u (Min: ${item.min})`}
+                        </div>
+                      </div>
+                      <button
+                        onClick={() => handleSimulateStockPull(item.id)}
+                        className="px-2.5 py-1 bg-blue-600/80 hover:bg-blue-500 text-white rounded text-[10px] font-bold tracking-wider uppercase transition-all active:scale-95 cursor-pointer"
+                      >
+                        {lang === "es" ? "Pedir -5" : lang === "pt" ? "Pedir -5" : "Order -5"}
+                      </button>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Live Alert Banner */}
+                {stockAlertMessage ? (
+                  <div className="p-2 bg-amber-500/20 border border-amber-500/40 rounded text-[10px] font-mono text-amber-200 animate-pulse text-center">
+                    {stockAlertMessage}
+                  </div>
+                ) : (
+                  <div className="text-[10px] font-mono text-slate-500 italic text-center py-1">
+                    {lang === "es" ? "Haga clic en 'Pedir -5' para probar alerta de stock crítico" : lang === "pt" ? "Clique em 'Pedir -5' para testar alerta de estoque crítico" : "Click 'Order -5' to trigger critical stock alert"}
+                  </div>
+                )}
+              </div>
+
+              {/* Project description body */}
+              <div className="p-6">
+                <div className="font-mono text-[10px] tracking-wider uppercase text-cv-accent mb-2">
+                  {lang === "es" ? PROJECTS[1].tag.es : lang === "pt" ? PROJECTS[1].tag.pt : PROJECTS[1].tag.en}
+                </div>
+                <h3 className="font-serif text-2xl mb-3">{PROJECTS[1].title}</h3>
+                <p className="text-xs sm:text-sm text-cv-ink2 leading-relaxed mb-6">
+                  {lang === "es" ? PROJECTS[1].desc.es : lang === "pt" ? PROJECTS[1].desc.pt : PROJECTS[1].desc.en}
+                </p>
+
+                <div className="space-y-2 mb-6 text-xs text-cv-ink2">
+                  {PROJECTS[1].features.map((feat, index) => (
+                    <div key={index} className="flex gap-2.5 items-start">
+                      <span className="text-cv-accent font-bold">→</span>
+                      <span>{lang === "es" ? feat.es : lang === "pt" ? feat.pt : feat.en}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <a 
+                  href={PROJECTS[1].link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-2.5 bg-cv-accent text-cv-white text-xs font-bold uppercase tracking-wider rounded inline-flex items-center gap-2 hover:bg-cv-ink hover:-translate-y-0.5 transition-all w-fit active:translate-y-0"
+                >
+                  {lang === "es" ? "Probar Demo en vivo" : lang === "pt" ? "Testar Demo ao vivo" : "Try Live Demo"} <ArrowUpRight className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+
             {/* Interactive ISO Compliance Analyzer Card */}
             <div className="bg-cv-white rounded border border-cv-line overflow-hidden flex flex-col justify-between shadow-md">
               <div className="bg-cv-ink p-4 text-cv-bg2 flex items-center justify-between border-b border-cv-line">
@@ -945,15 +1077,15 @@ export default function App() {
               {/* Project description body */}
               <div className="p-6">
                 <div className="font-mono text-[10px] tracking-wider uppercase text-cv-accent mb-2">
-                  {lang === "es" ? PROJECTS[1].tag.es : lang === "pt" ? PROJECTS[1].tag.pt : PROJECTS[1].tag.en}
+                  {lang === "es" ? PROJECTS[2].tag.es : lang === "pt" ? PROJECTS[2].tag.pt : PROJECTS[2].tag.en}
                 </div>
-                <h3 className="font-serif text-2xl mb-3">{PROJECTS[1].title}</h3>
+                <h3 className="font-serif text-2xl mb-3">{PROJECTS[2].title}</h3>
                 <p className="text-xs sm:text-sm text-cv-ink2 leading-relaxed mb-6">
-                  {lang === "es" ? PROJECTS[1].desc.es : lang === "pt" ? PROJECTS[1].desc.pt : PROJECTS[1].desc.en}
+                  {lang === "es" ? PROJECTS[2].desc.es : lang === "pt" ? PROJECTS[2].desc.pt : PROJECTS[2].desc.en}
                 </p>
 
                 <div className="space-y-2 mb-6 text-xs text-cv-ink2">
-                  {PROJECTS[1].features.map((feat, index) => (
+                  {PROJECTS[2].features.map((feat, index) => (
                     <div key={index} className="flex gap-2.5 items-start">
                       <span className="text-cv-accent font-bold">→</span>
                       <span>{lang === "es" ? feat.es : lang === "pt" ? feat.pt : feat.en}</span>
@@ -1159,31 +1291,31 @@ export default function App() {
       {/* CONTACT */}
       <section className="bg-cv-ink text-cv-white px-6 sm:px-12 py-20 text-center" id="contact">
         <div className="max-w-3xl mx-auto">
-          <h2 className="font-serif text-4xl sm:text-5xl leading-tight mb-4">
+          <h2 className="font-serif text-3xl sm:text-5xl leading-tight mb-4">
             {lang === "es" ? (
               <>
-                Construyamos algo <br />
-                <span className="italic text-cv-accent font-normal">que realmente funcione</span>
+                ¿Cuello de botella en línea, auditoría próxima <br />
+                <span className="italic text-cv-accent font-normal">o planillas manuales frenando su planta?</span>
               </>
             ) : lang === "pt" ? (
               <>
-                Construamos algo <br />
-                <span className="italic text-cv-accent font-normal">que realmente funcione</span>
+                Gargalos na linha, auditoria próxima <br />
+                <span className="italic text-cv-accent font-normal">ou planilhas manuais travando a fábrica?</span>
               </>
             ) : (
               <>
-                Let's build systems <br />
-                <span className="italic text-cv-accent font-normal">that actually deliver</span>
+                Line bottlenecks, upcoming audits <br />
+                <span className="italic text-cv-accent font-normal">or manual spreadsheets slowing down operations?</span>
               </>
             )}
           </h2>
           
           <p className="text-sm sm:text-base text-cv-bg2/80 max-w-xl mx-auto mb-12 leading-relaxed">
             {lang === "es" ? 
-              "Disponible para oportunidades en Calidad, Mejora de Procesos, Excelencia Operacional y Transformación Digital (presencial o remoto) con total disponibilidad para relocalización nacional e internacional." : 
+              "Analicemos en 15 minutos cómo simplificar procesos, blindar la conformidad o digitalizar capturas de datos sin burocracia de IT. Disponible para oportunidades en Calidad, Excelencia Operacional y Transformación Digital (presencial o remoto) con total disponibilidad de relocalización." : 
              lang === "pt" ?
-              "Disponível para oportunidades em Qualidade, Melhoria de Processos, Excelência Operacional e Transformação Digital (presencial ou remoto) com total disponibilidade para relocação nacional e internacional." :
-              "Open to opportunities in Quality, Process Improvement, Operational Excellence and Digital Transformation (on-site or remote) with relocation availability."}
+              "Vamos analisar em 15 minutos como simplificar processos, blindar a conformidade ou digitalizar a captura de dados sem burocracia de TI. Disponível para oportunidades em Qualidade, Excelência Operacional e Transformação Digital (presencial ou remoto) com total disponibilidade de relocação." :
+              "Let's spend 15 minutes analyzing how to streamline processes, safeguard compliance, or digitize shop-floor data collection without IT delays. Open to Quality, Operational Excellence, and Digital Transformation roles with relocation availability."}
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 lg:gap-6">

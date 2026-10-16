@@ -106,9 +106,9 @@ export const STATS: StatItem[] = [
       pt: "Aumento de produção alcançado" 
     },
     sub: { 
-      es: "Línea Alcatel 4007 · Balanceo Lean y ergonomía", 
-      en: "Alcatel 4007 line · Lean balancing & ergonomics", 
-      pt: "Linha Alcatel 4007 · Balanceamento Lean e ergonomia" 
+      es: "Línea Alcatel 4007 · Capacidad neta ganada con cero CAPEX adicional", 
+      en: "Alcatel 4007 line · Net capacity unlocked with zero additional CAPEX", 
+      pt: "Linha Alcatel 4007 · Capacidade líquida liberada sem CAPEX adicional" 
     }
   },
   {
@@ -119,9 +119,9 @@ export const STATS: StatItem[] = [
       pt: "Tempo de treinamento e ramp-up" 
     },
     sub: { 
-      es: "Producción y calidad alcanzadas 2 días antes de lo programado", 
-      en: "Target output & quality reached 2 days ahead of schedule", 
-      pt: "Produção e qualidade atingidas 2 dias antes do previsto" 
+      es: "Aceleró el Time-to-Market evitando penalizaciones contractuales OEM", 
+      en: "Accelerated Time-to-Market avoiding OEM delivery delay penalties", 
+      pt: "Acelerou o Time-to-Market evitando penalidades contratuais OEM" 
     }
   }
 ];
@@ -268,9 +268,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "+17%",
     icon: "⚙️",
     text: {
-      es: "Línea Alcatel 4007 — Problema: cuello de botella en ensamble y desbalance entre estaciones. Acción: rediseñé el balanceo de línea Lean y optimicé la ergonomía de los puestos. Impacto: aumento del 17% en la producción de la línea.",
-      en: "Alcatel 4007 Line — Problem: assembly-line bottlenecks and station cycle time imbalances. Action: rebalanced Lean line operations and optimized workstation ergonomics. Impact: increased Alcatel 4007 line output by 17%.",
-      pt: "Linha Alcatel 4007 — Problema: gargalos na montagem e desbalanceamento entre postos. Ação: redesenhei o balanceamento de linha Lean e otimizei a ergonomia dos postos. Impacto: aumento de 17% na produção da linha."
+      es: "Línea Alcatel 4007 — Problema: cuello de botella en ensamble y desbalance entre estaciones. Acción: rediseñé el balanceo de línea Lean y optimicé la ergonomía de los puestos. Impacto: aumento del 17% en la producción de la línea, sumando capacidad neta de entrega sin incorporar maquinaria adicional ni sobrecostos de turno (cero CAPEX).",
+      en: "Alcatel 4007 Line — Problem: assembly-line bottlenecks and station cycle time imbalances. Action: rebalanced Lean line operations and optimized workstation ergonomics. Impact: increased line output by 17%, unlocking net delivery capacity with zero additional machinery or overtime costs (zero CAPEX).",
+      pt: "Linha Alcatel 4007 — Problema: gargalos na montagem e desbalanceamento entre postos. Ação: redesenhei o balanceamento de linha Lean e otimizei a ergonomia dos postos. Impacto: aumento de 17% na produção da linha, liberando capacidade líquida de entrega sem máquinas adicionais nem horas extras (zero CAPEX)."
     }
   },
   {
@@ -288,9 +288,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "-3 op",
     icon: "📉",
     text: {
-      es: "Línea Microondas Samsung — Problema: exceso de carga operativa y altos costos de fabricación. Acción: colaboré activamente en el rebalanceo Lean y redistribución de tareas estándar. Impacto: reasignación eficiente de 3 puestos de operarios, reduciendo costos laborales sin comprometer la confiabilidad.",
-      en: "Samsung Microwave Line — Problem: excess labor cost and uneven workstation loading. Action: actively collaborated in Lean line rebalancing and standard task reallocation. Impact: successfully reallocated 3 operator roles, lowering manufacturing labor costs without compromising reliability.",
-      pt: "Linha Micro-ondas Samsung — Problema: excesso de postos e custos de fabricação elevados. Ação: colaborei ativamente no rebalanceamento Lean e redistribuição de tarefas padrão. Impacto: realocação eficiente de 3 operadores, reduzindo custos sem comprometer a confiabilidade."
+      es: "Línea Microondas Samsung — Problema: sobreasignación y altos costos de fabricación en estación crítica. Acción: rebalanceo Lean y redistribución de tareas estándar. Impacto: liberé 3 puestos operativos reasignándolos a áreas con cuello de botella, absorbiendo demanda interna sin nuevas contrataciones ni horas extras y preservando el 100% de la calidad.",
+      en: "Samsung Microwave Line — Problem: workstation overstaffing and high manufacturing labor costs in a critical station. Action: Lean line rebalancing and standard task reallocation. Impact: freed up 3 operator roles and reallocated them to bottleneck areas, absorbing plant demand with zero new hires or overtime while maintaining 100% quality.",
+      pt: "Linha Micro-ondas Samsung — Problema: sobrecarga e custos de fabricação elevados em posto crítico. Ação: rebalanceamento Lean e redistribuição de tarefas padrão. Impacto: liberei 3 postos operacionais realocando-os para áreas de gargalo, absorvendo demanda interna sem novas contratações ou horas extras e com 100% de qualidade."
     }
   },
   {
@@ -298,9 +298,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "−2d",
     icon: "🎯",
     text: {
-      es: "Capacitación en Lanzamientos — Problema: curva de aprendizaje lenta para personal nuevo en lanzamientos de producto. Acción: diseñé un programa de coaching peer-to-peer 1-a-1 entre turnos. Impacto: reduje el tiempo de capacitación y ramp-up en 2 días, alcanzando el nivel de producción y la calidad requeridos 2 días antes de lo programado.",
-      en: "Launch Training Model — Problem: slow operator learning curve during rapid product launches. Action: designed a peer-to-peer 1-on-1 cross-shift coaching program. Impact: reduced training and ramp-up time by 2 days, reaching target production volume and quality standards 2 days ahead of schedule.",
-      pt: "Treinamento em Lançamentos — Problema: curva lenta de aprendizado de novos operadores em lançamentos. Ação: desenhei um programa peer-to-peer 1-a-1 de acompanhamento entre turnos. Impacto: reduzi o tempo de treinamento e ramp-up em 2 dias, atingindo o nível de produção e qualidade exigidos 2 dias antes do previsto."
+      es: "Capacitación en Lanzamientos — Problema: curva de aprendizaje lenta para personal nuevo en lanzamientos de producto. Acción: diseñé un programa de coaching peer-to-peer 1-a-1 entre turnos. Impacto: reduje el tiempo de ramp-up en 2 días, acelerando el Time-to-Market y evitando penalizaciones contractuales por demora de entrega bajo estándares OEM.",
+      en: "Launch Training Model — Problem: slow operator learning curve during rapid product launches. Action: designed a peer-to-peer 1-on-1 cross-shift coaching program. Impact: cut ramp-up time by 2 days, accelerating Time-to-Market and avoiding OEM delivery delay penalties.",
+      pt: "Treinamento em Lançamentos — Problema: curva lenta de aprendizado de novos operadores em lançamentos. Ação: desenhei um programa peer-to-peer 1-a-1 de acompanhamento entre turnos. Impacto: reduzi o ramp-up em 2 dias, acelerando o Time-to-Market e evitando penalidades contratuais por atraso de entrega sob padrões OEM."
     }
   },
   {
@@ -318,9 +318,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "5+ OEM",
     icon: "🌍",
     text: {
-      es: "Conformidad para Marcas Globales — Problema: exigentes y diversos estándares de calidad de clientes internacionales. Acción: coordiné especificaciones con proveedores en Asia/China, audité procesos e implementé planes de control APQP. Impacto: aprobación sin desvíos críticos en auditorías de cliente y cumplimiento sostenido para Motorola, Samsung, Huawei, Sony y Alcatel.",
-      en: "Global Brands Compliance — Problem: demanding, diverse technical quality requirements from international clients. Action: coordinated specifications with Asian suppliers, audited process lines, and enforced APQP control plans. Impact: zero critical customer audit findings and sustained technical sign-off for Motorola, Samsung, Huawei, Sony, and Alcatel.",
-      pt: "Conformidade para Marcas Globais — Problema: padrões técnicos exigentes e diversos de clientes globais. Ação: coordenei especificações com fornecedores na Ásia, auditei processos e executei planos de controle APQP. Impacto: aprovação sem desvios críticos em auditorias de cliente e conformidade técnica contínua para Motorola, Samsung, Huawei, Sony e Alcatel."
+      es: "Gestión de Riesgo con Proveedores en Asia — Problema: desvíos de ingeniería y componentes fuera de tolerancia con riesgo de parar la producción. Acción: coordiné especificaciones técnicas en inglés con fabricantes en China, audité procesos e implementé planes APQP. Impacto: contención temprana en origen evitando fletes aéreos de emergencia, scrap importado y paradas críticas para Motorola, Samsung, Huawei, Sony y Alcatel.",
+      en: "Asia Supplier Risk Management — Problem: engineering discrepancies and out-of-tolerance parts risking factory line halts. Action: coordinated technical specs directly with Chinese suppliers, audited processes, and enforced APQP control plans. Impact: early containment at source, preventing emergency air freights, imported scrap, and line stoppages for Motorola, Samsung, Huawei, Sony, and Alcatel.",
+      pt: "Gestão de Risco com Fornecedores na Ásia — Problema: desvios de engenharia e componentes fora da tolerância com risco de parar a produção. Ação: coordenei especificações técnicas diretamente com fabricantes na China, auditei processos e executei planos APQP. Impacto: contenção precoce na origem, evitando fretes aéreos de emergência, refugo importado e paradas críticas para Motorola, Samsung, Huawei, Sony e Alcatel."
     }
   }
 ];
@@ -469,11 +469,32 @@ export const PROJECTS: ProjectItem[] = [
     },
     features: [
       { es: "Problema eliminado: erradica planillas de cálculo manuales y demoras de registro", en: "Problem eliminated: eliminates manual spreadsheets and delayed data logging", pt: "Problema resolvido: elimina planilhas manuais e atrasos no registro" },
-      { es: "Simplificación operativa: registro visual en un clic sobre coordenadas reales", en: "Operational simplification: one-click visual logging on exact board coordinates", pt: "Simplificação operacional: registro visual em um clique nas coordenadas reais" },
+      { es: "Simplificación operativa: interfaz táctil en un clic sobre coordenadas reales, operable con guantes ESD", en: "Operational simplification: one-click touch interface on board coordinates, operable with ESD gloves", pt: "Simplificação operacional: interface tátil em um clique nas coordenadas reais, operável com luvas ESD" },
       { es: "Resultado inmediato: mapa de calor en vivo para identificar cuellos de botella de calidad", en: "Immediate outcome: live defect heatmaps pinpointing quality bottlenecks", pt: "Resultado imediato: mapa de calor ao vivo identificando gargalos de qualidade" },
       { es: "Funcionamiento ágil: 100% autónomo y local, sin servidores ni latencia de red", en: "Agile execution: 100% autonomous and local, no server dependency or network lag", pt: "Execução ágil: 100% autônomo e local, sem servidores ou lentidão de rede" }
     ],
     link: "https://guillermocanete.github.io/DefectRecorder/"
+  },
+  {
+    id: "almacen-industrial",
+    tag: { 
+      es: "Construido en 6 Horas · Trazabilidad de Stock · Demo Funcional", 
+      en: "Built in 6 Hours · Stock Traceability · Live Demo", 
+      pt: "Construído em 6 Horas · Rastreabilidade de Estoque · Demo Funcional" 
+    },
+    title: "Gestión de Almacén Industrial",
+    desc: {
+      es: "Solución digital desarrollada en solo 6 horas de trabajo para erradicar las demoras y faltantes por pedidos informales en papel o WhatsApp. Permite a las líneas solicitar insumos en segundos, gestionar stock con lector de códigos de barras, emitir alertas automáticas de stock crítico y visualizar indicadores de consumo en tiempo real.",
+      en: "Digital shop-floor solution developed in just 6 hours to eliminate line stoppages and missing parts caused by informal paper or chat requests. Enables lines to request parts in seconds, manages inventory via barcode scanner, triggers automatic low-stock alerts, and tracks live consumption KPIs.",
+      pt: "Solução digital desenvolvida em apenas 6 horas para eliminar paradas e faltas de material por pedidos informais em papel ou WhatsApp. Permite às linhas solicitar insumos em segundos, gerenciar estoque com leitor de código de barras, emitir alertas de estoque crítico e monitorar indicadores de consumo em tempo real."
+    },
+    features: [
+      { es: "Problema eliminado: desabastecimiento de línea y pérdida de trazabilidad por pedidos informales", en: "Problem eliminated: line starvation and lost traceability caused by informal paper/chat orders", pt: "Problema eliminado: paradas de linha e perda de rastreabilidade por pedidos informais" },
+      { es: "Velocidad de implementación: MVP operativo y trazable construido y desplegado en solo 6 horas", en: "Implementation speed: fully functional and traceable MVP built and deployed in only 6 hours", pt: "Velocidade de entrega: MVP operacional e rastreável construído e implantado em apenas 6 horas" },
+      { es: "Control de piso: solicitud ágil de insumos, lector de código de barras y alerta temprana de reposición", en: "Shop-floor control: quick requisition workflow, barcode scanning, and early low-stock alerts", pt: "Controle de fábrica: requisição ágil de insumos, leitor de código de barras e alerta de reposição" },
+      { es: "Inteligencia operativa: métricas en vivo de consumo de materiales para compras y planificación", en: "Operational intelligence: live consumption analytics and turnover KPIs for planning", pt: "Inteligência operacional: métricas ao vivo de consumo de materiais para compras e planejamento" }
+    ],
+    link: "https://floorsync-mfg-2026.web.app"
   },
   {
     id: "iso-analyzer",
@@ -538,19 +559,19 @@ export const CERT_CATEGORIES: CertCategory[] = [
   {
     id: "tech",
     title: {
-      es: "Tecnología, Datos e Inteligencia Artificial Aplicada",
-      en: "Technology, Data & Applied Artificial Intelligence",
-      pt: "Tecnologia, Dados e Inteligência Artificial Aplicada"
+      es: "Tecnología & IA Aplicada (Multiplicador de Eficiencia en Calidad)",
+      en: "Technology & Applied AI (Quality Efficiency Multiplier)",
+      pt: "Tecnologia & IA Aplicada (Multiplicador de Eficiência em Qualidade)"
     },
     subtitle: {
-      es: "Analítica de datos con IA, modelos generativos y automatización de operaciones",
-      en: "AI data analytics, generative models & operations automation",
-      pt: "Analítica de dados com IA, modelos generativos e automação operacional"
+      es: "Herramientas digitales a medida, analítica de datos y automatización aplicadas a procesos de manufactura",
+      en: "Custom digital tooling, data analytics & workflow automation applied to manufacturing processes",
+      pt: "Ferramentas digitais sob medida, análise de dados e automação aplicadas a processos industriais"
     },
     badge: {
-      es: "Datos & IA Aplicada",
-      en: "Data & Applied AI",
-      pt: "Dados & IA Aplicada"
+      es: "Multiplicador Digital",
+      en: "Digital Multiplier",
+      pt: "Multiplicador Digital"
     }
   }
 ];
