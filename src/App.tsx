@@ -1148,7 +1148,7 @@ export default function App() {
                           {/* Thumbnail */}
                           <div 
                             className="relative w-36 sm:w-48 p-2 flex-shrink-0 bg-cv-bg2/5 border-r border-cv-line cursor-pointer overflow-hidden flex items-center justify-center"
-                            onClick={() => setCertModalImage(cert.thumbnail!)}
+                            onClick={() => setCertModalImage((cert.link && /\.(jpe?g|png|webp)$/i.test(cert.link)) ? cert.link : cert.thumbnail!)}
                           >
                             <img 
                               src={cert.thumbnail} 

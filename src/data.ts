@@ -44,7 +44,7 @@ export interface ProjectItem {
   wip?: boolean;
 }
 
-export type CertCategoryType = "quality" | "leadership" | "tech";
+export type CertCategoryType = "quality" | "leadership" | "tech" | "education";
 
 export interface CertCategory {
   id: CertCategoryType;
@@ -573,6 +573,24 @@ export const CERT_CATEGORIES: CertCategory[] = [
       en: "Digital Multiplier",
       pt: "Multiplicador Digital"
     }
+  },
+  {
+    id: "education",
+    title: {
+      es: "Educación Formal de Base",
+      en: "Formal Secondary Education",
+      pt: "Educação Formal de Base"
+    },
+    subtitle: {
+      es: "Título oficial de nivel medio otorgado por la Dirección de Enseñanza Media de Córdoba",
+      en: "Official secondary school diploma awarded by the Directorate of Secondary Education of Córdoba",
+      pt: "Diploma oficial de ensino médio concedido pela Diretoria de Ensino Médio de Córdoba"
+    },
+    badge: {
+      es: "Educación",
+      en: "Education",
+      pt: "Educação"
+    }
   }
 ];
 
@@ -831,6 +849,28 @@ export const CERTS: CertItem[] = [
     },
     link: "/cv/certificates/cert_ai_fluency.pdf",
     thumbnail: "/cv/certificates/thumbs/ai_fluency.png"
+  },
+  // --- 4. Educación Formal de Base ---
+  { 
+    icon: "📜", 
+    category: "education",
+    name: { 
+      es: "Bachiller en Humanidades — Especialidad Arte: Comunicaciones", 
+      en: "Secondary Education — Humanities & Communications", 
+      pt: "Ensino Médio — Humanidades & Comunicação" 
+    }, 
+    org: { 
+      es: "I.P.E.M. Nº 97 'Independencia' · Alta Gracia, Córdoba · Dic 2000", 
+      en: "I.P.E.M. Nº 97 'Independencia' · Alta Gracia, Córdoba · Dec 2000", 
+      pt: "I.P.E.M. Nº 97 'Independencia' · Alta Gracia, Córdoba · Dez 2000" 
+    },
+    description: {
+      es: "Título oficial de educación media. Base formativa en comunicación, redacción técnica y facilitación interpersonal, aplicada en planta para la capacitación de operarios, diseño de instrucciones de trabajo y resolución colaborativa de problemas.",
+      en: "Official secondary education diploma. Solid foundation in communication, technical writing, and interpersonal facilitation, applied on the plant floor for operator training, work instructions design, and collaborative problem-solving.",
+      pt: "Diploma oficial de ensino médio. Base formativa em comunicação, redação técnica e facilitação interpessoal, aplicada na fábrica para treinamento de operacionais, elaboração de instruções de trabalho e resolução colaborativa de problemas."
+    },
+    link: "/cv/certificates/titulo_secundario.jpg",
+    thumbnail: "/cv/certificates/thumbs/titulo_secundario.png"
   }
 ];
 

@@ -68,11 +68,11 @@ function cleanHtmlDescription(desc: string): string {
     const bullets = parts.slice(1).map(p => p.replace(/<br\s*\/?>/g, '').trim()).filter(Boolean);
     let result = '';
     if (intro) {
-      result += `<div style="margin-bottom: 1.5px; font-size: 7.8pt; color: #333; line-height: 1.2;">${intro}</div>`;
+      result += `<div style="margin-bottom: 1px; font-size: 7.6pt; color: #333; line-height: 1.18;">${intro}</div>`;
     }
     if (bullets.length > 0) {
-      result += '<ul style="margin: 0; padding-left: 13px; font-size: 7.6pt; line-height: 1.18;">' + 
-        bullets.map(b => `<li style="margin-bottom: 1px;">${b}</li>`).join('') + 
+      result += '<ul style="margin: 0; padding-left: 12px; font-size: 7.4pt; line-height: 1.15;">' + 
+        bullets.map(b => `<li style="margin-bottom: 0.5px;">${b}</li>`).join('') + 
         '</ul>';
     }
     return result;
@@ -146,16 +146,16 @@ async function run() {
       const categoryCerts = CERTS.filter(c => c.category === cat.id);
       const itemsHtml = categoryCerts.map(c => `
         <div class="cert-item">
-          <strong>${c.icon} ${c.name[lang]}</strong> — <span style="font-size: 7.6pt; color: #555;">${c.org[lang]}</span>
+          <strong>${c.icon} ${c.name[lang]}</strong> — <span style="font-size: 7.2pt; color: #555;">${c.org[lang]}</span>
         </div>
       `).join('\n');
 
       return `
-        <div class="cert-category-block" style="margin-bottom: 5px;">
-          <div style="font-size: 8pt; font-weight: 700; color: #c84b1a; text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 2px; border-bottom: 1px solid #e8e4dc; padding-bottom: 1px;">
+        <div class="cert-category-block" style="margin-bottom: 3px;">
+          <div style="font-size: 7.8pt; font-weight: 700; color: #c84b1a; text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 1.5px; border-bottom: 1px solid #e8e4dc; padding-bottom: 1px;">
             ${cat.title[lang]}
           </div>
-          <div class="certs-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px 10px;">
+          <div class="certs-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5px 10px;">
             ${itemsHtml}
           </div>
         </div>
@@ -171,7 +171,7 @@ async function run() {
   <style>
     @page {
       size: A4;
-      margin: 8mm 10mm 8mm 10mm;
+      margin: 7mm 10mm 7mm 10mm;
     }
     * {
       box-sizing: border-box;
@@ -342,7 +342,7 @@ async function run() {
 
     /* EXPERIENCE (PAGE 2) */
     .experience-item {
-      margin-bottom: 3.5px;
+      margin-bottom: 2.2px;
       page-break-inside: avoid;
     }
     .exp-header {
@@ -351,34 +351,34 @@ async function run() {
       align-items: baseline;
     }
     .exp-title {
-      font-size: 8.5pt;
+      font-size: 8.3pt;
       font-weight: 700;
       color: #1a1814;
     }
     .exp-company {
-      font-size: 8pt;
+      font-size: 7.8pt;
       font-weight: 600;
       color: #c84b1a;
       display: inline-block;
       margin-right: 8px;
     }
     .exp-date {
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       color: #666;
       font-weight: 500;
     }
 
     /* CERTS */
     .cert-item {
-      font-size: 7.5pt;
+      font-size: 7.1pt;
       color: #3a3630;
-      line-height: 1.16;
+      line-height: 1.12;
     }
 
     /* CTA BOX (PAGE 2 FOOTER) */
     .cta-box {
-      margin-top: 5px;
-      padding: 4px 8px;
+      margin-top: 3.5px;
+      padding: 3px 8px;
       background: #1a1814;
       color: #fdfcf8;
       border-radius: 3px;
@@ -386,24 +386,26 @@ async function run() {
       justify-content: space-between;
       align-items: center;
       gap: 8px;
+      page-break-inside: avoid;
+      break-inside: avoid;
     }
     .cta-content {
       flex: 1;
     }
     .cta-title {
-      font-size: 8pt;
+      font-size: 7.7pt;
       font-weight: 700;
       color: #f4a261;
       margin-bottom: 1px;
     }
     .cta-sub {
-      font-size: 7.2pt;
+      font-size: 7pt;
       color: #ddd;
-      line-height: 1.16;
+      line-height: 1.13;
     }
     .cta-action {
       text-align: right;
-      font-size: 7.2pt;
+      font-size: 7pt;
       white-space: nowrap;
       border-left: 1px solid rgba(255,255,255,0.2);
       padding-left: 8px;
@@ -512,8 +514,8 @@ async function run() {
       format: 'A4',
       printBackground: true,
       margin: {
-        top: '8mm',
-        bottom: '8mm',
+        top: '7mm',
+        bottom: '7mm',
         left: '10mm',
         right: '10mm'
       }
