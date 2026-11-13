@@ -473,27 +473,27 @@ export default function App() {
 
           <div className="mb-8">
             <span className="block font-mono text-xs sm:text-sm text-cv-accent font-bold uppercase tracking-wider mb-2">
-              {lang === "es" ? "ESPECIALISTA EN CALIDAD OPERATIVA & DIGITALIZACIÓN DE PLANTA" : lang === "pt" ? "ESPECIALISTA EM QUALIDADE OPERACIONAL & DIGITALIZAÇÃO INDUSTRIAL" : "OPERATIONAL QUALITY & PLANT DIGITALIZATION SPECIALIST"}
+              {lang === "es" ? "SENIOR QUALITY & OPERATIONAL EXCELLENCE LEAD | DIGITALIZACIÓN INDUSTRIAL" : lang === "pt" ? "SENIOR QUALITY & OPERATIONAL EXCELLENCE LEAD | DIGITALIZAÇÃO INDUSTRIAL" : "SENIOR QUALITY & OPERATIONAL EXCELLENCE LEAD | INDUSTRIAL DIGITALIZATION"}
             </span>
             <span className="block font-serif text-lg sm:text-xl text-cv-ink italic font-normal mb-4">
               {lang === "es" 
-                ? "Reduzco el Costo de No Calidad (COPQ), tiempos de ciclo y riesgos de parada combinando rigor normativo con herramientas digitales a medida." 
+                ? "I fix broken processes. 16+ años · 6 marcas globales · Rigor normativo y herramientas digitales propias." 
                 : lang === "pt" 
-                  ? "Reduzo o Custo da Não Qualidade (COPQ), tempos de ciclo e riscos de parada combinando rigor normativo com ferramentas digitais sob medida." 
-                  : "Reducing Cost of Poor Quality (COPQ), cycle times, and line downtime risks by combining regulatory rigor with custom digital tools."}
+                  ? "I fix broken processes. 16+ anos · 6 marcas globais · Rigor normativo e ferramentas digitais sob medida." 
+                  : "I fix broken processes. 16+ years · 6 global brands · Regulatory rigor and proprietary digital tools."}
             </span>
             <p className="text-base sm:text-lg text-cv-ink2 max-w-xl leading-relaxed">
               {lang === "es" ? (
                 <>
-                  En manufactura de alta exigencia, la brecha entre Calidad, Procesos y Sistemas suele costar semanas de desvíos y miles de dólares en planillas manuales y scrap. Con 14+ años en líneas complejas (Motorola, Samsung, Huawei, Sony, Alcatel), cierro esa brecha desde el primer día: estabilizo líneas con balanceo Lean y trabajo estándar, audito bajo estándares internacionales (<strong>Auditor Interno ISO 9001 / 14001 / 45001</strong>, <strong>IATF 16949</strong>) y desarrollo herramientas digitales propias para eliminar cuellos de botella sin depender de largos desarrollos de IT. Disponible para relocalización.
+                  En manufactura de alta exigencia, la brecha entre Calidad, Procesos y Sistemas suele costar semanas de desvíos y miles de dólares en planillas manuales y scrap. Con 16+ años en líneas complejas (LG, Motorola, Samsung, Huawei, Sony, Alcatel), cierro esa brecha desde el primer día: estabilizo líneas con balanceo Lean y trabajo estándar, audito bajo estándares internacionales (<strong>Auditor Interno ISO 9001 / 14001 / 45001</strong>, <strong>IATF 16949</strong>) y desarrollo herramientas digitales propias para eliminar cuellos de botella sin depender de largos desarrollos de IT. Disponible para relocalización.
                 </>
               ) : lang === "pt" ? (
                 <>
-                  Na manufatura de alta exigência, a lacuna entre Qualidade, Processos e TI costuma custar semanas de desvios e milhares de dólares em planilhas manuais e refugo. Com mais de 14 anos em linhas complexas (Motorola, Samsung, Huawei, Sony, Alcatel), fecho essa lacuna desde o primeiro dia: estabilizo linhas com balanceamento Lean e trabalho padronizado, audito sob normas internacionais (<strong>Auditor Interno ISO 9001 / 14001 / 45001</strong>, <strong>IATF 16949</strong>) e desenvolvo ferramentas digitais próprias para eliminar gargalos sem depender da burocracia de TI. Disponível para relocação.
+                  Na manufatura de alta exigência, a lacuna entre Qualidade, Processos e TI costuma custar semanas de desvios e milhares de dólares em planilhas manuais e refugo. Com mais de 16 anos em linhas complexas (LG, Motorola, Samsung, Huawei, Sony, Alcatel), fecho essa lacuna desde o primeiro dia: estabilizo linhas com balanceamento Lean e trabalho padronizado, audito sob normas internacionais (<strong>Auditor Interno ISO 9001 / 14001 / 45001</strong>, <strong>IATF 16949</strong>) e desenvolvo ferramentas digitais próprias para eliminar gargalos sem depender da burocracia de TI. Disponível para relocação.
                 </>
               ) : (
                 <>
-                  In high-reliability manufacturing, the gap between Quality, Engineering, and IT often costs weeks of deviations and thousands of dollars in manual spreadsheets and scrap. With 14+ years on complex plant floors (Motorola, Samsung, Huawei, Sony, Alcatel), I bridge that gap from day one: stabilizing lines via Lean balancing and standard work, auditing under international standards (<strong>ISO 9001 / 14001 / 45001 Internal Auditor</strong>, <strong>IATF 16949</strong>), and developing custom digital tools to eliminate bottlenecks without waiting for corporate IT backlogs. Open to relocation.
+                  In high-reliability manufacturing, the gap between Quality, Engineering, and IT often costs weeks of deviations and thousands of dollars in manual spreadsheets and scrap. With 16+ years on complex plant floors (LG, Motorola, Samsung, Huawei, Sony, Alcatel), I bridge that gap from day one: stabilizing lines via Lean balancing and standard work, auditing under international standards (<strong>ISO 9001 / 14001 / 45001 Internal Auditor</strong>, <strong>IATF 16949</strong>), and developing custom digital tools to eliminate bottlenecks without waiting for corporate IT backlogs. Open to relocation.
                 </>
               )}
             </p>

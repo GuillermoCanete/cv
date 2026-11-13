@@ -73,7 +73,7 @@ export interface Article {
 
 export const STATS: StatItem[] = [
   {
-    number: "14+",
+    number: "16+",
     label: { 
       es: "Años en Calidad y Mejora de Procesos", 
       en: "Years in Quality & Process Improvement", 
@@ -86,16 +86,16 @@ export const STATS: StatItem[] = [
     }
   },
   {
-    number: "5+",
+    number: "6+",
     label: { 
       es: "Marcas globales coordinadas en planta", 
       en: "Global brands delivered on plant floor", 
       pt: "Marcas globais coordenadas na planta" 
     },
     sub: { 
-      es: "Motorola · Samsung · Huawei · Sony · Alcatel", 
-      en: "Motorola · Samsung · Huawei · Sony · Alcatel", 
-      pt: "Motorola · Samsung · Huawei · Sony · Alcatel" 
+      es: "LG · Motorola · Samsung · Huawei · Sony · Alcatel", 
+      en: "LG · Motorola · Samsung · Huawei · Sony · Alcatel", 
+      pt: "LG · Motorola · Samsung · Huawei · Sony · Alcatel" 
     }
   },
   {
@@ -106,9 +106,9 @@ export const STATS: StatItem[] = [
       pt: "Aumento de produção alcançado" 
     },
     sub: { 
-      es: "Línea Alcatel 4007 · Capacidad neta ganada con cero CAPEX adicional", 
-      en: "Alcatel 4007 line · Net capacity unlocked with zero additional CAPEX", 
-      pt: "Linha Alcatel 4007 · Capacidade líquida liberada sem CAPEX adicional" 
+      es: "Línea Alcatel 4007 · Capacidad neta ganada sin maquinaria adicional", 
+      en: "Alcatel 4007 line · Net capacity unlocked without additional machinery", 
+      pt: "Linha Alcatel 4007 · Capacidade líquida liberada sem máquinas adicionais" 
     }
   },
   {
@@ -119,9 +119,9 @@ export const STATS: StatItem[] = [
       pt: "Tempo de treinamento e ramp-up" 
     },
     sub: { 
-      es: "Aceleró el Time-to-Market evitando penalizaciones contractuales OEM", 
-      en: "Accelerated Time-to-Market avoiding OEM delivery delay penalties", 
-      pt: "Acelerou o Time-to-Market evitando penalidades contratuais OEM" 
+      es: "Aceleró el Time-to-Market y la curva de aprendizaje en planta", 
+      en: "Accelerated Time-to-Market and plant learning curve", 
+      pt: "Acelerou o Time-to-Market e a curva de aprendizado na fábrica" 
     }
   }
 ];
@@ -268,9 +268,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "+17%",
     icon: "⚙️",
     text: {
-      es: "Línea Alcatel 4007 — Problema: cuello de botella en ensamble y desbalance entre estaciones. Acción: rediseñé el balanceo de línea Lean y optimicé la ergonomía de los puestos. Impacto: aumento del 17% en la producción de la línea, sumando capacidad neta de entrega sin incorporar maquinaria adicional ni sobrecostos de turno (cero CAPEX).",
-      en: "Alcatel 4007 Line — Problem: assembly-line bottlenecks and station cycle time imbalances. Action: rebalanced Lean line operations and optimized workstation ergonomics. Impact: increased line output by 17%, unlocking net delivery capacity with zero additional machinery or overtime costs (zero CAPEX).",
-      pt: "Linha Alcatel 4007 — Problema: gargalos na montagem e desbalanceamento entre postos. Ação: redesenhei o balanceamento de linha Lean e otimizei a ergonomia dos postos. Impacto: aumento de 17% na produção da linha, liberando capacidade líquida de entrega sem máquinas adicionais nem horas extras (zero CAPEX)."
+      es: "Línea Alcatel 4007 — Problema: cuello de botella en ensamble y desbalance entre estaciones. Acción: rediseñé el balanceo de línea Lean y optimicé la ergonomía de los puestos. Impacto: aumento del 17% en la producción de la línea, sumando capacidad neta de entrega sin incorporar maquinaria adicional ni sobrecostos de turno.",
+      en: "Alcatel 4007 Line — Problem: assembly-line bottlenecks and station cycle time imbalances. Action: rebalanced Lean line operations and optimized workstation ergonomics. Impact: increased line output by 17%, unlocking net delivery capacity without additional machinery or overtime costs.",
+      pt: "Linha Alcatel 4007 — Problema: gargalos na montagem e desbalanceamento entre postos. Ação: redesenhei o balanceamento de linha Lean e otimizei a ergonomia dos postos. Impacto: aumento de 17% na produção da linha, liberando capacidade líquida de entrega sem máquinas adicionais nem horas extras."
     }
   },
   {
@@ -288,9 +288,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "-3 op",
     icon: "📉",
     text: {
-      es: "Línea Microondas Samsung — Problema: sobreasignación y altos costos de fabricación en estación crítica. Acción: rebalanceo Lean y redistribución de tareas estándar. Impacto: liberé 3 puestos operativos reasignándolos a áreas con cuello de botella, absorbiendo demanda interna sin nuevas contrataciones ni horas extras y preservando el 100% de la calidad.",
-      en: "Samsung Microwave Line — Problem: workstation overstaffing and high manufacturing labor costs in a critical station. Action: Lean line rebalancing and standard task reallocation. Impact: freed up 3 operator roles and reallocated them to bottleneck areas, absorbing plant demand with zero new hires or overtime while maintaining 100% quality.",
-      pt: "Linha Micro-ondas Samsung — Problema: sobrecarga e custos de fabricação elevados em posto crítico. Ação: rebalanceamento Lean e redistribuição de tarefas padrão. Impacto: liberei 3 postos operacionais realocando-os para áreas de gargalo, absorvendo demanda interna sem novas contratações ou horas extras e com 100% de qualidade."
+      es: "Línea Microondas Samsung — Problema: sobreasignación y altos costos de fabricación en estación crítica. Acción: rebalanceo Lean y redistribución de tareas estándar. Impacto: liberé 3 puestos operativos reasignándolos a áreas con cuello de botella, absorbiendo demanda interna sin nuevas contrataciones ni horas extras y preservando los estándares de calidad requeridos.",
+      en: "Samsung Microwave Line — Problem: workstation overstaffing and high manufacturing labor costs in a critical station. Action: Lean line rebalancing and standard task reallocation. Impact: freed up 3 operator roles and reallocated them to bottleneck areas, absorbing plant demand with zero new hires or overtime without compromising quality.",
+      pt: "Linha Micro-ondas Samsung — Problema: sobrecarga e custos de fabricação elevados em posto crítico. Ação: rebalanceamento Lean e redistribuição de tarefas padrão. Impacto: liberei 3 postos operacionais realocando-os para áreas de gargalo, absorvendo demanda interna sem novas contratações ou horas extras e mantendo os padrões de qualidade requeridos."
     }
   },
   {
@@ -298,9 +298,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "−2d",
     icon: "🎯",
     text: {
-      es: "Capacitación en Lanzamientos — Problema: curva de aprendizaje lenta para personal nuevo en lanzamientos de producto. Acción: diseñé un programa de coaching peer-to-peer 1-a-1 entre turnos. Impacto: reduje el tiempo de ramp-up en 2 días, acelerando el Time-to-Market y evitando penalizaciones contractuales por demora de entrega bajo estándares OEM.",
-      en: "Launch Training Model — Problem: slow operator learning curve during rapid product launches. Action: designed a peer-to-peer 1-on-1 cross-shift coaching program. Impact: cut ramp-up time by 2 days, accelerating Time-to-Market and avoiding OEM delivery delay penalties.",
-      pt: "Treinamento em Lançamentos — Problema: curva lenta de aprendizado de novos operadores em lançamentos. Ação: desenhei um programa peer-to-peer 1-a-1 de acompanhamento entre turnos. Impacto: reduzi o ramp-up em 2 dias, acelerando o Time-to-Market e evitando penalidades contratuais por atraso de entrega sob padrões OEM."
+      es: "Capacitación en Lanzamientos — Problema: curva de aprendizaje lenta para personal nuevo en lanzamientos de producto. Acción: diseñé un programa de coaching peer-to-peer 1-a-1 entre turnos. Impacto: reduje el tiempo de ramp-up en 2 días, acelerando el Time-to-Market y alcanzando los niveles de producción y calidad antes de lo programado.",
+      en: "Launch Training Model — Problem: slow operator learning curve during rapid product launches. Action: designed a peer-to-peer 1-on-1 cross-shift coaching program. Impact: cut ramp-up time by 2 days, accelerating Time-to-Market and reaching target output and quality standards ahead of schedule.",
+      pt: "Treinamento em Lançamentos — Problema: curva lenta de aprendizado de novos operadores em lançamentos. Ação: desenhei um programa peer-to-peer 1-a-1 de acompanhamento entre turnos. Impacto: reduzi o ramp-up em 2 dias, acelerando o Time-to-Market e atingindo os níveis de produção e qualidade antes do previsto."
     }
   },
   {
@@ -412,14 +412,14 @@ export const EXPERIENCES: ExperienceItem[] = [
       pt: "Março de 2014 – Fevereiro de 2017" 
     },
     role: { 
-      es: "Técnico de Procesos | Responsabilidades de Ingeniería de Procesos", 
-      en: "Process Technician | Acting Process Engineering Responsibilities", 
-      pt: "Técnico de Processos | Responsabilidades de Engenharia de Processos" 
+      es: "Técnico de Procesos Senior | Responsable de Diseño de Manufactura & Industrialización NPI", 
+      en: "Senior Process Technician | Manufacturing Process Design & Industrialization (Acting Process Engineer)", 
+      pt: "Técnico de Processos Sênior | Responsável por Projeto de Manufatura e Industrialização NPI" 
     },
     desc: {
-      es: "Asumí responsabilidades de ingeniería de procesos tras quedar vacante el puesto, liderando la industrialización y lanzamiento de más de 10 modelos de smartphones Alcatel:<br/>● <strong>10+ lanzamientos de modelos (destacando 4007 y 4015):</strong> Diseñé el flujo de ensamble y balanceo de línea para más de una decena de modelos de celulares; logré +17% de aumento de producción en Alcatel 4007 y +10% en 4015 mediante balanceo Lean y optimización ergonómica.<br/>● <strong>Capacitación y ramp-up (-2 días):</strong> Diseñé e implementé un programa de coaching peer-to-peer 1-a-1 entre turnos, reduciendo en 2 días el tiempo de capacitación y ramp-up, alcanzando el nivel de producción y calidad requeridos 2 días antes de lo programado.<br/>● <strong>Estabilización de líneas de ensamble:</strong> Implementé pautas de balanceo continuo, tiempos de ciclo estándar y mejoras ergonómicas, manteniendo alta confiabilidad en líneas de telefonía móvil.",
-      en: "Assumed process engineering responsibilities after the Process Engineer position became vacant, leading the industrialization and launch of 10+ Alcatel smartphone models:<br/>● <strong>10+ model launches (highlighting 4007 & 4015):</strong> Designed assembly flows and line balancing for over a dozen phone models; increased line output by +17% on Alcatel 4007 and +10% on 4015 through Lean line balancing and ergonomic optimization.<br/>● <strong>Training & ramp-up acceleration (-2 days):</strong> Designed and implemented a peer-to-peer 1-on-1 cross-shift coaching program, reducing training and ramp-up time by 2 days and reaching target production output and quality standards 2 days ahead of schedule.<br/>● <strong>Assembly line stabilization:</strong> Implemented continuous balancing guidelines, standard cycle times, and ergonomic improvements, sustaining high reliability across mobile phone lines.",
-      pt: "Assumi responsabilidades de engenharia de processos após o cargo ficar em aberto, liderando a industrialização e lançamento de mais de 10 modelos de smartphones Alcatel:<br/>● <strong>Mais de 10 lançamentos de modelos (destaque 4007 e 4015):</strong> Projetei o fluxo de montagem e balanceamento de linha para mais de uma dezena de modelos de celulares; alcancei aumento de produção de +17% no Alcatel 4007 e +10% no 4015 através de balanceamento Lean e otimização ergonômica.<br/>● <strong>Treinamento e ramp-up (-2 dias):</strong> Desenvolvi e implementei um programa peer-to-peer 1-a-1 entre turnos, reduzindo em 2 dias o tempo de treinamento e ramp-up, atingindo o nível de produção e qualidade exigidos 2 dias antes do previsto.<br/>● <strong>Estabilização de linhas de montagem:</strong> Implementei diretrizes de balanceamento contínuo, tempos de ciclo padrão e melhorias ergonômicas, mantendo alta confiabilidade nas linhas de telefonia móvel."
+      es: "Asumí la responsabilidad integral del diseño del proceso de manufactura tras quedar vacante el puesto de ingeniería, liderando la industrialización y estabilización operativa de más de 10 modelos de smartphones Alcatel:<br/>● <strong>Diseño de manufactura de punta a punta:</strong> Diseñé el flujo completo de ensamble, la asignación de tareas por estación, la distribución de puestos y el balanceo de línea para más de una decena de modelos de celulares.<br/>● <strong>Estabilización de producción y calidad (+17% capacidad neta):</strong> Ajusté parámetros de proceso y tiempos de ciclo hasta alcanzar y superar los estándares OEM requeridos, logrando un +17% de incremento de producción en Alcatel 4007 y +10% en Alcatel 4015 mediante balanceo Lean y ergonomía sin maquinaria adicional.<br/>● <strong>Ramp-up y aceleración de curva de aprendizaje (-2 días):</strong> Diseñé e implementé un programa de coaching peer-to-peer 1-a-1 entre turnos, logrando que la línea alcanzara el régimen de producción y los estándares de calidad 48 horas antes de lo programado.<br/>● <strong>Estabilización continua:</strong> Implementé pautas de balanceo dinámico y trabajo estándar, sosteniendo alta confiabilidad operativa en líneas de alta densidad.",
+      en: "Assumed full process engineering ownership following a vacancy, leading the end-to-end manufacturing process design, line industrialization, and operational stabilization for 10+ Alcatel smartphone models:<br/>● <strong>End-to-End Manufacturing Process Design:</strong> Engineered the complete assembly workflow, station task allocation, workstation layout, and line balancing for over a dozen phone models.<br/>● <strong>Production & Quality Stabilization (+17% Net Output):</strong> Fine-tuned process variables until reaching and exceeding OEM quality and output targets; achieved a +17% output boost on Alcatel 4007 and +10% on 4015 through Lean balancing and ergonomics with zero added machinery.<br/>● <strong>Accelerated Ramp-up (-2 Days):</strong> Built and deployed a peer-to-peer 1-on-1 shift coaching model, bringing lines to target production rate and quality compliance 2 days ahead of schedule.<br/>● <strong>Continuous Stabilization:</strong> Enforced dynamic line balancing and standard work, maintaining high operational reliability across high-density assembly cells.",
+      pt: "Assumi a responsabilidade integral pelo projeto do processo de manufatura após vaga de engenharia, liderando a industrialização e estabilização de mais de 10 modelos de smartphones Alcatel:<br/>● <strong>Projeto de manufatura de ponta a ponta:</strong> Projetei o fluxo completo de montagem, distribuição de postos, tempos de ciclo e balanceamento de linha para mais de dez modelos de celulares.<br/>● <strong>Estabilização de produção e qualidade (+17% capacidade):</strong> Ajustei parâmetros até superar as metas OEM, alcançando +17% de produção no Alcatel 4007 e +10% no 4015 com Lean e ergonomia sem máquinas adicionais.<br/>● <strong>Aceleração de ramp-up (-2 dias):</strong> Desenvolvi e implantei coaching peer-to-peer 1-a-1 entre turnos, atingindo metas de volume e qualidade 48 horas antes do previsto.<br/>● <strong>Estabilização contínua:</strong> Estabeleci balanceamento contínuo e trabalho padronizado, garantindo alta confiabilidade na linha."
     },
     highlight: { 
       es: "10+ Lanzamientos Alcatel · +17% producción (4007) · Balanceo de línea", 
@@ -449,6 +449,30 @@ export const EXPERIENCES: ExperienceItem[] = [
       es: "Motorola · Huawei · ZTE · Microondas Samsung · Proveedores China", 
       en: "Motorola · Huawei · ZTE · Samsung Microwave · China Suppliers", 
       pt: "Motorola · Huawei · ZTE · Micro-ondas Samsung · Fornecedores China" 
+    }
+  },
+  {
+    id: "e7",
+    company: "Mirgor",
+    dates: { 
+      es: "Junio 2008 – Enero 2009 · Presencial", 
+      en: "June 2008 – January 2009 · On-site", 
+      pt: "Junho de 2008 – Janeiro de 2009 · Presencial" 
+    },
+    role: { 
+      es: "Analista de Calidad de Producto Terminado & Despacho", 
+      en: "Finished Product Quality & Dispatch Analyst", 
+      pt: "Analista de Qualidade de Produto Acabado & Expedição" 
+    },
+    desc: {
+      es: "Aseguramiento integral de la calidad de producto terminado de punta a punta (End-to-End) en líneas de manufactura y ensamble de equipos de climatización residencial y comercial para marcas globales, incluyendo <strong>LG</strong>:<br/>● <strong>Aseguramiento End-to-End y liberación de embarque:</strong> Supervisión técnica de calidad desde el ensamble y pruebas funcionales hasta la auditoría de empaque (Out-of-Box Audit / Dock Audit) y liberación conforme de unidades para transporte logístico y distribución.<br/>● <strong>Ensayos normativos y confiabilidad:</strong> Verificación estricta de parámetros de seguridad eléctrica, estanqueidad de circuitos refrigerantes y rendimiento térmico bajo especificaciones técnicas de marca OEM.<br/>● <strong>Contención inmediata de no conformidades:</strong> Detección temprana y bloqueo preventivo de desvíos en embalaje y producto terminado en final de línea, previniendo reclamos de cliente o daños en tránsito.",
+      en: "End-to-end quality assurance across manufacturing and assembly lines of residential and commercial air conditioning units for global OEM brands, including <strong>LG</strong>:<br/>● <strong>End-to-End QA & Shipping Release:</strong> Technical quality oversight from assembly and functional testing through packaging inspection, Out-of-Box Audits (OBA / Dock Audit), and final transport release for logistics distribution.<br/>● <strong>Functional testing & compliance:</strong> Rigorous verification of electrical safety parameters, refrigerant circuit leakage testing, and thermal performance according to OEM engineering specifications.<br/>● <strong>Immediate non-conformance containment:</strong> Early detection and quarantine of packaging and finished product deviations at the end of the line, preventing customer complaints and transit damage.",
+      pt: "Garantia integral da qualidade de produto acabado de ponta a ponta (End-to-End) em linhas de montagem de equipamentos de ar condicionado para marcas globais, incluindo <strong>LG</strong>:<br/>● <strong>Garantia End-to-End e liberação para transporte:</strong> Supervisão técnica de qualidade desde a montagem e testes funcionais até a auditoria de embalagem (Out-of-Box Audit / Dock Audit) e liberação para logística.<br/>● <strong>Ensaios normativos e confiabilidade:</strong> Verificação rigorosa de segurança elétrica, estanqueidade de gás refrigerante e desempenho térmico sob especificações OEM.<br/>● <strong>Contenção imediata de não conformidades:</strong> Detecção precoce e bloqueio de desvios em embalagem e produto acabado no final da linha, evitando reclamações e danos no transporte."
+    },
+    highlight: { 
+      es: "LG Climatización · Aseguramiento End-to-End · Dock Audit · Liberación de Embarque", 
+      en: "LG Climate · End-to-End QA · Dock Audit · Logistics Shipping Release", 
+      pt: "LG Climatização · Garantia End-to-End · Dock Audit · Liberação de Carga" 
     }
   }
 ];
