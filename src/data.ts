@@ -80,17 +80,17 @@ export const STATS: StatItem[] = [
       pt: "Anos em Qualidade e Melhoria de Processos" 
     },
     sub: { 
-      es: "Electrónica compleja, electrodomésticos e industria", 
-      en: "Complex electronics, appliances & industry", 
-      pt: "Eletrônicos complexos, eletrodomésticos e indústria" 
+      es: "Manufactura electrónica, climatización e industria", 
+      en: "Electronics manufacturing, HVAC & industry", 
+      pt: "Manufatura eletrônica, climatização e indústria" 
     }
   },
   {
     number: "6+",
     label: { 
-      es: "Marcas globales coordinadas en planta", 
-      en: "Global brands delivered on plant floor", 
-      pt: "Marcas globais coordenadas na planta" 
+      es: "Marcas globales en línea de producción", 
+      en: "Global brands on the production floor", 
+      pt: "Marcas globais na linha de produção" 
     },
     sub: { 
       es: "LG · Motorola · Samsung · Huawei · Sony · Alcatel", 
@@ -106,9 +106,9 @@ export const STATS: StatItem[] = [
       pt: "Aumento de produção alcançado" 
     },
     sub: { 
-      es: "Línea Alcatel 4007 · Capacidad neta ganada sin maquinaria adicional", 
-      en: "Alcatel 4007 line · Net capacity unlocked without additional machinery", 
-      pt: "Linha Alcatel 4007 · Capacidade líquida liberada sem máquinas adicionais" 
+      es: "Línea Alcatel 4007 · Balanceo de línea y mejora ergonómica", 
+      en: "Alcatel 4007 line · Line balancing & ergonomic improvement", 
+      pt: "Linha Alcatel 4007 · Balanceamento de linha e melhoria ergonômica" 
     }
   },
   {
@@ -119,9 +119,9 @@ export const STATS: StatItem[] = [
       pt: "Tempo de treinamento e ramp-up" 
     },
     sub: { 
-      es: "Aceleró el Time-to-Market y la curva de aprendizaje en planta", 
-      en: "Accelerated Time-to-Market and plant learning curve", 
-      pt: "Acelerou o Time-to-Market e a curva de aprendizado na fábrica" 
+      es: "Menor curva de aprendizaje en lanzamientos de nuevos modelos", 
+      en: "Shorter learning curve during new model launches", 
+      pt: "Menor curva de aprendizado em lançamentos de novos modelos" 
     }
   }
 ];
@@ -268,9 +268,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "+17%",
     icon: "⚙️",
     text: {
-      es: "Línea Alcatel 4007 — Problema: cuello de botella en ensamble y desbalance entre estaciones. Acción: rediseñé el balanceo de línea Lean y optimicé la ergonomía de los puestos. Impacto: aumento del 17% en la producción de la línea, sumando capacidad neta de entrega sin incorporar maquinaria adicional ni sobrecostos de turno.",
-      en: "Alcatel 4007 Line — Problem: assembly-line bottlenecks and station cycle time imbalances. Action: rebalanced Lean line operations and optimized workstation ergonomics. Impact: increased line output by 17%, unlocking net delivery capacity without additional machinery or overtime costs.",
-      pt: "Linha Alcatel 4007 — Problema: gargalos na montagem e desbalanceamento entre postos. Ação: redesenhei o balanceamento de linha Lean e otimizei a ergonomia dos postos. Impacto: aumento de 17% na produção da linha, liberando capacidade líquida de entrega sem máquinas adicionais nem horas extras."
+      es: "Línea Alcatel 4007 — La línea tenía cuellos de botella y desbalance entre estaciones. Rediseñé el balanceo de puestos y mejoré la ergonomía de trabajo, logrando un 17% más de producción con el mismo equipamiento y sin horas extras.",
+      en: "Alcatel 4007 Line — The assembly line had station bottlenecks and cycle time imbalances. I rebalanced workstations and improved ergonomics, increasing output by 17% with the same equipment and no overtime.",
+      pt: "Linha Alcatel 4007 — A linha tinha gargalos e desbalanceamento entre postos. Redesenhei o balanceamento e melhorei a ergonomia, aumentando a produção em 17% com o mesmo equipamento e sem horas extras."
     }
   },
   {
@@ -278,9 +278,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "+10%",
     icon: "📈",
     text: {
-      es: "Línea Alcatel 4015 — Problema: restricciones de flujo táctico durante la rampa de producción. Acción: estabilicé el flujo continuo de proceso y controlé tiempos de ciclo. Impacto: superé en un 10% la producción planificada, reduciendo defectos y mejorando la confiabilidad del proceso.",
-      en: "Alcatel 4015 Line — Problem: tactical flow constraints during production ramp-up. Action: stabilized continuous process flow and cycle times. Impact: exceeded planned production by 10%, reducing defect rates and improving process reliability.",
-      pt: "Linha Alcatel 4015 — Problema: restrições de fluxo tático na rampa de produção. Ação: estabilizei o fluxo contínuo e tempos de ciclo. Impacto: superei em 10% a produção planejada, reduzindo defeitos e melhorando a confiabilidade do processo."
+      es: "Línea Alcatel 4015 — Durante la puesta en marcha había demoras en el flujo de ensamble. Ajusté los tiempos de ciclo y estabilicé el proceso continuo, superando en un 10% el objetivo de producción diario y bajando la tasa de defectos.",
+      en: "Alcatel 4015 Line — During ramp-up, the assembly flow had recurring delays. I adjusted cycle times and stabilized continuous flow, exceeding daily production targets by 10% while lowering defect rates.",
+      pt: "Linha Alcatel 4015 — Durante a rampa de produção havia atrasos no fluxo de montagem. Ajustei os tempos de ciclo e estabilizei o processo, superando em 10% a meta diária e reduzindo defeitos."
     }
   },
   {
@@ -288,9 +288,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "-3 op",
     icon: "📉",
     text: {
-      es: "Línea Microondas Samsung — Problema: sobreasignación y altos costos de fabricación en estación crítica. Acción: rebalanceo Lean y redistribución de tareas estándar. Impacto: liberé 3 puestos operativos reasignándolos a áreas con cuello de botella, absorbiendo demanda interna sin nuevas contrataciones ni horas extras y preservando los estándares de calidad requeridos.",
-      en: "Samsung Microwave Line — Problem: workstation overstaffing and high manufacturing labor costs in a critical station. Action: Lean line rebalancing and standard task reallocation. Impact: freed up 3 operator roles and reallocated them to bottleneck areas, absorbing plant demand with zero new hires or overtime without compromising quality.",
-      pt: "Linha Micro-ondas Samsung — Problema: sobrecarga e custos de fabricação elevados em posto crítico. Ação: rebalanceamento Lean e redistribuição de tarefas padrão. Impacto: liberei 3 postos operacionais realocando-os para áreas de gargalo, absorvendo demanda interna sem novas contratações ou horas extras e mantendo os padrões de qualidade requeridos."
+      es: "Línea Microondas Samsung — Una estación crítica tenía sobrecarga de tareas y personal. Reorganicé el trabajo estándar y el balanceo de la línea, liberando 3 puestos que fueron reubicados en sectores donde hacían falta, manteniendo la calidad.",
+      en: "Samsung Microwave Line — A critical station had uneven workload distribution. I reorganized standard work and line balancing, freeing up 3 operator positions to be reassigned where needed on the floor without affecting quality.",
+      pt: "Linha Micro-ondas Samsung — Um posto crítico tinha sobrecarga de tarefas. Reorganizei o trabalho padrão e o balanceamento da linha, liberando 3 operadores para outros setores necessários sem afetar a qualidade."
     }
   },
   {
@@ -298,9 +298,9 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "−2d",
     icon: "🎯",
     text: {
-      es: "Capacitación en Lanzamientos — Problema: curva de aprendizaje lenta para personal nuevo en lanzamientos de producto. Acción: diseñé un programa de coaching peer-to-peer 1-a-1 entre turnos. Impacto: reduje el tiempo de ramp-up en 2 días, acelerando el Time-to-Market y alcanzando los niveles de producción y calidad antes de lo programado.",
-      en: "Launch Training Model — Problem: slow operator learning curve during rapid product launches. Action: designed a peer-to-peer 1-on-1 cross-shift coaching program. Impact: cut ramp-up time by 2 days, accelerating Time-to-Market and reaching target output and quality standards ahead of schedule.",
-      pt: "Treinamento em Lançamentos — Problema: curva lenta de aprendizado de novos operadores em lançamentos. Ação: desenhei um programa peer-to-peer 1-a-1 de acompanhamento entre turnos. Impacto: reduzi o ramp-up em 2 dias, acelerando o Time-to-Market e atingindo os níveis de produção e qualidade antes do previsto."
+      es: "Capacitación en lanzamientos — En cada cambio de modelo, la curva de aprendizaje demoraba varios días. Armé un esquema de acompañamiento 1 a 1 entre turnos que redujo el tiempo de adaptación en 2 días y permitió llegar antes al ritmo y calidad objetivos.",
+      en: "Launch Training — During model changeovers, operator learning curves took several days. I set up a 1-on-1 cross-shift coaching scheme that cut ramp-up time by 2 days and reached target output and quality ahead of schedule.",
+      pt: "Treinamento em lançamentos — A cada troca de modelo, a curva de aprendizado demorava vários dias. Criei um esquema de acompanhamento 1 a 1 entre turnos que reduziu o tempo de adaptação em 2 dias."
     }
   },
   {
@@ -308,19 +308,19 @@ export const ACHIEVEMENTS: AchievementItem[] = [
     accent: "CAPA",
     icon: "🔬",
     text: {
-      es: "Programas CAPA de Ciclo Cerrado — Problema: fallas repetitivas en manufactura electrónica compleja. Acción: lideré análisis profundos de causa raíz (Ishikawa, 5 Porqués) e implementé intervenciones correctivas y preventivas robustas. Impacto: eliminación total de la recurrencia de defectos críticos en múltiples líneas.",
-      en: "Closed-Loop CAPA Programs — Problem: repetitive defect patterns in complex electronics manufacturing. Action: led deep root-cause investigations (Ishikawa, 5 Whys) and implemented robust preventive controls. Impact: permanently eliminated recurrence of critical defects across multiple production lines.",
-      pt: "Programas CAPA de Ciclo Fechado — Problema: falhas repetitivas na manufatura eletrônica complexa. Ação: liderei análises de causa raiz (Ishikawa, 5 Porquês) e implementei ações preventivas robustas. Impacto: eliminação total da reincidência de defeitos críticos em múltiplas linhas."
+      es: "Resolución de fallas repetitivas — Frente a defectos recurrentes en placas electrónicas, conduje análisis de causa raíz en línea (Ishikawa, 5 Porqués) junto a ingeniería y producción, aplicando acciones correctivas que eliminaron su repetición.",
+      en: "Recurring Defect Resolution — Facing repeated defects on electronic boards, I led shop-floor root cause investigations (Ishikawa, 5 Whys) with engineering and production, implementing corrective actions that stopped recurrence.",
+      pt: "Resolução de falhas repetitivas — Diante de defeitos recorrentes em placas eletrônicas, conduzi análises de causa raiz na linha (Ishikawa, 5 Porquês) com engenharia e produção, eliminando a reincidência."
     }
   },
   {
     id: "a4",
-    accent: "5+ OEM",
+    accent: "6+ OEM",
     icon: "🌍",
     text: {
-      es: "Gestión de Riesgo con Proveedores en Asia — Problema: desvíos de ingeniería y componentes fuera de tolerancia con riesgo de parar la producción. Acción: coordiné especificaciones técnicas en inglés con fabricantes en China, audité procesos e implementé planes APQP. Impacto: contención temprana en origen evitando fletes aéreos de emergencia, scrap importado y paradas críticas para Motorola, Samsung, Huawei, Sony y Alcatel.",
-      en: "Asia Supplier Risk Management — Problem: engineering discrepancies and out-of-tolerance parts risking factory line halts. Action: coordinated technical specs directly with Chinese suppliers, audited processes, and enforced APQP control plans. Impact: early containment at source, preventing emergency air freights, imported scrap, and line stoppages for Motorola, Samsung, Huawei, Sony, and Alcatel.",
-      pt: "Gestão de Risco com Fornecedores na Ásia — Problema: desvios de engenharia e componentes fora da tolerância com risco de parar a produção. Ação: coordenei especificações técnicas diretamente com fabricantes na China, auditei processos e executei planos APQP. Impacto: contenção precoce na origem, evitando fretes aéreos de emergência, refugo importado e paradas críticas para Motorola, Samsung, Huawei, Sony e Alcatel."
+      es: "Trato técnico con proveedores en Asia — Cuando llegaban lotes con desvíos de ingeniería, revisaba planos en inglés y gestionaba las correcciones directamente con los fabricantes en China, frenando piezas defectuosas antes de que pararan las líneas de LG, Motorola, Samsung, Huawei, Sony o Alcatel.",
+      en: "Technical Liaison with Asian Suppliers — When incoming lots had engineering deviations, I reviewed English technical drawings and coordinated fixes directly with manufacturers in China, stopping defective parts before they halted LG, Motorola, Samsung, Huawei, Sony, or Alcatel lines.",
+      pt: "Contato técnico com fornecedores na Ásia — Quando lotes chegavam com desvios, revisava especificações em inglês e coordenava correções diretamente com fabricantes na China, evitando paradas nas linhas da LG, Motorola, Samsung, Huawei, Sony e Alcatel."
     }
   }
 ];
@@ -340,9 +340,9 @@ export const EXPERIENCES: ExperienceItem[] = [
       pt: "Gestão de Qualidade e Melhoria Contínua" 
     },
     desc: {
-      es: "Resolución de problemas operativos y elevación de confiabilidad en 2–3 líneas activas:<br/>● <strong>Fallas repetitivas en línea:</strong> Analicé causas raíz mediante 5 Porqués e Ishikawa e implementé acciones correctivas (CAPA), reduciendo defectos y mejorando la confiabilidad del proceso.<br/>● <strong>Desvíos en componentes importados:</strong> Identifiqué no conformidades, coordiné acciones con proveedores en Asia y rediseñé controles de trazabilidad en planta, previniendo paradas de línea.<br/>● <strong>Carga manual lenta de datos:</strong> Construí herramientas digitales y flujos automatizados de registro visual, simplificando reportes y eliminando la burocracia de planillas.",
-      en: "Solving operational problems and improving reliability across 2–3 active production lines:<br/>● <strong>Repetitive shop-floor defects:</strong> Analyzed root causes via 5 Whys/Ishikawa and implemented closed-loop CAPA, reducing defect rates and improving process reliability.<br/>● <strong>Imported component non-conformances:</strong> Identified quality gaps, coordinated corrective actions with Asian suppliers, and redesigned plant traceability controls, preventing line stoppages.<br/>● <strong>Slow manual data logging:</strong> Built lightweight digital tools and automated visual logging workflows, simplifying reporting and eliminating spreadsheet bureaucracy.",
-      pt: "Resolução de problemas operacionais e elevação de confiabilidade em 2–3 linhas ativas:<br/>● <strong>Falhas repetitivas na linha:</strong> Analisei causas raízes via 5 Porquês/Ishikawa e implementei ações corretivas (CAPA), reduzindo defeitos e melhorando a confiabilidade do processo.<br/>● <strong>Desvios em componentes importados:</strong> Identifiquei não conformidades, coordenei ações com fornecedores na Ásia e redesenhei controles de rastreabilidade na fábrica, prevenindo paradas.<br/>● <strong>Registro manual lento de dados:</strong> Desenvolvi ferramentas digitais e fluxos automatizados de captura visual, simplificando relatórios e eliminando a burocracia de planilhas."
+      es: "Trabajo diario en 2 a 3 líneas productivas activas resolviendo problemas de calidad y proceso:<br/>● <strong>Análisis de fallas en línea:</strong> Investigo defectos repetitivos con 5 Porqués e Ishikawa y hago el seguimiento de las acciones correctivas (CAPA) hasta confirmar que el problema no vuelve a aparecer.<br/>● <strong>Control de insumos importados:</strong> Detecto desvíos en componentes, coordino reclamos técnicos con proveedores en Asia y ajusto los controles de recepción y trazabilidad.<br/>● <strong>Digitalización de registros:</strong> Desarrollo aplicaciones web simples para que los operarios registren fallas desde su puesto en lugar de usar planillas en papel.",
+      en: "Daily shop-floor work across 2–3 active production lines solving quality and process issues:<br/>● <strong>Shop-floor failure analysis:</strong> Investigate recurring defects using 5 Whys and Ishikawa, tracking corrective actions (CAPA) until confirming the issue does not return.<br/>● <strong>Imported component control:</strong> Identify part deviations, coordinate technical claims with Asian suppliers, and refine incoming inspection and traceability controls.<br/>● <strong>Digital record keeping:</strong> Build simple web apps so operators can log defects directly at their stations instead of filling out paper sheets.",
+      pt: "Trabalho diário em 2 a 3 linhas produtivas ativas resolvendo problemas de qualidade e processo:<br/>● <strong>Análise de falhas na linha:</strong> Investigo defeitos repetitivos com 5 Porquês e Ishikawa e acompanho ações corretivas (CAPA) até confirmar que o problema não volte.<br/>● <strong>Controle de insumos importados:</strong> Identifico desvios em componentes, coordeno reclamações técnicas com fornecedores na Ásia e ajusto controles de rastreabilidade.<br/>● <strong>Digitalização de registros:</strong> Desenvolvo aplicações web simples para registro de falhas no posto de trabalho em vez de planilhas de papel."
     },
     highlight: { es: "Mejora Continua", en: "Continuous Improvement", pt: "Melhoria Contínua" }
   },
@@ -412,14 +412,14 @@ export const EXPERIENCES: ExperienceItem[] = [
       pt: "Março de 2014 – Fevereiro de 2017" 
     },
     role: { 
-      es: "Técnico de Procesos Senior | Responsable de Diseño de Manufactura & Industrialización NPI", 
-      en: "Senior Process Technician | Manufacturing Process Design & Industrialization (Acting Process Engineer)", 
-      pt: "Técnico de Processos Sênior | Responsável por Projeto de Manufatura e Industrialização NPI" 
+      es: "Técnico de Procesos Senior | Diseño de Manufactura y Nuevos Lanzamientos", 
+      en: "Senior Process Technician | Manufacturing Design & New Product Launches", 
+      pt: "Técnico de Processos Sênior | Projeto de Manufatura e Novos Lançamentos" 
     },
     desc: {
-      es: "Asumí la responsabilidad integral del diseño del proceso de manufactura tras quedar vacante el puesto de ingeniería, liderando la industrialización y estabilización operativa de más de 10 modelos de smartphones Alcatel:<br/>● <strong>Diseño de manufactura de punta a punta:</strong> Diseñé el flujo completo de ensamble, la asignación de tareas por estación, la distribución de puestos y el balanceo de línea para más de una decena de modelos de celulares.<br/>● <strong>Estabilización de producción y calidad (+17% capacidad neta):</strong> Ajusté parámetros de proceso y tiempos de ciclo hasta alcanzar y superar los estándares OEM requeridos, logrando un +17% de incremento de producción en Alcatel 4007 y +10% en Alcatel 4015 mediante balanceo Lean y ergonomía sin maquinaria adicional.<br/>● <strong>Ramp-up y aceleración de curva de aprendizaje (-2 días):</strong> Diseñé e implementé un programa de coaching peer-to-peer 1-a-1 entre turnos, logrando que la línea alcanzara el régimen de producción y los estándares de calidad 48 horas antes de lo programado.<br/>● <strong>Estabilización continua:</strong> Implementé pautas de balanceo dinámico y trabajo estándar, sosteniendo alta confiabilidad operativa en líneas de alta densidad.",
-      en: "Assumed full process engineering ownership following a vacancy, leading the end-to-end manufacturing process design, line industrialization, and operational stabilization for 10+ Alcatel smartphone models:<br/>● <strong>End-to-End Manufacturing Process Design:</strong> Engineered the complete assembly workflow, station task allocation, workstation layout, and line balancing for over a dozen phone models.<br/>● <strong>Production & Quality Stabilization (+17% Net Output):</strong> Fine-tuned process variables until reaching and exceeding OEM quality and output targets; achieved a +17% output boost on Alcatel 4007 and +10% on 4015 through Lean balancing and ergonomics with zero added machinery.<br/>● <strong>Accelerated Ramp-up (-2 Days):</strong> Built and deployed a peer-to-peer 1-on-1 shift coaching model, bringing lines to target production rate and quality compliance 2 days ahead of schedule.<br/>● <strong>Continuous Stabilization:</strong> Enforced dynamic line balancing and standard work, maintaining high operational reliability across high-density assembly cells.",
-      pt: "Assumi a responsabilidade integral pelo projeto do processo de manufatura após vaga de engenharia, liderando a industrialização e estabilização de mais de 10 modelos de smartphones Alcatel:<br/>● <strong>Projeto de manufatura de ponta a ponta:</strong> Projetei o fluxo completo de montagem, distribuição de postos, tempos de ciclo e balanceamento de linha para mais de dez modelos de celulares.<br/>● <strong>Estabilização de produção e qualidade (+17% capacidade):</strong> Ajustei parâmetros até superar as metas OEM, alcançando +17% de produção no Alcatel 4007 e +10% no 4015 com Lean e ergonomia sem máquinas adicionais.<br/>● <strong>Aceleração de ramp-up (-2 dias):</strong> Desenvolvi e implantei coaching peer-to-peer 1-a-1 entre turnos, atingindo metas de volume e qualidade 48 horas antes do previsto.<br/>● <strong>Estabilização contínua:</strong> Estabeleci balanceamento contínuo e trabalho padronizado, garantindo alta confiabilidade na linha."
+      es: "Al quedar vacante el puesto de ingeniero de procesos, asumí el diseño completo del proceso de manufactura y la puesta en marcha de más de 10 modelos de celulares Alcatel:<br/>● <strong>Diseño del proceso de punta a punta:</strong> Armé la secuencia de ensamble, la distribución de tareas por estación y el balanceo de línea para cada nuevo modelo.<br/>● <strong>Estabilización de producción y calidad (+17%):</strong> Ajusté tiempos de ciclo y ergonomía de puestos hasta alcanzar los objetivos de marca, logrando +17% de producción en el modelo Alcatel 4007 y +10% en el 4015 con el mismo equipamiento.<br/>● <strong>Reducción del tiempo de adaptación (-2 días):</strong> Implementé un esquema de acompañamiento 1 a 1 entre turnos que permitió alcanzar el ritmo y la calidad requeridos 2 días antes de lo previsto.",
+      en: "When the process engineer position became vacant, I took on full responsibility for designing the manufacturing process and launching over 10 Alcatel smartphone models:<br/>● <strong>End-to-end process design:</strong> Built the assembly sequence, station task breakdown, and line balancing for each new model.<br/>● <strong>Production and quality stabilization (+17%):</strong> Tuned cycle times and workstation ergonomics to meet brand targets, achieving +17% output on the Alcatel 4007 and +10% on the 4015 with existing equipment.<br/>● <strong>Faster ramp-up (-2 days):</strong> Implemented a 1-on-1 cross-shift coaching scheme that brought lines to target speed and quality 2 days ahead of schedule.",
+      pt: "Ao ficar vaga a posição de engenheiro de processos, assumi o projeto completo do processo de manufatura e o lançamento de mais de 10 modelos de celulares Alcatel:<br/>● <strong>Projeto completo do processo:</strong> Montei a sequência de montagem, divisão de tarefas por posto e balanceamento de linha para cada modelo.<br/>● <strong>Estabilização de produção e qualidade (+17%):</strong> Ajustei tempos de ciclo e ergonomia até atingir as metas da marca, alcançando +17% de produção no Alcatel 4007 e +10% no 4015.<br/>● <strong>Redução do tempo de adaptação (-2 dias):</strong> Implementei acompanhamento 1 a 1 entre turnos, atingindo o ritmo e a qualidade exigidos 2 dias antes do previsto."
     },
     highlight: { 
       es: "10+ Lanzamientos Alcatel · +17% producción (4007) · Balanceo de línea", 
@@ -460,19 +460,19 @@ export const EXPERIENCES: ExperienceItem[] = [
       pt: "Junho de 2008 – Janeiro de 2009 · Presencial" 
     },
     role: { 
-      es: "Analista de Calidad de Producto Terminado & Despacho", 
-      en: "Finished Product Quality & Dispatch Analyst", 
-      pt: "Analista de Qualidade de Produto Acabado & Expedição" 
+      es: "Analista de Calidad de Producto y Despacho", 
+      en: "Product Quality & Dispatch Analyst", 
+      pt: "Analista de Qualidade de Produto e Expedição" 
     },
     desc: {
-      es: "Aseguramiento integral de la calidad de producto terminado de punta a punta (End-to-End) en líneas de manufactura y ensamble de equipos de climatización residencial y comercial para marcas globales, incluyendo <strong>LG</strong>:<br/>● <strong>Aseguramiento End-to-End y liberación de embarque:</strong> Supervisión técnica de calidad desde el ensamble y pruebas funcionales hasta la auditoría de empaque (Out-of-Box Audit / Dock Audit) y liberación conforme de unidades para transporte logístico y distribución.<br/>● <strong>Ensayos normativos y confiabilidad:</strong> Verificación estricta de parámetros de seguridad eléctrica, estanqueidad de circuitos refrigerantes y rendimiento térmico bajo especificaciones técnicas de marca OEM.<br/>● <strong>Contención inmediata de no conformidades:</strong> Detección temprana y bloqueo preventivo de desvíos en embalaje y producto terminado en final de línea, previniendo reclamos de cliente o daños en tránsito.",
-      en: "End-to-end quality assurance across manufacturing and assembly lines of residential and commercial air conditioning units for global OEM brands, including <strong>LG</strong>:<br/>● <strong>End-to-End QA & Shipping Release:</strong> Technical quality oversight from assembly and functional testing through packaging inspection, Out-of-Box Audits (OBA / Dock Audit), and final transport release for logistics distribution.<br/>● <strong>Functional testing & compliance:</strong> Rigorous verification of electrical safety parameters, refrigerant circuit leakage testing, and thermal performance according to OEM engineering specifications.<br/>● <strong>Immediate non-conformance containment:</strong> Early detection and quarantine of packaging and finished product deviations at the end of the line, preventing customer complaints and transit damage.",
-      pt: "Garantia integral da qualidade de produto acabado de ponta a ponta (End-to-End) em linhas de montagem de equipamentos de ar condicionado para marcas globais, incluindo <strong>LG</strong>:<br/>● <strong>Garantia End-to-End e liberação para transporte:</strong> Supervisão técnica de qualidade desde a montagem e testes funcionais até a auditoria de embalagem (Out-of-Box Audit / Dock Audit) e liberação para logística.<br/>● <strong>Ensaios normativos e confiabilidade:</strong> Verificação rigorosa de segurança elétrica, estanqueidade de gás refrigerante e desempenho térmico sob especificações OEM.<br/>● <strong>Contenção imediata de não conformidades:</strong> Detecção precoce e bloqueio de desvios em embalagem e produto acabado no final da linha, evitando reclamações e danos no transporte."
+      es: "Estuve a cargo de la calidad de equipos de aire acondicionado de varias marcas, incluyendo <strong>LG</strong>, desde que salían de la línea de producción hasta la carga en el camión:<br/>● <strong>Control desde la línea hasta el despacho:</strong> Supervisé las pruebas funcionales en línea, la revisión de empaque e inspección pre-embarque (auditoría de despacho), asegurando que los equipos se cargaran en condiciones óptimas.<br/>● <strong>Pruebas funcionales y seguridad:</strong> Verifiqué el cumplimiento de los ensayos de estanqueidad, seguridad eléctrica y rendimiento térmico exigidos por cada marca.<br/>● <strong>Freno a desvíos antes de la entrega:</strong> Detecté y retuve lotes con defectos estéticos, de armado o de embalaje al final de la línea, coordinando su corrección inmediata con producción.",
+      en: "Managed product quality for air conditioning units across multiple brands, including <strong>LG</strong>, from the end of the production line through truck loading:<br/>● <strong>Line-to-dispatch oversight:</strong> Supervised in-line functional testing, packaging checks, and pre-shipment dock audits, making sure units were loaded in proper condition.<br/>● <strong>Functional & safety testing:</strong> Verified compliance with leak testing, electrical safety, and thermal performance standards required by each brand.<br/>● <strong>Defect containment before shipping:</strong> Caught and held lots with cosmetic, assembly, or packaging issues at the end of the line, coordinating immediate fixes with production.",
+      pt: "Fiquei responsável pela qualidade de equipamentos de ar condicionado de várias marcas, incluindo <strong>LG</strong>, desde a saída da linha de produção até o carregamento no caminhão:<br/>● <strong>Controle da linha à expedição:</strong> Supervisionei testes funcionais na linha, revisão de embalagem e auditoria de embarque, garantindo o carregamento em ótimas condições.<br/>● <strong>Testes funcionais e segurança:</strong> Verifiquei o cumprimento dos ensaios de estanqueidade, segurança elétrica e desempenho térmico exigidos por cada marca.<br/>● <strong>Contenção de desvios antes da entrega:</strong> Identifiquei e retive lotes com defeitos de montagem ou embalagem no final da linha, coordenando a correção imediata com a produção."
     },
     highlight: { 
-      es: "LG Climatización · Aseguramiento End-to-End · Dock Audit · Liberación de Embarque", 
-      en: "LG Climate · End-to-End QA · Dock Audit · Logistics Shipping Release", 
-      pt: "LG Climatização · Garantia End-to-End · Dock Audit · Liberação de Carga" 
+      es: "LG Climatización · Calidad de Punta a Punta · Auditoría de Despacho", 
+      en: "LG Air Conditioning · Line-to-Dispatch Quality · Dock Audit", 
+      pt: "LG Climatização · Qualidade de Ponta a Ponta · Auditoria de Embarque" 
     }
   }
 ];
@@ -583,9 +583,9 @@ export const CERT_CATEGORIES: CertCategory[] = [
   {
     id: "tech",
     title: {
-      es: "Tecnología & IA Aplicada (Multiplicador de Eficiencia en Calidad)",
-      en: "Technology & Applied AI (Quality Efficiency Multiplier)",
-      pt: "Tecnologia & IA Aplicada (Multiplicador de Eficiência em Qualidade)"
+      es: "Tecnología, Automatización e IA Aplicada",
+      en: "Technology, Automation & Applied AI",
+      pt: "Tecnologia, Automação e IA Aplicada"
     },
     subtitle: {
       es: "Herramientas digitales a medida, analítica de datos y automatización aplicadas a procesos de manufactura",
@@ -593,9 +593,9 @@ export const CERT_CATEGORIES: CertCategory[] = [
       pt: "Ferramentas digitais sob medida, análise de dados e automação aplicadas a processos industriais"
     },
     badge: {
-      es: "Multiplicador Digital",
-      en: "Digital Multiplier",
-      pt: "Multiplicador Digital"
+      es: "Tecnología & IA",
+      en: "Tech & AI",
+      pt: "Tecnologia & IA"
     }
   },
   {

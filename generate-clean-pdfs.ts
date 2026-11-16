@@ -9,58 +9,58 @@ const __dirname = path.dirname(__filename);
 
 const translations = {
   es: {
-    title: "SENIOR QUALITY & OPERATIONAL EXCELLENCE LEAD | DIGITALIZACIÓN INDUSTRIAL",
-    subtitle: "I fix broken processes. 16+ años · 6 marcas globales · Rigor normativo y herramientas digitales a medida.",
+    title: "LÍDER DE CALIDAD Y MEJORA DE PROCESOS",
+    subtitle: "16 años en manufactura electrónica · Auditor Interno ISO 9001 / 14001 / 45001 · Herramientas digitales propias",
     contact: "Contacto",
     location: "Tierra del Fuego, Argentina (Disponible para Relocalización)",
     languagesHeader: "Español (Nativo) · Inglés (B2+ Profesional) · Portugués (Básico)",
-    summaryTitle: "Perfil Profesional & Propuesta de Valor",
-    summary: "Líder de Calidad y Excelencia Operacional con 16+ años estabilizando líneas de manufactura compleja (LG, Motorola, Samsung, Huawei, Sony, Alcatel) e implementando sistemas de gestión bajo normas internacionales (Auditor Interno ISO 9001 / 14001 / 45001, IATF 16949, ISO 17025). Especialista en cerrar la brecha crítica entre Calidad, Ingeniería de Procesos y Sistemas: diseño procesos de manufactura desde cero, balanceo estaciones Lean, resuelvo discrepancias técnicas con proveedores en Asia y desarrollo herramientas digitales propias (Python/React) para erradicar planillas manuales y capturar datos en tiempo real sin depender de largos desarrollos de IT.",
-    skillsTitle: "Habilidades Clave & Sistemas de Gestión",
-    achievementsTitle: "Qué he mejorado (Problema → Acción → Impacto Financiero & Capacidad)",
-    bghGroupHeader: "Grupo BGH · Trayectoria de Crecimiento Vertical (12+ Años)",
-    bghGroupSub: "Evolución continua a través de 5 roles de creciente complejidad técnica, metrológica y de gestión",
-    experienceTitle: "Experiencia Laboral en Planta",
-    projectsTitle: "Herramientas Digitales Propias Desarrolladas para Planta",
-    certsTitle: "Educación & Certificaciones Profesionales",
-    ctaTitle: "¿Cuello de botella en línea, auditoría próxima o planillas manuales ralentizando su planta?",
-    ctaSub: "Analicemos en 15 minutos cómo simplificar procesos, blindar la conformidad o digitalizar capturas de datos sin burocracia de IT."
+    summaryTitle: "Perfil Profesional",
+    summary: "Trabajo hace más de 16 años en plantas de manufactura electrónica y climatización, con productos de LG, Motorola, Samsung, Huawei, Sony y Alcatel. Empecé en control de calidad de producto terminado y fui creciendo hacia el diseño de procesos, la metrología y la gestión de calidad. Lo que mejor sé hacer es estabilizar líneas de producción: diseñar el proceso, balancear estaciones, encontrar la causa raíz de los defectos y sostener las mejoras en el tiempo. Soy auditor interno de ISO 9001, 14001 y 45001, y desarrollo mis propias herramientas digitales para reemplazar planillas en papel y tener datos de planta en tiempo real.",
+    skillsTitle: "Conocimientos Técnicos y Normas",
+    achievementsTitle: "Resultados destacados",
+    bghGroupHeader: "Grupo BGH · 12 años y 6 posiciones en planta",
+    bghGroupSub: "Crecimiento continuo desde calidad en nuevos lanzamientos hasta ingeniería de procesos, metrología y gestión de calidad",
+    experienceTitle: "Experiencia Laboral",
+    projectsTitle: "Herramientas digitales que desarrollé",
+    certsTitle: "Educación y Certificaciones",
+    ctaTitle: "¿Conversamos?",
+    ctaSub: "Si su planta tiene problemas de calidad, una auditoría por delante o datos que todavía se cargan a mano, con gusto le cuento cómo lo encararía. Disponible para relocalización."
   },
   en: {
-    title: "SENIOR QUALITY & OPERATIONAL EXCELLENCE LEAD | INDUSTRIAL DIGITALIZATION",
-    subtitle: "I fix broken processes. 16+ years · 6 global brands · Regulatory rigor and proprietary digital tools.",
+    title: "QUALITY & PROCESS IMPROVEMENT LEAD",
+    subtitle: "16 years in electronics manufacturing · ISO 9001 / 14001 / 45001 Internal Auditor · Custom digital tools",
     contact: "Contact Information",
     location: "Tierra del Fuego, Argentina (Open to Relocation)",
     languagesHeader: "English (B2+ Professional) · Spanish (Native) · Portuguese (Basic)",
-    summaryTitle: "Professional Profile & Value Proposition",
-    summary: "Senior Quality & Operational Excellence Lead with 16+ years stabilizing complex manufacturing lines (LG, Motorola, Samsung, Huawei, Sony, Alcatel) and implementing international management systems (ISO 9001 / 14001 / 45001 Internal Auditor, IATF 16949, ISO 17025). Specialist in bridging the operational gap between Quality, Process Engineering, and IT: engineered end-to-end manufacturing workflows, balanced Lean assembly cells, resolved technical discrepancies directly with Asian suppliers, and developed proprietary digital tools (Python/React) to eliminate shop-floor spreadsheets without corporate IT delays.",
-    skillsTitle: "Core Competencies & Management Systems",
-    achievementsTitle: "What I Have Improved (Problem → Action → Financial & Capacity Impact)",
-    bghGroupHeader: "Grupo BGH · Vertical Career Progression (12+ Years)",
-    bghGroupSub: "Continuous growth across 5 progressively complex technical, metrological, and operational leadership roles",
+    summaryTitle: "Professional Profile",
+    summary: "I have spent over 16 years on electronics and HVAC manufacturing floors working with LG, Motorola, Samsung, Huawei, Sony, and Alcatel products. I started in finished-product quality control and grew into process design, metrology, and quality management. What I do best is stabilize production lines: designing the workflow, balancing workstations, finding the root cause of defects, and making improvements stick. I am an ISO 9001, 14001, and 45001 internal auditor, and I build my own digital tools to replace paper spreadsheets with real-time shop-floor data.",
+    skillsTitle: "Technical Skills & Standards",
+    achievementsTitle: "Key Results",
+    bghGroupHeader: "Grupo BGH · 12 years, 6 roles on the plant floor",
+    bghGroupSub: "Progression from new product launches to process design, metrology laboratory, and quality management",
     experienceTitle: "Work Experience",
-    projectsTitle: "Proprietary Digital Shop-Floor Tools",
-    certsTitle: "Education & Professional Certifications",
-    ctaTitle: "Line bottlenecks, upcoming audits, or manual spreadsheets slowing down operations?",
-    ctaSub: "Let's spend 15 minutes analyzing how to streamline processes, safeguard compliance, or digitize shop-floor data collection without IT delays."
+    projectsTitle: "Digital tools I built",
+    certsTitle: "Education & Certifications",
+    ctaTitle: "Let's talk",
+    ctaSub: "If your plant is facing line quality issues, an upcoming audit, or manual spreadsheet bottlenecks, I'd be glad to share how I would approach them. Open to relocation."
   },
   pt: {
-    title: "SENIOR QUALITY & OPERATIONAL EXCELLENCE LEAD | DIGITALIZAÇÃO INDUSTRIAL",
-    subtitle: "I fix broken processes. 16+ anos · 6 marcas globais · Rigor normativo e ferramentas digitais sob medida.",
+    title: "LÍDER DE QUALIDADE E MELHORIA DE PROCESSOS",
+    subtitle: "16 anos em manufatura eletrônica · Auditor Interno ISO 9001 / 14001 / 45001 · Ferramentas digitais próprias",
     contact: "Informações de Contato",
     location: "Tierra del Fuego, Argentina (Disponível para Relocação)",
     languagesHeader: "Espanhol (Nativo) · Inglês (B2+ Profissional) · Português (Básico)",
-    summaryTitle: "Perfil Profissional & Proposta de Valor",
-    summary: "Líder de Qualidade e Excelência Operacional com mais de 16 anos estabilizando linhas de manufatura complexa (LG, Motorola, Samsung, Huawei, Sony, Alcatel) e implementando normas internacionais (Auditor Interno ISO 9001 / 14001 / 45001, IATF 16949, ISO 17025). Especialista em fechar a lacuna entre Qualidade, Processos e TI: projeto processos de manufatura, balanceamento Lean, resolução com fornecedores na Ásia e ferramentas digitais sob medida (Python/React) para eliminar planilhas manuais sem depender da burocracia de TI.",
-    skillsTitle: "Habilidades Principais & Normas de Gestão",
-    achievementsTitle: "O que melhorei (Problema → Ação → Impacto Financeiro & Capacidade)",
-    bghGroupHeader: "Grupo BGH · Trajetória de Crescimento Vertical (12+ Anos)",
-    bghGroupSub: "Evolução contínua em 5 funções de crescente complexidade técnica, metrológica e de liderança",
+    summaryTitle: "Perfil Profissional",
+    summary: "Trabalho há mais de 16 anos em fábricas de manufatura eletrônica e climatização, com produtos da LG, Motorola, Samsung, Huawei, Sony e Alcatel. Comecei no controle de qualidade de produto acabado e cresci para o projeto de processos, metrologia e gestão da qualidade. O que faço de melhor é estabilizar linhas de produção: projetar o processo, balancear postos, encontrar a causa raiz dos defeitos e sustentar as melhorias no tempo. Sou auditor interno ISO 9001, 14001 e 45001, e desenvolvo minhas próprias ferramentas digitais para substituir planilhas de papel e ter dados da fábrica em tempo real.",
+    skillsTitle: "Conhecimentos Técnicos e Normas",
+    achievementsTitle: "Resultados em destaque",
+    bghGroupHeader: "Grupo BGH · 12 anos e 6 cargos na fábrica",
+    bghGroupSub: "Evolução contínua desde qualidade em novos lançamentos até projeto de processos, metrologia e gestão da qualidade",
     experienceTitle: "Experiência Profissional",
-    projectsTitle: "Ferramentas Digitais Próprias para Fábrica",
-    certsTitle: "Educação & Certificações Profissionais",
-    ctaTitle: "Gargalos na linha, auditoria próxima ou planilhas manuais travando a fábrica?",
-    ctaSub: "Vamos analisar em 15 minutos como simplificar processos, blindar a conformidade ou digitalizar a captura de dados sem burocracia de TI."
+    projectsTitle: "Ferramentas digitais que desenvolvi",
+    certsTitle: "Educação e Certificações",
+    ctaTitle: "Vamos conversar?",
+    ctaSub: "Se sua fábrica tem problemas de qualidade, uma auditoria pela frente ou dados que ainda são carregados à mão, terei prazer em contar como eu encararia isso. Disponível para relocação."
   }
 };
 
@@ -100,20 +100,36 @@ async function run() {
     const skillsHtml = `
       <div class="skills-grid">
         <div class="skill-category-item">
-          <strong>${lang === 'es' ? 'Sistemas & Normas' : lang === 'pt' ? 'Sistemas & Normas' : 'Systems & Standards'}:</strong>
-          Auditor Interno ISO 9001 / 14001 / 45001 · IATF 16949 · ISO 17025 (Metrología) · Auditorías de Proceso y Producto
+          <strong>${lang === 'es' ? 'Sistemas y Normas' : lang === 'pt' ? 'Sistemas e Normas' : 'Systems & Standards'}:</strong>
+          ${lang === 'es'
+            ? 'Auditor Interno ISO 9001 / 14001 / 45001 · IATF 16949 · ISO 17025 (Metrología) · Auditorías de Proceso y Producto'
+            : lang === 'pt'
+              ? 'Auditor Interno ISO 9001 / 14001 / 45001 · IATF 16949 · ISO 17025 (Metrologia) · Auditorias de Processo e Produto'
+              : 'ISO 9001 / 14001 / 45001 Internal Auditor · IATF 16949 · ISO 17025 (Metrology) · Process & Product Audits'}
         </div>
         <div class="skill-category-item">
           <strong>${lang === 'es' ? 'Ingeniería de Procesos' : lang === 'pt' ? 'Engenharia de Processos' : 'Process Engineering'}:</strong>
-          Diseño de Manufactura · Balanceo de Líneas Lean · APQP / FMEA de Proceso · Trabajo Estándar & Ergonomía de Puesto
+          ${lang === 'es'
+            ? 'Diseño de Manufactura · Balanceo de Líneas Lean · APQP / FMEA de Proceso · Trabajo Estándar y Ergonomía de Puesto'
+            : lang === 'pt'
+              ? 'Projeto de Manufatura · Balanceamento de Linhas Lean · APQP / FMEA de Processo · Trabalho Padrão e Ergonomia'
+              : 'Manufacturing Process Design · Lean Line Balancing · APQP / Process FMEA · Standard Work & Workstation Ergonomics'}
         </div>
         <div class="skill-category-item">
           <strong>${lang === 'es' ? 'Resolución de Problemas' : lang === 'pt' ? 'Solução de Problemas' : 'Problem Solving'}:</strong>
-          RCA (Root Cause Analysis: 8D, 5 Porqués, Ishikawa) · CAPA de Ciclo Cerrado · Control Estadístico (SPC/MSA)
+          ${lang === 'es'
+            ? 'Análisis de Causa Raíz (RCA: 8D, 5 Porqués, Ishikawa) · Acciones Correctivas (CAPA) · Control Estadístico (SPC/MSA)'
+            : lang === 'pt'
+              ? 'Análise de Causa Raiz (RCA: 8D, 5 Porquês, Ishikawa) · Ações Corretivas (CAPA) · Controle Estatístico (SPC/MSA)'
+              : 'Root Cause Analysis (RCA: 8D, 5 Whys, Ishikawa) · Closed-Loop CAPA · Statistical Process Control (SPC/MSA)'}
         </div>
         <div class="skill-category-item">
-          <strong>${lang === 'es' ? 'Digitalización & Datos' : lang === 'pt' ? 'Digitalização & Dados' : 'Digitalization & Data'}:</strong>
-          SGC Paperless · Trazabilidad de Lotes · Desarrollo Rápido de Herramientas Locales (Python, React) · Flujos Automatizados
+          <strong>${lang === 'es' ? 'Digitalización y Datos' : lang === 'pt' ? 'Digitalização e Dados' : 'Digitalization & Data'}:</strong>
+          ${lang === 'es'
+            ? 'Registro Digital en Planta (Sin Papel) · Trazabilidad de Lotes · Desarrollo Rápido de Aplicaciones (Python, React) · Automatización'
+            : lang === 'pt'
+              ? 'Registro Digital na Fábrica (Sem Papel) · Rastreabilidade de Lotes · Desenvolvimento Rápido de Aplicações (Python, React) · Automação'
+              : 'Paperless Shop-Floor Logging · Lot Traceability · Rapid Local Tooling Development (Python, React) · Workflow Automation'}
         </div>
       </div>
     `;
@@ -606,7 +622,7 @@ async function run() {
         <div class="cta-sub">${trans.ctaSub}</div>
       </div>
       <div class="cta-action">
-        <div><strong>${lang === 'es' ? 'Agenda 15 min:' : lang === 'pt' ? 'Agende 15 min:' : 'Schedule 15 min:'}</strong></div>
+        <div><strong>${lang === 'es' ? 'Contacto:' : lang === 'pt' ? 'Contato:' : 'Contact:'}</strong></div>
         <div><a href="mailto:guillermo.canete@hotmail.com">guillermo.canete@hotmail.com</a></div>
         <div>+54 9 2964 413910</div>
       </div>

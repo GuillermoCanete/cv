@@ -473,27 +473,27 @@ export default function App() {
 
           <div className="mb-8">
             <span className="block font-mono text-xs sm:text-sm text-cv-accent font-bold uppercase tracking-wider mb-2">
-              {lang === "es" ? "SENIOR QUALITY & OPERATIONAL EXCELLENCE LEAD | DIGITALIZACIÓN INDUSTRIAL" : lang === "pt" ? "SENIOR QUALITY & OPERATIONAL EXCELLENCE LEAD | DIGITALIZAÇÃO INDUSTRIAL" : "SENIOR QUALITY & OPERATIONAL EXCELLENCE LEAD | INDUSTRIAL DIGITALIZATION"}
+              {lang === "es" ? "LÍDER DE CALIDAD Y MEJORA DE PROCESOS" : lang === "pt" ? "LÍDER DE QUALIDADE E MELHORIA DE PROCESSOS" : "QUALITY & PROCESS IMPROVEMENT LEAD"}
             </span>
             <span className="block font-serif text-lg sm:text-xl text-cv-ink italic font-normal mb-4">
               {lang === "es" 
-                ? "I fix broken processes. 16+ años · 6 marcas globales · Rigor normativo y herramientas digitales propias." 
+                ? "16 años en manufactura electrónica · Auditor Interno ISO 9001 / 14001 / 45001 · Herramientas digitales propias" 
                 : lang === "pt" 
-                  ? "I fix broken processes. 16+ anos · 6 marcas globais · Rigor normativo e ferramentas digitais sob medida." 
-                  : "I fix broken processes. 16+ years · 6 global brands · Regulatory rigor and proprietary digital tools."}
+                  ? "16 anos em manufatura eletrônica · Auditor Interno ISO 9001 / 14001 / 45001 · Ferramentas digitais próprias" 
+                  : "16 years in electronics manufacturing · ISO 9001 / 14001 / 45001 Internal Auditor · Custom digital tools"}
             </span>
             <p className="text-base sm:text-lg text-cv-ink2 max-w-xl leading-relaxed">
               {lang === "es" ? (
                 <>
-                  En manufactura de alta exigencia, la brecha entre Calidad, Procesos y Sistemas suele costar semanas de desvíos y miles de dólares en planillas manuales y scrap. Con 16+ años en líneas complejas (LG, Motorola, Samsung, Huawei, Sony, Alcatel), cierro esa brecha desde el primer día: estabilizo líneas con balanceo Lean y trabajo estándar, audito bajo estándares internacionales (<strong>Auditor Interno ISO 9001 / 14001 / 45001</strong>, <strong>IATF 16949</strong>) y desarrollo herramientas digitales propias para eliminar cuellos de botella sin depender de largos desarrollos de IT. Disponible para relocalización.
+                  Trabajo hace más de 16 años en plantas de manufactura electrónica y climatización, con productos de LG, Motorola, Samsung, Huawei, Sony y Alcatel. Empecé en control de calidad de producto terminado y fui creciendo hacia el diseño de procesos, la metrología y la gestión de calidad. Lo que mejor sé hacer es estabilizar líneas de producción: diseñar el proceso, balancear estaciones, encontrar la causa raíz de los defectos y sostener las mejoras en el tiempo. Soy <strong>auditor interno de ISO 9001, 14001 y 45001</strong>, y desarrollo mis propias herramientas digitales para reemplazar planillas en papel y tener datos de planta en tiempo real. Disponible para relocalización.
                 </>
               ) : lang === "pt" ? (
                 <>
-                  Na manufatura de alta exigência, a lacuna entre Qualidade, Processos e TI costuma custar semanas de desvios e milhares de dólares em planilhas manuais e refugo. Com mais de 16 anos em linhas complexas (LG, Motorola, Samsung, Huawei, Sony, Alcatel), fecho essa lacuna desde o primeiro dia: estabilizo linhas com balanceamento Lean e trabalho padronizado, audito sob normas internacionais (<strong>Auditor Interno ISO 9001 / 14001 / 45001</strong>, <strong>IATF 16949</strong>) e desenvolvo ferramentas digitais próprias para eliminar gargalos sem depender da burocracia de TI. Disponível para relocação.
+                  Trabalho há mais de 16 anos em fábricas de manufatura eletrônica e climatização, com produtos da LG, Motorola, Samsung, Huawei, Sony e Alcatel. Comecei no controle de qualidade de produto acabado e cresci para o projeto de processos, metrologia e gestão da qualidade. O que faço de melhor é estabilizar linhas de produção: projetar o processo, balancear postos, encontrar a causa raiz dos defeitos e sustentar as melhorias no tempo. Sou <strong>auditor interno ISO 9001, 14001 e 45001</strong>, e desenvolvo minhas próprias ferramentas digitais para substituir planilhas de papel e ter dados da fábrica em tempo real. Disponível para relocação.
                 </>
               ) : (
                 <>
-                  In high-reliability manufacturing, the gap between Quality, Engineering, and IT often costs weeks of deviations and thousands of dollars in manual spreadsheets and scrap. With 16+ years on complex plant floors (LG, Motorola, Samsung, Huawei, Sony, Alcatel), I bridge that gap from day one: stabilizing lines via Lean balancing and standard work, auditing under international standards (<strong>ISO 9001 / 14001 / 45001 Internal Auditor</strong>, <strong>IATF 16949</strong>), and developing custom digital tools to eliminate bottlenecks without waiting for corporate IT backlogs. Open to relocation.
+                  I have spent over 16 years on electronics and HVAC manufacturing floors working with LG, Motorola, Samsung, Huawei, Sony, and Alcatel products. I started in finished-product quality control and grew into process design, metrology, and quality management. What I do best is stabilize production lines: designing the workflow, balancing workstations, finding the root cause of defects, and making improvements stick. I am an <strong>ISO 9001, 14001, and 45001 internal auditor</strong>, and I build my own digital tools to replace paper spreadsheets with real-time shop-floor data. Open to relocation.
                 </>
               )}
             </p>
@@ -707,7 +707,7 @@ export default function App() {
             <div className="flex items-center gap-4">
               <span className="font-mono text-xs sm:text-sm text-cv-accent font-semibold">02</span>
               <h2 className="font-serif text-3xl sm:text-4xl text-cv-white">
-                {lang === "es" ? "Qué he mejorado" : lang === "pt" ? "O que melhorei" : "What I have improved"}
+                {lang === "es" ? "Resultados destacados" : lang === "pt" ? "Resultados em destaque" : "Key Results"}
               </h2>
             </div>
             <span className="font-mono text-xs text-cv-accent uppercase tracking-wider">
@@ -797,15 +797,15 @@ export default function App() {
           <div className="flex items-center gap-4 mb-4 border-b border-cv-line pb-4">
             <span className="font-mono text-xs sm:text-sm text-cv-accent font-semibold">04</span>
             <h2 className="font-serif text-3xl sm:text-4xl text-cv-ink">
-              {lang === "es" ? "Herramientas digitales para operaciones" : lang === "pt" ? "Ferramentas digitais para operações" : "Digital tools for operations"}
+              {lang === "es" ? "Herramientas digitales que desarrollé" : lang === "pt" ? "Ferramentas digitais que desenvolvi" : "Digital tools I built"}
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-cv-ink2 max-w-2xl mb-12 leading-relaxed">
             {lang === "es" ? 
-              "Mientras la industria tradicional espera meses por tickets de sistemas o consultorías costosas, desarrollo herramientas operativas ligeras y autónomas que resuelven cuellos de botella en días. Pruebe los prototipos interactivos integrados a continuación:" : 
+              "En lugar de esperar meses por desarrollos externos, armo aplicaciones simples y directas para resolver problemas cotidianos de la línea: registrar defectos sin papel, controlar el stock de insumos y preparar auditorías. Podés probar los prototipos acá mismo:" : 
              lang === "pt" ?
-              "Enquanto a indústria tradicional espera meses por tickets de TI ou consultorias caras, desenvolvo ferramentas operacionais leves e autônomas que resolvem gargalos em dias. Teste os protótipos interativos integrados abaixo:" :
-              "While traditional industry waits months for IT ticketing backlogs or expensive consultants, I build lightweight, autonomous operational tools that resolve shop-floor bottlenecks in days. Interact with the sandbox prototypes below:"
+              "Em vez de esperar meses por sistemas externos, crio aplicações simples e diretas para resolver problemas diários da linha: registrar defeitos sem papel, controlar o estoque de insumos e preparar auditorias. Você pode testar os protótipos abaixo:" :
+              "Instead of waiting months for external software, I build simple, practical apps to solve everyday line problems: logging defects without paper, tracking material stock, and preparing for audits. You can test the interactive prototypes right here:"
             }
           </p>
 
@@ -1294,28 +1294,25 @@ export default function App() {
           <h2 className="font-serif text-3xl sm:text-5xl leading-tight mb-4">
             {lang === "es" ? (
               <>
-                ¿Cuello de botella en línea, auditoría próxima <br />
-                <span className="italic text-cv-accent font-normal">o planillas manuales frenando su planta?</span>
+                ¿Conversamos sobre <span className="italic text-cv-accent font-normal">su operación?</span>
               </>
             ) : lang === "pt" ? (
               <>
-                Gargalos na linha, auditoria próxima <br />
-                <span className="italic text-cv-accent font-normal">ou planilhas manuais travando a fábrica?</span>
+                Vamos conversar sobre <span className="italic text-cv-accent font-normal">sua operação?</span>
               </>
             ) : (
               <>
-                Line bottlenecks, upcoming audits <br />
-                <span className="italic text-cv-accent font-normal">or manual spreadsheets slowing down operations?</span>
+                Let&apos;s talk about <span className="italic text-cv-accent font-normal">your operations</span>
               </>
             )}
           </h2>
           
           <p className="text-sm sm:text-base text-cv-bg2/80 max-w-xl mx-auto mb-12 leading-relaxed">
             {lang === "es" ? 
-              "Analicemos en 15 minutos cómo simplificar procesos, blindar la conformidad o digitalizar capturas de datos sin burocracia de IT. Disponible para oportunidades en Calidad, Excelencia Operacional y Transformación Digital (presencial o remoto) con total disponibilidad de relocalización." : 
+              "Si su planta tiene problemas de calidad en línea, una auditoría por delante o datos que todavía se cargan a mano en planillas, con gusto le cuento cómo trabajaría para resolverlo. Estoy disponible para posiciones presenciales o remotas y abierto a relocalización." : 
              lang === "pt" ?
-              "Vamos analisar em 15 minutos como simplificar processos, blindar a conformidade ou digitalizar a captura de dados sem burocracia de TI. Disponível para oportunidades em Qualidade, Excelência Operacional e Transformação Digital (presencial ou remoto) com total disponibilidade de relocação." :
-              "Let's spend 15 minutes analyzing how to streamline processes, safeguard compliance, or digitize shop-floor data collection without IT delays. Open to Quality, Operational Excellence, and Digital Transformation roles with relocation availability."}
+              "Se sua fábrica tem problemas de qualidade na linha, uma auditoria pela frente ou dados que ainda são anotados à mão em planilhas, terei prazer em contar como eu trabalharia para resolver isso. Disponível para posições presenciais ou remotas e aberto a relocação." :
+              "If your plant is dealing with line quality issues, an upcoming audit, or shop-floor data still being entered by hand into spreadsheets, I would be glad to share how I would approach it. Available for on-site or remote roles and open to relocation."}
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 lg:gap-6">
