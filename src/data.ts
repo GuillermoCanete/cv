@@ -112,16 +112,16 @@ export const STATS: StatItem[] = [
     }
   },
   {
-    number: "−2d",
+    number: "2 hs",
     label: { 
-      es: "Tiempo de capacitación y ramp-up", 
-      en: "Training & ramp-up acceleration", 
-      pt: "Tempo de treinamento e ramp-up" 
+      es: "Rampa récord en celulares Sony", 
+      en: "Record ramp-up on Sony line", 
+      pt: "Rampa recorde em celulares Sony" 
     },
     sub: { 
-      es: "Menor curva de aprendizaje en lanzamientos de nuevos modelos", 
-      en: "Shorter learning curve during new model launches", 
-      pt: "Menor curva de aprendizado em lançamentos de novos modelos" 
+      es: "Meta de 2 días de adaptación lograda en solo 2 horas", 
+      en: "2-day ramp-up and training target reached in just 2 hours", 
+      pt: "Meta de 2 dias de adaptação atingida em apenas 2 horas" 
     }
   }
 ];
@@ -295,12 +295,12 @@ export const ACHIEVEMENTS: AchievementItem[] = [
   },
   {
     id: "a2",
-    accent: "−2d",
-    icon: "🎯",
+    accent: "2 horas",
+    icon: "⚡",
     text: {
-      es: "Capacitación en lanzamientos — En cada cambio de modelo, la curva de aprendizaje demoraba varios días. Armé un esquema de acompañamiento 1 a 1 entre turnos que redujo el tiempo de adaptación en 2 días y permitió llegar antes al ritmo y calidad objetivos.",
-      en: "Launch Training — During model changeovers, operator learning curves took several days. I set up a 1-on-1 cross-shift coaching scheme that cut ramp-up time by 2 days and reached target output and quality ahead of schedule.",
-      pt: "Treinamento em lançamentos — A cada troca de modelo, a curva de aprendizado demorava vários dias. Criei um esquema de acompanhamento 1 a 1 entre turnos que reduziu o tempo de adaptação em 2 dias."
+      es: "Línea Celulares Sony — Tenía 15 días para rediseñar el proceso al 50% de dotación y volumen, y 2 días para capacitar al personal y estabilizar la línea. Alcanzamos la meta de producción y calidad en solo 2 horas.",
+      en: "Sony Smartphone Line — Had 15 days to redesign the process for 50% staffing and volume, and 2 days to train operators and stabilize the line. Reached full target production and quality rate in just 2 hours.",
+      pt: "Linha Celulares Sony — Tinha 15 dias para redesenhar o processo para 50% do efetivo e volume, e 2 dias para treinar a equipe e estabilizar a linha. Atingimos a meta de produção e qualidade em apenas 2 horas."
     }
   },
   {
@@ -417,14 +417,14 @@ export const EXPERIENCES: ExperienceItem[] = [
       pt: "Técnico de Processos Sênior | Projeto de Manufatura e Novos Lançamentos" 
     },
     desc: {
-      es: "Al quedar vacante el puesto de ingeniero de procesos, asumí el diseño completo del proceso de manufactura y la puesta en marcha de más de 10 modelos de celulares Alcatel:<br/>● <strong>Diseño del proceso de punta a punta:</strong> Armé la secuencia de ensamble, la distribución de tareas por estación y el balanceo de línea para cada nuevo modelo.<br/>● <strong>Estabilización de producción y calidad (+17%):</strong> Ajusté tiempos de ciclo y ergonomía de puestos hasta alcanzar los objetivos de marca, logrando +17% de producción en el modelo Alcatel 4007 y +10% en el 4015 con el mismo equipamiento.<br/>● <strong>Reducción del tiempo de adaptación (-2 días):</strong> Implementé un esquema de acompañamiento 1 a 1 entre turnos que permitió alcanzar el ritmo y la calidad requeridos 2 días antes de lo previsto.",
-      en: "When the process engineer position became vacant, I took on full responsibility for designing the manufacturing process and launching over 10 Alcatel smartphone models:<br/>● <strong>End-to-end process design:</strong> Built the assembly sequence, station task breakdown, and line balancing for each new model.<br/>● <strong>Production and quality stabilization (+17%):</strong> Tuned cycle times and workstation ergonomics to meet brand targets, achieving +17% output on the Alcatel 4007 and +10% on the 4015 with existing equipment.<br/>● <strong>Faster ramp-up (-2 days):</strong> Implemented a 1-on-1 cross-shift coaching scheme that brought lines to target speed and quality 2 days ahead of schedule.",
-      pt: "Ao ficar vaga a posição de engenheiro de processos, assumi o projeto completo do processo de manufatura e o lançamento de mais de 10 modelos de celulares Alcatel:<br/>● <strong>Projeto completo do processo:</strong> Montei a sequência de montagem, divisão de tarefas por posto e balanceamento de linha para cada modelo.<br/>● <strong>Estabilização de produção e qualidade (+17%):</strong> Ajustei tempos de ciclo e ergonomia até atingir as metas da marca, alcançando +17% de produção no Alcatel 4007 e +10% no 4015.<br/>● <strong>Redução do tempo de adaptação (-2 dias):</strong> Implementei acompanhamento 1 a 1 entre turnos, atingindo o ritmo e a qualidade exigidos 2 dias antes do previsto."
+      es: "Diseño del proceso de manufactura, balanceo de líneas y puesta en marcha de modelos para <strong>Alcatel y Sony</strong>:<br/>● <strong>Celulares Sony (Rebalanceo por cambio de volumen):</strong> Adapté la línea para producir al 50% de volumen con la mitad del personal. Rediseñé el proceso completo y emití las nuevas instrucciones de trabajo (ITs) en 15 días. La meta para capacitar y estabilizar la línea era de 2 días; alcanzamos el ritmo de producción y calidad objetivo en <strong>solo 2 horas</strong>.<br/>● <strong>Aumento de producción (+17% Alcatel):</strong> Rebalanceé puestos y ajusté tiempos de ciclo, logrando un 17% más de producción en el modelo Alcatel 4007 y un 10% en el 4015 con el mismo equipamiento y sin horas extras.<br/>● <strong>Diseño de proceso de punta a punta:</strong> Diseñé la secuencia de ensamble, la distribución de puestos y el balanceo de línea en más de 10 lanzamientos de nuevos modelos.",
+      en: "Manufacturing process design, line balancing, and new model launches for <strong>Alcatel and Sony</strong>:<br/>● <strong>Sony Smartphones (Line rebalancing & volume adjustment):</strong> Adapted the assembly line to operate at 50% volume with half the headcount. Redesigned the process and issued new Work Instructions (WIs) in 15 days. With a 2-day target to train operators and stabilize output, reached full target production and quality rate in <strong>just 2 hours</strong>.<br/>● <strong>Output increase (+17% Alcatel):</strong> Rebalanced workstations and cycle times, increasing output by 17% on Alcatel 4007 and 10% on 4015 with existing line equipment.<br/>● <strong>End-to-end process design:</strong> Built assembly sequences, workstation layouts, and line balancing across 10+ new smartphone launches.",
+      pt: "Projeto do processo de manufatura, balanceamento de linhas e introdução de novos modelos para <strong>Alcatel e Sony</strong>:<br/>● <strong>Celulares Sony (Rebalanceamento por mudança de volume):</strong> Adaptei a linha para produzir a 50% do volume com metade dos operadores. Redesenhei o processo e emiti novas instruções de trabalho (ITs) em 15 dias. Com meta de 2 dias para treinar a equipe e estabilizar a linha, alcançamos a meta de produção e qualidade em <strong>apenas 2 horas</strong>.<br/>● <strong>Aumento de produção (+17% Alcatel):</strong> Rebalanceei postos e ajustei tempos de ciclo, alcançando +17% de produção no Alcatel 4007 e +10% no 4015 com o mesmo maquinário e sem horas extras.<br/>● <strong>Projeto de processo de ponta a ponta:</strong> Defini sequência de montagem, distribuição de postos e balanceamento de linha em mais de 10 lançamentos de modelos."
     },
     highlight: { 
-      es: "10+ Lanzamientos Alcatel · +17% producción (4007) · Balanceo de línea", 
-      en: "10+ Alcatel Launches · +17% production (4007) · Line balancing", 
-      pt: "10+ Lançamentos Alcatel · +17% produção (4007) · Balanceamento" 
+      es: "Alcatel & Sony · Meta de 2 días lograda en 2 horas · +17% producción (4007)", 
+      en: "Alcatel & Sony · 2-day target reached in 2 hours · +17% output (4007)", 
+      pt: "Alcatel & Sony · Meta de 2 dias atingida em 2 horas · +17% produção (4007)" 
     }
   },
   {
